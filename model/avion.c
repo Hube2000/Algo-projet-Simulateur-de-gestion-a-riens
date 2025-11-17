@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <stdbool.h>
 
 typedef enum CATEGORIE_AVION
 {
@@ -16,4 +15,14 @@ typedef struct avion
     CATEGORIE_AVION categorie;
     int etat; // 0 pour au sol, 1 pour en vol
     int nombre_de_passagers;
+    avion* next;
+    avion* prev;
 };
+
+typdef struct AvionFile AvionFile;
+struct AvionFile{
+    int nbElement;
+    avion *premier;
+    avion  *dernier;
+}
+
