@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <string.h>
 
+typedef struct avion avion;
+typedef struct AvionFile AvionFile;
+
 typedef enum CATEGORIE_AVION
 {
     AVION_DE_LIGNE,
@@ -19,7 +22,7 @@ typedef struct avion
     avion* prev;
 };
 
-typdef struct AvionFile AvionFile;
+struct AvionFile AvionFile;
 struct AvionFile{
     int nbElement;
     avion *premier;
