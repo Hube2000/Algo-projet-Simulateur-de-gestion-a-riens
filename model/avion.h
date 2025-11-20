@@ -13,7 +13,7 @@ typedef enum CATEGORIE_AVION
 typedef struct avion avion;
 
 typedef struct avion {
-    int identifiant;
+    int id;
     CATEGORIE_AVION categorie;
     int etat; // 0 pour au sol, 1 pour en vol
     int nombre_de_passagers;
