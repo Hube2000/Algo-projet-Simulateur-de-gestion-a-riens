@@ -5,3 +5,5 @@
 #include "/models/avion"
 #include "/models/piste"
 #include "/models/aeroport"
+
+int main(){};
