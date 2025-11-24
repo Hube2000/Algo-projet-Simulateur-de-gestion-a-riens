@@ -1,6 +1,19 @@
-#include "avion.h"
+#include "../models/avion.h"
 #include <stdlib.h>
 #include <stdio.h>
+
+
+avion * creerAvion(){
+    avion * newAvion = malloc(sizeof(avion));
+    if(!newAvion) return NULL;
+    newAvion->id = rand() % 51 + 1; // random id 1-50
+    newAvion->categorie = (CATEGORIE_AVION)(rand() % 3);
+    newAvion->etat = 0;
+    newAvion->nombre_de_passagers = 0;
+    newAvion->next = NULL;
+    newAvion->prev = NULL;
+    return newAvion;
+}
 
 avion * rechercherAvion(AvionFile *file, int id){ 
     if(!file) return NULL;
