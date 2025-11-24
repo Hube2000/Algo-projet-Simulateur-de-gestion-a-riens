@@ -63,7 +63,7 @@ void afficher_compatibilite(avion *av, PISTE *p) {
             case AVION_DE_LIGNE: printf("Ligne)"); break;
         }
 
-        printf(" - compatible avec Piste #%d (", p->numero_de_piste);
+        printf(" compatible avec Piste #%d (", p->numero_de_piste);
         switch(p->categorie_piste) {
             case PISTE_PETITE: printf("Petite)"); break;
             case PISTE_MOYENNE: printf("Moyenne)"); break;
@@ -74,3 +74,4 @@ void afficher_compatibilite(avion *av, PISTE *p) {
         printf("incompatibilite\n");
     }
 }
+
