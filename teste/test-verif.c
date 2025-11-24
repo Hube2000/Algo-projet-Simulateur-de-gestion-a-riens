@@ -1,9 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include "../models/aeroport.h"
-#include "../models/avion.h"
-#include "../models/piste.h"
 #include "../verif/verif.h"
 
 
@@ -32,5 +29,8 @@ int main() {
     afficher_compatibilite(&avion_ligne, &piste_petite);
     afficher_compatibilite(&avion_ligne, &piste_moyenne);
     afficher_compatibilite(&avion_ligne, &piste_grande);
+
+    // compter_elements et parking_est_plein peuvent être testés une fois la structure AvionFile implémentée
+
     return 0;
 }

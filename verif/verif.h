@@ -1,8 +1,6 @@
 #ifndef VERIF_H
 #define VERIF_H
 #include <stdbool.h>
-#include "../models/avion.h"
-#include "../models/piste.h"
 #include "../models/aeroport.h"
 
 bool verifier_compatibilite(avion *avion, PISTE *piste);

@@ -2,8 +2,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 
-#include "avion.h"
-#include "piste.h"
 #include "verif.h"
 
 
@@ -56,7 +54,7 @@ bool parking_est_plein(AvionFile *liste_parking, int capacite_max_parking) {
 
 void afficher_compatibilite(avion *av, PISTE *p) {
     if (verifier_compatibilite(av, p)) {
-        printf("Avion #%d ", av->id);
+        printf("Avion #%d (", av->id);
         switch(av->categorie) {
             case AVION_LEGER: printf("Léger)"); break;
             case AVION_D_AFFAIRE: printf("Affaire)"); break;
@@ -65,13 +63,13 @@ void afficher_compatibilite(avion *av, PISTE *p) {
 
         printf(" compatible avec Piste #%d (", p->numero_de_piste);
         switch(p->categorie_piste) {
-            case PISTE_PETITE: printf("Petite)"); break;
-            case PISTE_MOYENNE: printf("Moyenne)"); break;
-            case PISTE_GRANDE: printf("Grande)"); break;
+            case PISTE_PETITE: printf("Petite)\n"); break;
+            case PISTE_MOYENNE: printf("Moyenne)\n"); break;
+            case PISTE_GRANDE: printf("Grande)\n"); break;
         }
-        printf("\n");
+        
     } else {
-        printf("incompatibilite\n");
+        printf("ERREUR : Avion #%d incompatible avec Piste #%d\n", av->id, p->numero_de_piste);
     }
 }
 
