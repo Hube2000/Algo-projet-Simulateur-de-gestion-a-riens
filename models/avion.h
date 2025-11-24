@@ -34,5 +34,6 @@ AvionFile * ajouterFinFile(AvionFile *file, avion *a);
 AvionFile * supprimerDebutFile(AvionFile *file);
 AvionFile * supprimerFinFile(AvionFile *file);
 avion * rechercherAvion(AvionFile *file, int id);
+avion* retirerAvion(AvionFile *file,int id);
 
 #endif 

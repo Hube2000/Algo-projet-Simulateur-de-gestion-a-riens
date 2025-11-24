@@ -55,7 +55,3 @@ avion* retirerAvion(AvionFile *file,int id){
     return aSupprimer;
 
 }
-
-int main(){
-    
-}
