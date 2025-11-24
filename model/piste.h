@@ -21,5 +21,5 @@ struct piste
     int longueur;
     CATEGORIE_PISTE categorie_piste;
     int nombre_max_avions_attente;
-    AvionFile* liste_avions_attente; // pointeur vers la file d'avions en attente
-};
+    struct avion_attente* liste_avions_attente; // Pointeur vers la liste chaînée des avions en attente
+} PISTE;
