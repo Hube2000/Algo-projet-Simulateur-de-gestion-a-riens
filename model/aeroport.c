@@ -1,7 +1,8 @@
-#include "piste.h"
 #include <stdio.h>
 #include <stdlib.h>
-#include <avion.h>
+#include "avion.h"
+#include "piste.h"
+
 
 PISTE * init_aeroport(int cap_parking, int cap_piste1, int cap_piste2, int cap_piste3){
     PISTE * aeroport = malloc(3*sizeof(PISTE));
@@ -25,12 +26,31 @@ PISTE * init_aeroport(int cap_parking, int cap_piste1, int cap_piste2, int cap_p
 }
 
 void charger_bdd(PISTE *aeroport,const char* path){
-    FILE* file = fopen(path,"r");
-    if(!file) return;
+    FILE* fileBdd = fopen(path,"rb");
+    if(!fileBdd){
+        printf("Erreur ouverture BDD");
+        return;
+    }
+
     AvionFile * file_avions = creerAvionFile();
-    
-    avion * current = file_avions->premier;
-    while(current != NULL ){
+    avion temp;
 
+    while (fread(&temp, sizeof(avion), 1, fileBdd) == 1) {
+        avion * nouveau = malloc(sizeof(avion));
+        if (!nouveau) break;
 
+        *nouveau = temp;
+        file_avions = ajouterFinFile(file_avions, nouveau);
+    }
+
+    fclose(fileBdd);
 }
+
+void liberer_aeroport(PISTE *aeroport){
+    if(aeroport){
+        free(aeroport);
+    }
+}
+
+int main(){}
+

@@ -1,7 +1,9 @@
-#ifndef AVION_H
-#define AVION_H
+
+#ifndef MODEL_AVION_H
+#define MODEL_AVION_H
 
 #include <stdlib.h>
+#include <stdio.h>
 
 typedef enum CATEGORIE_AVION
 {
@@ -34,5 +36,6 @@ AvionFile * ajouterFinFile(AvionFile *file, avion *a);
 AvionFile * supprimerDebutFile(AvionFile *file);
 AvionFile * supprimerFinFile(AvionFile *file);
 avion * rechercherAvion(AvionFile *file, int id);
+avion* retirerAvion(AvionFile *file,int id);
 
-#endif 
+#endif

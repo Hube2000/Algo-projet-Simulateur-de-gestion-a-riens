@@ -1,4 +1,6 @@
 #include "avion.h"
+#include <stdlib.h>
+#include <stdio.h>
 
 avion * rechercherAvion(AvionFile *file, int id){ 
     if(!file) return NULL;
@@ -16,25 +18,31 @@ avion* retirerAvion(AvionFile *file,int id){
     if(!file) return NULL;
     avion *aSupprimer = rechercherAvion(file, id);
     if(!aSupprimer) return NULL;
-
-    // Debut de la liste
-    if(aSupprimer == file->premier){
+    
+    if(file->nbElement == 1){
+        /* seul élément */
         file->premier = NULL;
         file->dernier = NULL;
-        free(aSupprimer);
-    }
-    
-    // Au millieu de la liste
-    aSupprimer->prev->next = aSupprimer->next;
-    aSupprimer->next->prev = aSupprimer->prev;
-
-    // Fin de la liste
-    if(aSupprimer == file->dernier){
+    } else if(aSupprimer == file->premier){
+        /* tête */
+        file->premier = aSupprimer->next;
+        if(file->premier) file->premier->prev = NULL;
+    } else if(aSupprimer == file->dernier){
+        /* queue */
         file->dernier = aSupprimer->prev;
-        free(aSupprimer);
+        if(file->dernier) file->dernier->next = NULL;
+    } else {
+        /* milieu */
+        if(aSupprimer->prev) aSupprimer->prev->next = aSupprimer->next;
+        if(aSupprimer->next) aSupprimer->next->prev = aSupprimer->prev;
     }
 
     file->nbElement--;
+    aSupprimer->next = aSupprimer->prev = NULL;
     return aSupprimer;
 
+}
+
+int main(){
+    
 }
