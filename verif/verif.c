@@ -1,9 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-
+#include <unistd.h>
 #include "verif.h"
-
 
 bool verifier_compatibilite(avion *avion, PISTE *piste) {
     if (avion == NULL || piste == NULL) {
@@ -73,3 +72,121 @@ void afficher_compatibilite(avion *av, PISTE *p) {
     }
 }
 
+
+
+
+void chargement(void) {
+    // Animation en 5 frames de 600ms chacune (total: 3 secondes)
+    
+    // Frame 1
+    system("cls||clear");
+    printf("\n");
+    printf("       _\n");
+    printf("      -=\\`\\\n");
+    printf("  |\\ ____\\_\\__\n");
+    printf("-=\\c`\"\"\"\"\"\"\" \"`)\n");
+    printf("  `~~~~~/ /~~`\n");
+    printf("   -==/ /\n");
+    printf("     '-'\n");
+    printf("\n");
+    printf("      _  _\n");
+    printf("     ( `   )_\n");
+    printf("    (    )    `)\n");
+    printf("  (_   (_ .  _) _)\n");
+    printf("                                 _\n");
+    printf("                                (  )\n");
+    printf(" _ .                         ( `  ) . )\n");
+    printf("(  _ )_                      (_, _(  ,_)_)\n");
+    printf("(_  _(_ ,)\n");
+    usleep(600000); // 600ms
+    
+    // Frame 2
+    system("cls||clear");
+    printf("\n");
+    printf("              _\n");
+    printf("             -=\\`\\\n");
+    printf("        |\\ ____\\_\\__\n");
+    printf("       -=\\c`\"\"\"\"\"\"\" \"`)\n");
+    printf("         `~~~~~/ /~~`\n");
+    printf("            -==/ /\n");
+    printf("              '-'\n");
+    printf("\n");
+    printf("      _  _\n");
+    printf("     ( `   )_\n");
+    printf("    (    )    `)\n");
+    printf("  (_   (_ .  _) _)\n");
+    printf("                                 _\n");
+    printf("                                (  )\n");
+    printf(" _ .                         ( `  ) . )\n");
+    printf("(  _ )_                      (_, _(  ,_)_)\n");
+    printf("(_  _(_ ,)\n");
+    usleep(60000); // 600ms
+    
+    // Frame 3
+    system("cls||clear");
+    printf("\n");
+    printf("                     _\n");
+    printf("                    -=\\`\\\n");
+    printf("               |\\ ____\\_\\__\n");
+    printf("              -=\\c`\"\"\"\"\"\"\" \"`)\n");
+    printf("                `~~~~~/ /~~`\n");
+    printf("                   -==/ /\n");
+    printf("                     '-'\n");
+    printf("\n");
+    printf("      _  _\n");
+    printf("     ( `   )_\n");
+    printf("    (    )    `)\n");
+    printf("  (_   (_ .  _) _)\n");
+    printf("                                 _\n");
+    printf("                                (  )\n");
+    printf(" _ .                         ( `  ) . )\n");
+    printf("(  _ )_                      (_, _(  ,_)_)\n");
+    printf("(_  _(_ ,)\n");
+    usleep(60000); // 600ms
+    
+    // Frame 4
+    system("cls||clear");
+    printf("\n");
+    printf("                                      _\n");
+    printf("                                     -=\\`\\\n");
+    printf("                                |\\ ____\\_\\__\n");
+    printf("                               -=\\c`\"\"\"\"\"\"\" \"`)\n");
+    printf("                                 `~~~~~/ /~~`\n");
+    printf("                                    -==/ /\n");
+    printf("                                      '-'\n");
+    printf("\n");
+    printf("      _  _\n");
+    printf("     ( `   )_\n");
+    printf("    (    )    `)\n");
+    printf("  (_   (_ .  _) _)\n");
+    printf("                                 _\n");
+    printf("                                (  )\n");
+    printf(" _ .                         ( `  ) . )\n");
+    printf("(  _ )_                      (_, _(  ,_)_)\n");
+    printf("(_  _(_ ,)\n");
+    usleep(60000); // 600ms
+    
+    // Frame 5
+    system("cls||clear");
+    printf("\n");
+    printf("                                                   _\n");
+    printf("                                                  -=\\`\\\n");
+    printf("                                             |\\ ____\\_\\__\n");
+    printf("                                            -=\\c`\"\"\"\"\"\"\" \"`)\n");
+    printf("                                              `~~~~~/ /~~`\n");
+    printf("                                                 -==/ /\n");
+    printf("                                                   '-'\n");
+    printf("\n");
+    printf("      _  _\n");
+    printf("     ( `   )_\n");
+    printf("    (    )    `)\n");
+    printf("  (_   (_ .  _) _)\n");
+    printf("                                 _\n");
+    printf("                                (  )\n");
+    printf(" _ .                         ( `  ) . )\n");
+    printf("(  _ )_                      (_, _(  ,_)_)\n");
+    printf("(_  _(_ ,)\n");
+    usleep(60000); // 600ms
+    
+    system("cls||clear");
+}

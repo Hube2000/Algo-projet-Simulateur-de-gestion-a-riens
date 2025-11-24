@@ -6,7 +6,9 @@
 
 int main() {
     
-     printf("Tests de verification de compatibilite entre avions et pistes\n");
+    chargement();
+    
+    printf("\n=== Tests de verification de compatibilite entre avions et pistes ===\n\n");
         // Création d'avions de différentes catégories
     avion avion_leger = { .id = 1, .categorie = AVION_LEGER };
     avion avion_affaire = { .id = 2, .categorie = AVION_D_AFFAIRE };
@@ -22,6 +24,7 @@ int main() {
     afficher_compatibilite(&avion_leger, &piste_moyenne);
     afficher_compatibilite(&avion_leger, &piste_grande);
 
+
     afficher_compatibilite(&avion_affaire, &piste_petite);
     afficher_compatibilite(&avion_affaire, &piste_moyenne);
     afficher_compatibilite(&avion_affaire, &piste_grande);
@@ -31,6 +34,6 @@ int main() {
     afficher_compatibilite(&avion_ligne, &piste_grande);
 
     // compter_elements et parking_est_plein peuvent être testés une fois la structure AvionFile implémentée
-
+    
     return 0;
 }
