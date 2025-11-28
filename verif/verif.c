@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <unistd.h>
-#include "verif.h"
+#include "../verif/verif.h"
 
 bool verifier_compatibilite(avion *avion, PISTE *piste) {
     if (avion == NULL || piste == NULL) {
