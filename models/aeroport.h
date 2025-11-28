@@ -1,15 +1,19 @@
+#ifndef AEROPORT_H
+#define AEROPORT_H
+
 #include <stdio.h>
 #include <stdlib.h>
 
-#include ".file.c"
-#include "avion.c"
-#include "piste.c"
+#include "avion.h"
+#include "piste.h"
 
 typedef struct Aeroport {
   PISTE *pistes[3];
-  Avion *parking[50];
+  avion *parking[50];
   int places;
   int passagers;
   int departs;
   int retours;
 } Aeroport;
+
+#endif
