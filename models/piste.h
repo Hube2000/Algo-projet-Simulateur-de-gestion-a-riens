@@ -1,3 +1,6 @@
+#ifndef PISTE_H
+#define PISTE_H
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -18,3 +21,5 @@ typedef struct piste
     int nombre_max_avions_attente;
     AvionFile* liste_avions_attente; // Pointeur vers la liste chaînée des avions en attente
 } PISTE;
+
+#endif

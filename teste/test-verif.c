@@ -6,8 +6,6 @@
 
 int main() {
     
-    chargement();
-    
     printf("\n=== Tests de verification de compatibilite entre avions et pistes ===\n\n");
         // Création d'avions de différentes catégories
     avion avion_leger = { .id = 1, .categorie = AVION_LEGER };

@@ -2,8 +2,10 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "/models/avion"
-#include "/models/piste"
-#include "/models/aeroport"
+#include "../models/avion.h"
+#include "../models/piste.h"
+#include "../models/aeroport.h"
 
-int main(){};
+int main(void){
+
+};
