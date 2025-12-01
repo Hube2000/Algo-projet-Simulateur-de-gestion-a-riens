@@ -166,7 +166,6 @@ int main(void){
                 printf("Choix invalide. Veuillez réessayer.\n");
                 break;
         }
-
     }   
     return 0;
 }
