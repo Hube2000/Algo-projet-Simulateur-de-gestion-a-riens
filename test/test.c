@@ -3,6 +3,7 @@
 
 int main(void) {
     while(1) {
+        system("cls");
         int choix;
         printf("1. Visuel 1\n");
         printf("2. Visuel 2\n");

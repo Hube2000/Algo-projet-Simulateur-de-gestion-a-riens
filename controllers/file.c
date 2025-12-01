@@ -78,4 +78,3 @@ AvionFile * supprimerFinFile(AvionFile *file){
     file->nbElement--;
     return file;
 }
-
