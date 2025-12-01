@@ -1,3 +1,6 @@
+#ifndef UI_HACK_C
+#define UI_HACK_C
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<stdbool.h>
@@ -6,7 +9,9 @@
   
 // pr lancer le programme il faut faire: 
 //system("start cmd /k \"gcc UI/Hack.c -o UI/Hack.exe && .\\Hack.exe\"");
-int main(void){
+void hack(){
+    system("cls");
+    system("title Hack en cours...");
     //bou je fais peur
     Sleep(2000);
     srand(time(NULL));
@@ -20,9 +25,10 @@ int main(void){
     }
         randNum = rand() % 100;
     }
-    Sleep(7000);
+    Sleep(700);
     system("taskkill /F /FI \"WINDOWTITLE eq IPConfig\"");
     system("taskkill /F /FI \"WINDOWTITLE eq Parrot\"");
     exit(0);
-    return 0;
 }
+
+#endif // UI_HACK_C
