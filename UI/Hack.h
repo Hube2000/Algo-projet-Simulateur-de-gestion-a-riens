@@ -7,10 +7,9 @@
 #include<windows.h>
 #include <time.h>
   
-// pr lancer le programme il faut faire: 
-//system("start cmd /k \"gcc UI/Hack.c -o UI/Hack.exe && .\\Hack.exe\"");
 void hack(){
     system("cls");
+
     system("title Hack en cours...");
     //bou je fais peur
     Sleep(2000);
@@ -20,8 +19,10 @@ void hack(){
     {
       if (randNum % 2 == 0){
     system("start cmd /k \"color a && ipconfig && title IPConfig\"");
+    PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
       }else{
     system("start cmd /k \"color c && curl parrot.live && title Parrot\"");
+    PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
     }
         randNum = rand() % 100;
     }
