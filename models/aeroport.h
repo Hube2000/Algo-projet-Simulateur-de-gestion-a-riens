@@ -9,7 +9,8 @@
 
 typedef struct Aeroport {
   PISTE *pistes[3];
-  avion *parking[50];
+  AvionFile *parking;
+  AvionFile *enVol;
   int places;
   int passagers;
   int departs;

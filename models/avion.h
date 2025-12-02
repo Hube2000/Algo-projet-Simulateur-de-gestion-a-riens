@@ -17,6 +17,7 @@ typedef struct avion {
     CATEGORIE_AVION categorie;
     int etat; // 0 pour au sol, 1 pour en vol
     int nombre_de_passagers;
+    int heure_decollage;
     struct avion* next;
     struct avion* prev;
 } avion;

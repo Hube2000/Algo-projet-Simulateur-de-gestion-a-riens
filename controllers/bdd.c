@@ -33,7 +33,7 @@ void sauvegarderAvionBDD(AvionFile *file){
     avion *current = file->premier;
     while(current != NULL){
         fwrite(&current->id, sizeof(int), 1, f);
-        int categorie = (int)current->categorie;
+        int categorie = current->categorie;
         fwrite(&categorie, sizeof(int), 1, f);
         fwrite(&current->etat, sizeof(int), 1, f);
         fwrite(&current->nombre_de_passagers, sizeof(int), 1, f);
