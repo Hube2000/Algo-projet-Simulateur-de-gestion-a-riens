@@ -12,6 +12,8 @@
 
 
 void Attack_Terroriste_UI(){
+    if (isShiny())
+    {    
     system("cls");
     
     printf("      %s______________________________    . \\  | / .\n", BRIGHT_RED);
@@ -81,5 +83,9 @@ void Attack_Terroriste_UI(){
     printf("                   %s`-=#$%&%$#=-'%s\n", BRIGHT_YELLOW, RESET);
     printf("                      %s| ;  :|%s\n", BRIGHT_YELLOW, RESET);
     printf("           %s  _____.,-#%%&$@%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
+    }else{
+    system("cls");
+    }
 }
+
 #endif // UI_ATTACK_TERRORISTE_H

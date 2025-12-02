@@ -18,10 +18,12 @@ int main(void) {
     printf("3. Crash\n");
     printf("4. Decollage\n");
     printf("5. Atterissage\n");
+    printf("0. Quitter\n");
     printf("Votre choix: ");
     scanf("%d", &choix);
     
     system("cls");
+    
     if (choix == 1) {
         Attack_Terroriste_UI();
     } else if (choix == 2) {
@@ -36,6 +38,6 @@ int main(void) {
     else {
         printf("Choix invalide!\n");
     }
-}
+    }
     return 0;
 }

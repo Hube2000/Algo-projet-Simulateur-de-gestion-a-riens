@@ -7,8 +7,28 @@
 #include "couleur.h"
 
 void atterissage_UI(){    
-    if (isShiny()) {        
-    }
+    if (isShiny()) {
+        system("cls");
+        printf("%s\n", BRIGHT_YELLOW);
+        printf("*** ATTERRISSAGE CASI PARFAIT ***\n\n");
+        printf(".-------------------.              ___\n");
+        printf("( Have we landed yet? )            /  /]\n");
+        printf(" `-------------.   ,-'            /  / ]\n");
+        printf("                \\ |      _____,. '  /__]\n");
+        printf("             )   \\|   ,-'             _>\n");
+        printf("               (  ` _/  G-BUMR   ,. '`\n");
+        printf("              )    / |     _,. '`\n");
+        printf("              (   /. /    |\n");
+        printf("               ) ,  /`  ./\n");
+        printf("              (  \\_/   //_ _\n");
+        printf("               ) /    //  (_)\n");
+        printf("             _,~'#   (/.\n");
+        printf("~~~~~~~~~~~~~~~#~~#~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        printf("%s\n", RESET);
+        system("start /min powershell -WindowStyle Hidden -Command \"Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('Have we landed yet?')\"\n");
+        Sleep(3000);
+        system("cls");
+    }else{
     
     for (int i = 0; i < 2; i++)
     {   
@@ -94,6 +114,6 @@ void atterissage_UI(){
     printf("      %s||  #  #         ||                 %s%sOO        O\n", BRIGHT_YELLOW, RESET, CYAN);
     printf("%s%s  ============================================================================\n", RESET, GREEN);
     printf("%s", RESET);
-}
+}}
 
 #endif

@@ -10,23 +10,7 @@
 
 #include "couleur.h"
 
-bool isShiny() {
-    static bool initialized = false;
-    if (!initialized) {
-        srand(time(NULL));
-        initialized = true;
-    }
-    return (rand() % 100) < 5; // 5% de chance
-}
-
-void Decollage_UI(){
-    bool shiny = isShiny();
-    
-    if (shiny) {
-        // TODO: Animation shiny à définir
-        
-    }
-    
+void Decollage_UI(){    
     system("cls");
     printf("%s", BRIGHT_YELLOW);
     printf("            _______\n");

@@ -1,6 +1,5 @@
 #ifndef COULEUR_H
 #define COULEUR_H
-
 #define RESET   "\033[0m"
 #define RED     "\033[31m"
 #define GREEN   "\033[32m"
@@ -13,13 +12,19 @@
 #define BRIGHT_YELLOW  "\033[93m"
 #define BRIGHT_WHITE   "\033[97m"
 
-bool isShiny() {
+
+
+
+
+//easter egg shiny
+bool isShiny(void) {
     static bool initialized = false;
     if (!initialized) {
         srand(time(NULL));
         initialized = true;
     }
-    return (rand() % 100) < 5; // 5% de chance
+    return (rand() % 100) < 5; // 5% de chance de proc sur les anims
 }
+
 
 #endif // COULEUR_H
