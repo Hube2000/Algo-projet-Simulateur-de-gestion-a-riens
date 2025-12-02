@@ -46,24 +46,32 @@
 
 int main() {
   srand(time(NULL));
-  Aeroport aeroport;
-  aeroport = *creerAeroport();
-  while (1) {
-    manageAirport(&aeroport);
-    aeroport.heure += 5;
-    printf("Heure actuelle : %d\n", aeroport.heure);
-    printf("--------------------PRAKING-----------------------\n");
-    afficherFile(aeroport.parking);
-    printf("\n--------------------PISTE 1-----------------------\n");
-    afficherFile(aeroport.pistes[0]->liste_avions_attente);
-    printf("\n--------------------PISTE 2-----------------------\n");
-    afficherFile(aeroport.pistes[1]->liste_avions_attente);
-    printf("\n--------------------PISTE 3-----------------------\n");
-    afficherFile(aeroport.pistes[2]->liste_avions_attente);
-    printf("\n--------------------EN VOL-------------------------\n");
-    afficherFile(aeroport.liste_avions_en_vol);
-    printf("\n--------------------FILE AERIENNE-----------------\n");
-    afficherFile(aeroport.file_attente_aerienne);
-    printf("\n---------------------------------------------------\n");
+  Aeroport *aeroport = creerAeroport();
+  if (!aeroport) {
+    fprintf(stderr, "Erreur : allocation mémoire échouée pour l'aéroport\n");
+    return 1;
   }
+  
+  
+  while (1) {
+    manageAirport(aeroport);
+    aeroport->heure += 5;
+    printf("Heure actuelle : %d\n", aeroport->heure);
+    printf("--------------------PRAKING-----------------------\n");
+    afficherFile(aeroport->parking);
+    printf("\n--------------------PISTE 1-----------------------\n");
+    afficherFile(aeroport->pistes[0]->liste_avions_attente);
+    printf("\n--------------------PISTE 2-----------------------\n");
+    afficherFile(aeroport->pistes[1]->liste_avions_attente);
+    printf("\n--------------------PISTE 3-----------------------\n");
+    afficherFile(aeroport->pistes[2]->liste_avions_attente);
+    printf("\n--------------------EN VOL-------------------------\n");
+    afficherFile(aeroport->liste_avions_en_vol);
+    printf("\n--------------------FILE AERIENNE-----------------\n");
+    afficherFile(aeroport->file_attente_aerienne);
+    printf("\n---------------------------------------------------\n");
+    sleep(2);
+  }
+  
+  return 0;
 }

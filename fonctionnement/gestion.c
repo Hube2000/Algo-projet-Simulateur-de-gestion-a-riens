@@ -72,7 +72,7 @@ int demandeAtt(Aeroport *airport, avion *plane) {
 }
 
 void demande_file_aerienne(Aeroport *aeroport, avion *plane) {
-  if (plane == NULL) {
+  if (plane == NULL || !aeroport) {
     printf(" \n! SKIP AUCUN AVION DISPO !\n");
     return;
   }
@@ -80,15 +80,17 @@ void demande_file_aerienne(Aeroport *aeroport, avion *plane) {
   if (request == -1 && aeroport->file_attente_aerienne != NULL) {
     // Affichage d'attente de l'avion dans la file d'attente aerienne.
     printf("Ajout de l'avion %d a la file d'attente aerienne. \n", plane->id);
+    retirerAvion(aeroport->parking, plane->id);
     ajouterFinFile(aeroport->file_attente_aerienne, plane);
-    retirerAvion(aeroport->liste_avions_en_vol, plane->id);
-  } else {
+  } else if (request >= 0 && request < 3) {
     // Affichage de déplacement d'avion vers la piste.
     printf("L'avion %d se dirige vers la piste %d pour atterrir.\n", plane->id,
            request);
     PISTE *piste = aeroport->pistes[request];
-    ajouterFinFile(piste->liste_avions_attente, plane);
-    retirerAvion(aeroport->liste_avions_en_vol, plane->id);
+    if (piste) {
+      retirerAvion(aeroport->parking, plane->id);
+      ajouterFinFile(piste->liste_avions_attente, plane);
+    }
   }
   return;
 }
@@ -99,14 +101,17 @@ void demandeDec(Aeroport *airport, avion *plane) {
     return;
   }
   int id = trouver_piste_libre(airport, plane);
-  if (id != -1) {
+  if (id != -1 && id >= 0 && id < 3) {
     // Affichage de déplacement d'avion vers la piste.
     printf("L'avion %d se dirige vers la piste %d pour decoller.\n", plane->id,
            id);
     PISTE *piste = airport->pistes[id];
-    ajouterFinFile(piste->liste_avions_attente, plane);
-    retirerAvion(airport->parking, plane->id);
-    plane->heure = airport->heure + 5;
+    if (piste) {
+      /* Retirer du parking d'abord */
+      retirerAvion(airport->parking, plane->id);
+      ajouterFinFile(piste->liste_avions_attente, plane);
+      plane->heure = airport->heure + 5;
+    }
   } else {
     // Affichage d'erreur.
     printf("Aucune Piste n'est disponible pour votre type d'avion, veuillez "
@@ -116,15 +121,16 @@ void demandeDec(Aeroport *airport, avion *plane) {
            plane->id);
     PISTE *piste_forcee = NULL;
     for (int i = 0; i < 3; i++) {
-      if (airport->pistes[i]->liste_avions_attente->nbElement > 0) {
+      if (airport->pistes[i] && airport->pistes[i]->liste_avions_attente->nbElement > 0) {
         piste_forcee = airport->pistes[i];
         break;
       }
     }
     if (piste_forcee) {
       decollage_atterrissage(airport, piste_forcee);
-      ajouterFinFile(piste_forcee->liste_avions_attente, plane);
+      /* Retirer du parking d'abord */
       retirerAvion(airport->parking, plane->id);
+      ajouterFinFile(piste_forcee->liste_avions_attente, plane);
     } else {
       printf("Aucun avion à forcer au décollage, opération annulée.\n");
     }
@@ -132,10 +138,11 @@ void demandeDec(Aeroport *airport, avion *plane) {
 }
 
 void action_on_time(Aeroport *Aeroport) {
+  if (!Aeroport) return;
   for (int i = 0; i < 3; i++) {
     PISTE *piste = Aeroport->pistes[i];
-    if (piste->liste_avions_attente->nbElement != 0) {
-      if (piste->liste_avions_attente->premier->heure == Aeroport->heure) {
+    if (piste && piste->liste_avions_attente && piste->liste_avions_attente->nbElement != 0) {
+      if (piste->liste_avions_attente->premier && piste->liste_avions_attente->premier->heure == Aeroport->heure) {
         decollage_atterrissage(Aeroport, piste);
       };
     }
@@ -145,10 +152,13 @@ void action_on_time(Aeroport *Aeroport) {
 void incoming_plane(Aeroport *airport) {
   int etat = rand() % 2;
   avion *plane = creerAvion(airport);
+  if (!plane) return;
+  
   plane->etat = etat;
   if (etat == 0) {
     // Ajout de l'avion au parking si possible.
     if (parking_est_plein(airport->parking, airport->places)) {
+      free(plane);  /* Libérer si le parking est plein */
       return;
     }
     printf("Arrivée d'un nouvel avion %d au parking.\n", plane->id);
@@ -161,12 +171,12 @@ void incoming_plane(Aeroport *airport) {
 }
 
 avion *select_rand_in_list(AvionFile *list) {
-  if (list->nbElement == 0) {
+  if (!list || list->nbElement == 0) {
     return NULL;
-  };
+  }
   int index = rand() % list->nbElement;
   avion *current = list->premier;
-  for (int i = 0; i < index; i++) {
+  for (int i = 0; i < index && current; i++) {
     current = current->next;
   }
   return current;
@@ -269,13 +279,13 @@ void manageAirport(Aeroport *airport) {
     // Selectionne un avion aleatoirement dans le parking pour decoller.
     {
       avion *plane = select_rand_in_list(airport->parking);
-      demandeDec(airport, plane);
+      if (plane) demandeDec(airport, plane);
       break;
     }
 
   case 2: {
     avion *plane = select_rand_in_list(airport->parking);
-    demande_file_aerienne(airport, plane);
+    if (plane) demande_file_aerienne(airport, plane);
     break;
   }
   default:
@@ -284,6 +294,4 @@ void manageAirport(Aeroport *airport) {
   }
 }
 
-/*Peut tu trouver pourquoi le programme se stop? peut tu rajouter des free, et
- * aussi trouve pourquoi le programme se stop c'est en lien avec les décollages
- * et atterissages. ne lance pas le programme stp*/
+
