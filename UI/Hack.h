@@ -6,30 +6,47 @@
 #include<stdbool.h>
 #include<windows.h>
 #include <time.h>
-  
+#include "couleur.h"
+
 void hack(){
     system("cls");
-
+   PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
     system("title Hack en cours...");
-    //bou je fais peur
-    Sleep(2000);
+
+    bool loop = true;
+    //bou je fais peur;
     srand(time(NULL));
     int randNum = 0;
-    for (int i = 0; i < 10; i++)
+    for (int i = 0; i < 3; i++)
     {
-      if (randNum % 2 == 0){
-    system("start cmd /k \"color a && ipconfig && title IPConfig\"");
-    PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
-      }else{
-    system("start cmd /k \"color c && curl parrot.live && title Parrot\"");
-    PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
-    }
+      if (loop = true)
+      {      
+        if (randNum % 2 == 0){
+           system("start cmd /k \"color a && ipconfig && title IPConfig\"");   
+        }if (randNum % 3 == 0){
+            system("start cmd /k \"color b && ping 8.8.8.8 && title Ping\"");
+            randNum = rand() % 100;
+        }
+        if (randNum % 5 == 0)//10% de chance d'ouvrir la fenetre Rickroll
+        {
+          loop = false;
+          system("start cmd /k \"color b && curl ascii.live/rick\"");
+        }
         randNum = rand() % 100;
     }
-    Sleep(700);
-    system("taskkill /F /FI \"WINDOWTITLE eq IPConfig\"");
-    system("taskkill /F /FI \"WINDOWTITLE eq Parrot\"");
-    exit(0);
+  }
+    printf("%sHack reussi! Systeme controle par l'ennemi.%s\n", RED, RESET);
+    Sleep(5500);
+
+    for (int i = 0; i < 4; i++)
+    {  
+    system("taskkill /F /FI \"WINDOWTITLE eq Rick\" >nul 2>&1");
+    system("taskkill /F /FI \"WINDOWTITLE eq Ping\" >nul 2>&1");
+    system("taskkill /F /FI \"WINDOWTITLE eq IPConfig\" >nul 2>&1");
+    Sleep(300);
+    }
+    printf("%sFermeture des backdoors...%s\n", YELLOW, RESET);
+    Sleep(200);
 }
 
 #endif // UI_HACK_C
