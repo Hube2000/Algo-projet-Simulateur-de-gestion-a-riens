@@ -51,7 +51,11 @@ int main() {
   while (1) {
     manageAirport(&aeroport);
     aeroport.heure += 5;
+    printf("\n");
     printf("Heure actuelle : %d\n", aeroport.heure);
+    printf("###########################################################\n");
+    printf("##                        TERMINAL                       ##\n");
+    printf("###########################################################\n");
     printf("--------------------PRAKING-----------------------\n");
     afficherFile(aeroport.parking);
     printf("\n--------------------PISTE 1-----------------------\n");
@@ -65,5 +69,7 @@ int main() {
     printf("\n--------------------FILE AERIENNE-----------------\n");
     afficherFile(aeroport.file_attente_aerienne);
     printf("\n---------------------------------------------------\n");
+    printf("\n");
+    sleep(2);
   }
 }
