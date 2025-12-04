@@ -321,13 +321,13 @@ void consume_carburant_vol(Aeroport *airport) {
     
     /* Alerte carburant faible */
     if (current->carburant <= 20 && current->carburant > 0) {
-      printf("⚠️  ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: %d)\n", 
+      printf("ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: %d)\n", 
              current->id, current->carburant);
     }
     
     /* Crash si carburant épuisé */
     if (current->carburant <= 0) {
-      printf("💥 CRASH! L'avion %d s'est écrasé par manque de carburant!\n", current->id);
+      printf("CRASH! L'avion %d s'est écrasé par manque de carburant!\n", current->id);
       avion *crashed = retirerAvion(airport->liste_avions_en_vol, current->id);
       if (crashed) free(crashed);
     }
