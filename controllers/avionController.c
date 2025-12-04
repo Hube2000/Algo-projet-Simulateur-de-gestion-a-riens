@@ -12,6 +12,7 @@ avion *creerAvion(Aeroport *airport) {
   newAvion->etat = 0;
   newAvion->nombre_de_passagers = 0;
   newAvion->heure = 0;
+  newAvion->carburant = 100;  
   newAvion->next = NULL;
   newAvion->prev = NULL;
   return newAvion;

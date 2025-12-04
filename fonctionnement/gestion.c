@@ -13,8 +13,7 @@ void decollage_atterrissage(Aeroport *airport, PISTE *piste) {
     return;
   }
 
-  avion *avionRetire =
-      retirerAvion(piste->liste_avions_attente, avionActif->id);
+  avion *avionRetire = retirerAvion(piste->liste_avions_attente, avionActif->id);
 
   if (avionRetire == NULL) {
     printf("Erreur: impossible de retirer l'avion %d de la piste %d.\n",
@@ -29,6 +28,8 @@ void decollage_atterrissage(Aeroport *airport, PISTE *piste) {
            piste->numero_de_piste);
     ajouterFinFile(airport->liste_avions_en_vol, avionRetire);
     avionRetire->etat = 1;
+    avionRetire->carburant -= 10;
+    
     break;
 
   case 1:
@@ -110,6 +111,7 @@ void demandeDec(Aeroport *airport, avion *plane) {
       ajouterFinFile(piste->liste_avions_attente, plane);
       retirerAvion(airport->parking, plane->id);
       plane->heure = airport->heure + 5;
+
     }
   } else {
     // Affichage d'erreur.
@@ -287,5 +289,40 @@ void manageAirport(Aeroport *airport) {
   default:
     printf("Cette partie ne fait pas partie du programme.\n");
     break;
+  }
+}
+
+int fuel_check(avion *plane) {
+  if(plane->carburant <= 0) {
+    return 0;
+  }
+  return 1;
+}
+
+void remplir_carburant(avion *plane) {
+  plane->carburant = 100;
+}
+
+void consume_carburant_vol(Aeroport *airport) {
+  if (!airport || !airport->liste_avions_en_vol) return;
+  
+  avion *current = airport->liste_avions_en_vol->premier;
+  while (current) {
+    avion *next = current->next;
+    current->carburant -= 5;  /* Perte de 5 unités par cycle en vol */
+    
+    /* Alerte carburant faible */
+    if (current->carburant <= 20 && current->carburant > 0) {
+      printf(" ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: %d)\n", 
+             current->id, current->carburant);
+    }
+    
+    /* Crash si carburant épuisé 
+    if (current->carburant <= 0) {
+      crash()
+    }
+    */
+    
+    current = next;
   }
 }

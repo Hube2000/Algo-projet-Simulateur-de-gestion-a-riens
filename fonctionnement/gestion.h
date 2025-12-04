@@ -13,6 +13,9 @@ void action_on_time(Aeroport *aeroport);
 void incoming_plane(Aeroport *airport);
 avion *select_rand_in_list(AvionFile *list);
 void manageAirport(Aeroport *airport);
+void consume_fuel_in_flight(Aeroport *airport);
+int fuel_check(avion *plane);
+void consume_carburant_vol(avion *plane);
 
 #endif
 

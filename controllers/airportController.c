@@ -86,8 +86,8 @@ void afficherFile(AvionFile *file) {
   avion *current = file->premier;
   printf("Contenu de la file (%d éléments):\n", file->nbElement);
   while (current) {
-    printf("Avion ID: %d, État: %d, Heure: %d\n", current->id, current->etat,
-           current->heure);
+    printf("Avion ID: %d, État: %d, Heure: %d, Carburant: %d\n", current->id, current->etat,
+           current->heure, current->carburant);
     current = current->next;
   }
 }

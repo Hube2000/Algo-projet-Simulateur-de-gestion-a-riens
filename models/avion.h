@@ -21,6 +21,7 @@ typedef struct avion {
   int heure;
   struct avion *next;
   struct avion *prev;
+  int carburant;
 } avion;
 
 typedef struct AvionFile {
