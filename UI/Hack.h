@@ -12,7 +12,8 @@ void hack(){
     system("cls");
     system("title Hack en cours...");
 
-    bool loop = true;
+    bool shiny  = isShiny();
+    int k = 0;
     //bou je fais peur;
     srand(time(NULL));
     int randNum = 0;
@@ -24,9 +25,10 @@ void hack(){
             system("start cmd /k \"color b && ping 8.8.8.8 && title Ping\"");
             randNum = rand() % 100;
         }
-        if (randNum % 10 == 0)//10% de chance d'ouvrir la fenetre Rickroll
+        if (shiny && k == 0)//10% de chance d'ouvrir la fenetre Rickroll
         {
           system("start https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+          k = 1;
         }
         randNum = rand() % 100;
     }

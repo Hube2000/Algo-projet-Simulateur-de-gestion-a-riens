@@ -6,32 +6,7 @@
 #include <mmsystem.h>
 #include "couleur.h"
 
-void atterissage_UI(){    
-    if (isShiny()) {
-        system("cls");
-        printf("%s\n", BRIGHT_YELLOW);
-        printf("*** ATTERRISSAGE CASI PARFAIT ***\n\n");
-        printf(".-------------------.              ___\n");
-        printf("( Have we landed yet? )            /  /]\n");
-        printf(" `-------------.   ,-'            /  / ]\n");
-        printf("                \\ |      _____,. '  /__]\n");
-        printf("             )   \\|   ,-'             _>\n");
-        printf("               (  ` _/  G-BUMR   ,. '`\n");
-        printf("              )    / |     _,. '`\n");
-        printf("              (   /. /    |\n");
-        printf("               ) ,  /`  ./\n");
-        printf("              (  \\_/   //_ _\n");
-        printf("               ) /    //  (_)\n");
-        printf("             _,~'#   (/.\n");
-        printf("~~~~~~~~~~~~~~~#~~#~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
-        printf("%s\n", RESET);
-        system("start /min powershell -WindowStyle Hidden -Command \"Add-Type -AssemblyName System.Speech; (New-Object System.Speech.Synthesis.SpeechSynthesizer).Speak('Have we landed yet?')\"\n");
-        Sleep(3000);
-        system("cls");
-    }else{
-    
-    for (int i = 0; i < 2; i++)
-    {   
+void atterissage_UI(){     
     system("cls");
     printf("%s", CYAN);
     printf("   Big airplane                           .------,\n");
@@ -84,10 +59,30 @@ void atterissage_UI(){
     printf("\n%sEn vol...%s\n", CYAN, RESET);
     Sleep(300);
     system("cls");
-    }
-    Sleep(100);
-    system("cls");
 
+     if (!isShiny()) {
+        system("cls");
+        printf("%s\n", BRIGHT_YELLOW);
+        printf("*** ATTERRISSAGE CASI PARFAIT ***\n\n");
+        printf(".-------------------.              ___\n");
+        printf("( Have we landed yet? )            /  /]\n");
+        printf(" `-------------.   ,-'            /  / ]\n");
+        printf("                \\ |      _____,. '  /__]\n");
+        printf("             )   \\|   ,-'             _>\n");
+        printf("               (  ` _/  G-BUMR   ,. '`\n");
+        printf("              )    / |     _,. '`\n");
+        printf("              (   /. /    |\n");
+        printf("               ) ,  /`  ./\n");
+        printf("              (  \\_/   //_ _\n");
+        printf("               ) /    //  (_)\n");
+        printf("             _,~'#   (/.\n");
+        printf("~~~~~~~~~~~~~~~#~~#~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+        printf("%s\n", RESET);
+        Sleep(3000);
+        system("cls");
+        printf("C'est une blague: on a atterri sans encombre !\n");
+        Sleep(2500);
+    }
     printf("%s", BRIGHT_YELLOW);
     printf("            _______\n");
     printf("            \\=====/\n");
@@ -114,6 +109,8 @@ void atterissage_UI(){
     printf("      %s||  #  #         ||                 %s%sOO        O\n", BRIGHT_YELLOW, RESET, CYAN);
     printf("%s%s  ============================================================================\n", RESET, GREEN);
     printf("%s", RESET);
-}}
+    Sleep(3000);
+}
+
 
 #endif
