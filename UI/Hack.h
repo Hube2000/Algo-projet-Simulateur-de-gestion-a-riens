@@ -10,7 +10,6 @@
 
 void hack(){
     system("cls");
-   PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
     system("title Hack en cours...");
 
     bool loop = true;
@@ -18,35 +17,30 @@ void hack(){
     srand(time(NULL));
     int randNum = 0;
     for (int i = 0; i < 3; i++)
-    {
-      if (loop = true)
-      {      
+    {    
         if (randNum % 2 == 0){
            system("start cmd /k \"color a && ipconfig && title IPConfig\"");   
         }if (randNum % 3 == 0){
             system("start cmd /k \"color b && ping 8.8.8.8 && title Ping\"");
             randNum = rand() % 100;
         }
-        if (randNum % 5 == 0)//10% de chance d'ouvrir la fenetre Rickroll
+        if (randNum % 10 == 0)//10% de chance d'ouvrir la fenetre Rickroll
         {
-          loop = false;
-          system("start cmd /k \"color b && curl ascii.live/rick\"");
+          system("start https://www.youtube.com/watch?v=dQw4w9WgXcQ");
         }
         randNum = rand() % 100;
     }
-  }
     printf("%sHack reussi! Systeme controle par l'ennemi.%s\n", RED, RESET);
-    Sleep(5500);
+    Sleep(3000);
 
     for (int i = 0; i < 4; i++)
     {  
     system("taskkill /F /FI \"WINDOWTITLE eq Rick\" >nul 2>&1");
     system("taskkill /F /FI \"WINDOWTITLE eq Ping\" >nul 2>&1");
     system("taskkill /F /FI \"WINDOWTITLE eq IPConfig\" >nul 2>&1");
-    Sleep(300);
+    Sleep(200);
     }
     printf("%sFermeture des backdoors...%s\n", YELLOW, RESET);
-    Sleep(200);
 }
 
 #endif // UI_HACK_C

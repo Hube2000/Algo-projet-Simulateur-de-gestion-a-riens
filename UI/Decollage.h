@@ -40,16 +40,14 @@ void Decollage_UI(){
     printf("%s", RESET);
     printf("\n%sDecollage en cours...%s\n", BRIGHT_YELLOW, RESET);
 
-    PlaySound(TEXT("SystemStart"), NULL, SND_ALIAS | SND_SYNC);
-    Sleep(1000);
+    Sleep(800);
     system("cls");
 
-    system("cls");
     printf("%s\n", GREEN);
     printf("                                    ___\n");
-    printf("   PA28-161 Warrior                /L|0\\\n");
-    printf("   by Paul Tomblin                /  |  \\\n");
-    printf("   ptomblin@xcski.com            /       \\\n");
+    printf("                                   /L|0\\\n");
+    printf("                                  /  |  \\\n");
+    printf("                                 /       \\\n");
     printf("                                /    |    \\\n");
     printf("                               /           \\\n");
     printf("                              /  __  | __   \\\n");
@@ -63,15 +61,14 @@ void Decollage_UI(){
     printf("                        %s___________[o0o]___________\n", CYAN);
     printf("                       %s          O   O   O\n", CYAN);
     printf("\n");
-        
-    PlaySound(TEXT("SystemStart"), NULL, SND_ALIAS | SND_SYNC);
-    Sleep(1500);
+    
+    Sleep(800);
     system("cls");
 
     printf("%s", CYAN);
-    printf("   Big airplane                               .------,\n");
-    printf("   Joan Stark                                  =\\      \\\n");
-    printf("   spunk1111@juno.com             .---.         =\\      \\\n");
+    printf("                                              .------,\n");
+    printf("                                               =\\      \\\n");
+    printf("                                  .---.         =\\      \\\n");
     printf("                                  | C~ \\         =\\      \\\n");
     printf("                                  |     `----------'------'----------,\n");
     printf("                                 .'     LI.-.LI LI LI LI LI LI LI.-.LI`-.\n");
@@ -83,7 +80,7 @@ void Decollage_UI(){
     printf("                                              /_____,'\n");
     printf("%s", RESET);
     printf("\n%sEn vol...%s\n", CYAN, RESET);
-    Sleep(3000);
+    Sleep(1000);
 
     printf("%s", RESET);
 

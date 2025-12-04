@@ -12,8 +12,115 @@
 
 
 void Attack_Terroriste_UI(){
+
     if (isShiny())
-    {    
+    {
+        // Version Shiny - Stickman détaillé avec animation
+        system("cls");
+        
+        printf(" %sLA SCENE QUI SUIS ETANT TROP VIOLENTE ELLE A ETAIT CENSURER POUR VOUS PROTEGER\n %s", RED, RESET);
+        Sleep(4000);
+
+        system("cls");
+        printf("\n\n\n");
+        printf("                    %s.oOOOOo.%s\n", CYAN, RESET);
+        printf("                   %s(  o  o  )%s\n", BRIGHT_CYAN, RESET);
+        printf("                    %s\\  ^  /%s\n", BRIGHT_CYAN, RESET);
+        printf("                     %s'---'%s\n", BRIGHT_CYAN, RESET);
+        printf("                       %s|%s\n", BRIGHT_CYAN, RESET);
+        printf("                    %s__/|\\__%s\n", BRIGHT_CYAN, RESET);
+        printf("                  %s_/   |   \\__%s\n", BRIGHT_CYAN, RESET);
+        printf("                 %s/     |      \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                       %s/|\\%s\n", BRIGHT_CYAN, RESET);
+        printf("                      %s/ | \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                     %s/  |  \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                    %s/   |   \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                   %s/    |    \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                  %s/_   / \\   _\\%s\n", BRIGHT_CYAN, RESET);
+        printf("                    %s\\ /   \\ /%s\n", BRIGHT_CYAN, RESET);
+        printf("                    %s |     |%s\n", BRIGHT_CYAN, RESET);
+        printf("                   %s/       \\%s\n", BRIGHT_CYAN, RESET);
+        printf("                  %s/         \\%s\n", BRIGHT_CYAN, RESET);
+        
+        Sleep(800);
+        system("cls");
+        
+        // Frame 2 - Stickman en BRIGHT_MAGENTA
+        printf("\n\n\n");
+        printf("                    %s.oOOOOo.%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                   %s(  ^  ^  )%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                    %s\\  v  /%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                     %s'---'%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                       %s|%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                    %s__/|\\__%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                  %s_/   |   \\__%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                 %s/     |      \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                       %s/|\\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                      %s/ | \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                     %s/  |  \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                    %s/   |   \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                   %s/    |    \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                  %s/_   / \\   _\\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                    %s\\ /   \\ /%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                    %s |     |%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                   %s/       \\%s\n", BRIGHT_MAGENTA, RESET);
+        printf("                  %s/         \\%s\n", BRIGHT_MAGENTA, RESET);
+        
+        Sleep(800);
+        system("cls");
+        
+        // Frame 3 - Stickman en BRIGHT_YELLOW
+        printf("\n\n\n");
+        printf("                    %s.oOOOOo.%s\n", BRIGHT_YELLOW, RESET);
+        printf("                   %s(  O  O  )%s\n", BRIGHT_YELLOW, RESET);
+        printf("                    %s\\  o  /%s\n", BRIGHT_YELLOW, RESET);
+        printf("                     %s'---'%s\n", BRIGHT_YELLOW, RESET);
+        printf("                       %s|%s\n", BRIGHT_YELLOW, RESET);
+        printf("                    %s__/|\\__%s\n", BRIGHT_YELLOW, RESET);
+        printf("                  %s_/   |   \\__%s\n", BRIGHT_YELLOW, RESET);
+        printf("                 %s/     |      \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                       %s/|\\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                      %s/ | \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                     %s/  |  \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                    %s/   |   \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                   %s/    |    \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                  %s/_   / \\   _\\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                    %s\\ /   \\ /%s\n", BRIGHT_YELLOW, RESET);
+        printf("                    %s |     |%s\n", BRIGHT_YELLOW, RESET);
+        printf("                   %s/       \\%s\n", BRIGHT_YELLOW, RESET);
+        printf("                  %s/         \\%s\n", BRIGHT_YELLOW, RESET);
+        
+        Sleep(800);
+        system("cls");
+        
+        // Frame 4 - Stickman en BRIGHT_GREEN (final)
+        printf("\n\n\n");
+        printf("                    %s.oOOOOo.%s\n", BRIGHT_GREEN, RESET);
+        printf("                   %s(  *  *  )%s\n", BRIGHT_GREEN, RESET);
+        printf("                    %s\\  w  /%s\n", BRIGHT_GREEN, RESET);
+        printf("                     %s'---'%s\n", BRIGHT_GREEN, RESET);
+        printf("                       %s|%s\n", BRIGHT_GREEN, RESET);
+        printf("                    %s__/|\\__%s\n", BRIGHT_GREEN, RESET);
+        printf("                  %s_/   |   \\__%s\n", BRIGHT_GREEN, RESET);
+        printf("                 %s/     |      \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                       %s/|\\%s\n", BRIGHT_GREEN, RESET);
+        printf("                      %s/ | \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                     %s/  |  \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                    %s/   |   \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                   %s/    |    \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                  %s/_   / \\   _\\%s\n", BRIGHT_GREEN, RESET);
+        printf("                    %s\\ /   \\ /%s\n", BRIGHT_GREEN, RESET);
+        printf("                    %s |     |%s\n", BRIGHT_GREEN, RESET);
+        printf("                   %s/       \\%s\n", BRIGHT_GREEN, RESET);
+        printf("                  %s/         \\%s\n", BRIGHT_GREEN, RESET);
+        Sleep(2000);
+        system("cls");
+        printf("%s ET BOOOM PLUS D'AVION\n", RESET);
+        Sleep (2000);
+        system("cls");
+    }else{
+
+
     system("cls");
     
     printf("      %s______________________________    . \\  | / .\n", BRIGHT_RED);
@@ -68,10 +175,6 @@ void Attack_Terroriste_UI(){
     Sleep(1000);
     system("cls");
 
-
-    Sleep(500);
-    system("cls");
-
     printf("                  %s _.-^^---....,,-- %s\n", YELLOW, RESET);
     printf("               %s3_--                --_%s\n", YELLOW, RESET);
     printf("             %s <                      >)%s\n", YELLOW, RESET);
@@ -83,8 +186,6 @@ void Attack_Terroriste_UI(){
     printf("                   %s`-=#$%&%$#=-'%s\n", BRIGHT_YELLOW, RESET);
     printf("                      %s| ;  :|%s\n", BRIGHT_YELLOW, RESET);
     printf("           %s  _____.,-#%%&$@%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
-    }else{
-    system("cls");
     }
 }
 

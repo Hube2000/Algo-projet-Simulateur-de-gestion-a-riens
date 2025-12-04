@@ -8,7 +8,10 @@
 #include "Decollage.h"
 #include "atterissage.h"
 
+
 int main(void) {
+    system("cls");
+    system("gcc couleur.h crash.h Attack_Terroriste.h Hack.h Decollage.h atterissage.h test_attack.c -o simulator.exe -lwinmm");
     int choix;
     while (1)
     {    

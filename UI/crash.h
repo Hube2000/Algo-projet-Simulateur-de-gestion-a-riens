@@ -11,8 +11,7 @@
 #include "couleur.h"
 
 void crash_UI(){
-    
-    if (isShiny) {
+
     system("cls");
     printf("%s", CYAN);
     printf("   Big airplane                           .------,\n");
@@ -64,6 +63,8 @@ void crash_UI(){
     printf("%s", RESET);
     printf("\n%sEn vol...%s\n", CYAN, RESET);
 
+    if (isShiny())
+    {
     Sleep(800);
     system("cls");
         system("cls");
