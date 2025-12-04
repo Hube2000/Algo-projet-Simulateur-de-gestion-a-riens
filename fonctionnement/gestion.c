@@ -24,18 +24,18 @@ void decollage_atterrissage(Aeroport *airport, PISTE *piste) {
   switch (avionRetire->etat) {
   case 0:
     // Mettre la fonction d'affichage du décollage ici.
-    printf("L'avion %d a decollé de la piste %d.\n", avionRetire->id,
-           piste->numero_de_piste);
+    printf("L'avion %d a decollé de la piste %d. (Carburant: %d)\n", avionRetire->id,
+           piste->numero_de_piste, avionRetire->carburant);
+    avionRetire->carburant -= 10;
     ajouterFinFile(airport->liste_avions_en_vol, avionRetire);
     avionRetire->etat = 1;
-    avionRetire->carburant -= 10;
-    
     break;
 
   case 1:
     // Mettre la fonction d'affichage de l'atterrissage ici.
-    printf("L'avion %d a atterri sur la piste %d.\n", avionRetire->id,
-           piste->numero_de_piste);
+    printf("L'avion %d a atterri sur la piste %d. (Carburant restant: %d)\n", avionRetire->id,
+           piste->numero_de_piste, avionRetire->carburant);
+    avionRetire->carburant = 100;  /* Refuel au parking */
     ajouterFinFile(airport->parking, avionRetire);
     avionRetire->etat = 0;
     break;
@@ -150,8 +150,11 @@ void action_on_time(Aeroport *Aeroport) {
 }
 
 void incoming_plane(Aeroport *airport) {
+  if (!airport) return;
   int etat = rand() % 2;
   avion *plane = creerAvion(airport);
+  if (!plane) return;
+  
   plane->etat = etat;
   if (etat == 0) {
     // Ajout de l'avion au parking si possible.
@@ -159,11 +162,11 @@ void incoming_plane(Aeroport *airport) {
       free(plane);
       return;
     }
-    printf("Arrivée d'un nouvel avion %d au parking.\n", plane->id);
+    printf("Arrivée d'un nouvel avion %d au parking. (Carburant: %d)\n", plane->id, plane->carburant);
     ajouterFinFile(airport->parking, plane);
   } else {
     // Ajout de l'avion a la liste des avions en vol.
-    printf("Arrivée d'un nouvel avion %d en vol.\n", plane->id);
+    printf("Arrivée d'un nouvel avion %d en vol. (Carburant: %d)\n", plane->id, plane->carburant);
     ajouterFinFile(airport->liste_avions_en_vol, plane);
   }
 }
@@ -264,6 +267,11 @@ avion *select_rand_in_list(AvionFile *list) {
 */
 
 void manageAirport(Aeroport *airport) {
+  if (!airport) return;
+  
+  /* Consommer du carburant en vol et vérifier les crashs */
+  consume_carburant_vol(airport);
+  
   int event = rand() % 3;
   // Fonction qui fait decoler les avions en fonctions des crénaux.
   action_on_time(airport);
@@ -277,13 +285,13 @@ void manageAirport(Aeroport *airport) {
     // Selectionne un avion aleatoirement dans le parking pour decoller.
     {
       avion *plane = select_rand_in_list(airport->parking);
-      demandeDec(airport, plane);
+      if (plane && fuel_check(plane)) demandeDec(airport, plane);
       break;
     }
 
   case 2: {
     avion *plane = select_rand_in_list(airport->parking);
-    demande_file_aerienne(airport, plane);
+    if (plane && fuel_check(plane)) demande_file_aerienne(airport, plane);
     break;
   }
   default:
@@ -313,15 +321,16 @@ void consume_carburant_vol(Aeroport *airport) {
     
     /* Alerte carburant faible */
     if (current->carburant <= 20 && current->carburant > 0) {
-      printf(" ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: %d)\n", 
+      printf("⚠️  ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: %d)\n", 
              current->id, current->carburant);
     }
     
-    /* Crash si carburant épuisé 
+    /* Crash si carburant épuisé */
     if (current->carburant <= 0) {
-      crash()
+      printf("💥 CRASH! L'avion %d s'est écrasé par manque de carburant!\n", current->id);
+      avion *crashed = retirerAvion(airport->liste_avions_en_vol, current->id);
+      if (crashed) free(crashed);
     }
-    */
     
     current = next;
   }
