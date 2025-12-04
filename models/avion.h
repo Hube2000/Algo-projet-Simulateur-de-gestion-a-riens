@@ -31,12 +31,13 @@ typedef struct AvionFile {
 
 avion *creerAvion(struct Aeroport *airport);
 AvionFile *creerAvionFile(void);
-AvionFile *ajouterDebutFile(AvionFile *file, avion *a);
-AvionFile *ajouterFinFile(AvionFile *file, avion *a);
-AvionFile *supprimerDebutFile(AvionFile *file);
-AvionFile *supprimerFinFile(AvionFile *file);
 avion *rechercherAvion(AvionFile *file, int id);
-avion *retirerAvion(AvionFile *file, int id);
+
+void ajouterDebutFile(AvionFile *file, avion *a);
+void ajouterFinFile(AvionFile *file, avion *a);
+void supprimerDebutFile(AvionFile *file);
+void supprimerFinFile(AvionFile *file);
+void retirerAvion(AvionFile *file, int id);
 void detruireAvionFile(AvionFile *file);
 
 #endif

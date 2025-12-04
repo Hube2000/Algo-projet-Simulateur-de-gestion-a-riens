@@ -5,6 +5,21 @@
 #include "gestion.h"
 
 void decollage_atterrissage(Aeroport *airport, PISTE *piste) {
+  // Vérifications de sécurité
+  if (!airport) {
+    printf("Erreur: Aéroport invalide dans decollage_atterrissage.\n");
+    return;
+  }
+  if (!piste) {
+    printf("Erreur: Piste invalide dans decollage_atterrissage.\n");
+    return;
+  }
+  if (!piste->liste_avions_attente) {
+    printf("Erreur: Liste d'attente invalide pour la piste %d.\n",
+           piste->numero_de_piste);
+    return;
+  }
+
   avion *avionActif = piste->liste_avions_attente->premier;
   if (avionActif == NULL) {
     // Mettre une fonction d'affichage d'erreur ici.
@@ -12,47 +27,67 @@ void decollage_atterrissage(Aeroport *airport, PISTE *piste) {
            piste->numero_de_piste);
     return;
   }
-
-  avion *avionRetire =
-      retirerAvion(piste->liste_avions_attente, avionActif->id);
-
-  if (avionRetire == NULL) {
-    printf("Erreur: impossible de retirer l'avion %d de la piste %d.\n",
-           avionActif->id, piste->numero_de_piste);
-    return;
-  }
-
-  switch (avionRetire->etat) {
+  switch (avionActif->etat) {
   case 0:
     // Mettre la fonction d'affichage du décollage ici.
-    printf("L'avion %d a decollé de la piste %d.\n", avionRetire->id,
+    printf("L'avion %d a decollé de la piste %d.\n", avionActif->id,
            piste->numero_de_piste);
-    ajouterFinFile(airport->liste_avions_en_vol, avionRetire);
-    avionRetire->etat = 1;
+    printf("\n SI ERREUR : case 0 : dec/att ajouterfinfile\n");
+    if (!airport->liste_avions_en_vol) {
+      printf("Erreur: Liste des avions en vol invalide.\n");
+      return;
+    }
+    ajouterFinFile(airport->liste_avions_en_vol, avionActif);
+    avionActif->etat = 1;
+    printf("\n SI ERREUR : case 0 : dec/att retirer\n");
+    retirerAvion(piste->liste_avions_attente, avionActif->id);
     break;
 
   case 1:
     // Mettre la fonction d'affichage de l'atterrissage ici.
-    printf("L'avion %d a atterri sur la piste %d.\n", avionRetire->id,
+    printf("L'avion %d a atterri sur la piste %d.\n", avionActif->id,
            piste->numero_de_piste);
-    ajouterFinFile(airport->parking, avionRetire);
-    avionRetire->etat = 0;
+    printf("\n SI ERREUR : case 1 : dec/att ajouterfinfile\n");
+    if (!airport->parking) {
+      printf("Erreur: Parking invalide.\n");
+      return;
+    }
+    ajouterFinFile(airport->parking, avionActif);
+    avionActif->etat = 0;
+    printf("\n SI ERREUR : case 1 : dec/att retirer\n");
+    // ICI C POURRI
+    retirerAvion(piste->liste_avions_attente, avionActif->id);
     break;
 
   default:
     printf("Etat d'avion inconnu (%d) pour l'avion %d sur la piste %d.\n",
-           avionRetire->etat, avionRetire->id, piste->numero_de_piste);
+           avionActif->etat, avionActif->id, piste->numero_de_piste);
+    free(avionActif);
     break;
   }
 }
 
 int demandeAtt(Aeroport *airport, avion *plane) {
+  // Vérifications de sécurité
+  if (!airport) {
+    printf("Erreur: Aéroport invalide dans demandeAtt.\n");
+    return -1;
+  }
+  if (!plane) {
+    printf("Erreur: Avion invalide dans demandeAtt.\n");
+    return -1;
+  }
+  if (!airport->parking) {
+    printf("Erreur: Parking invalide dans demandeAtt.\n");
+    return -1;
+  }
+
   // Test si le parking est plein.
   if (parking_est_plein(airport->parking, airport->places)) {
     // Affichage d'erreur.
     printf("Le parking est plein, veuillez aller dans la file d'attente.\n");
-    // Si plein, retourne 0 pour ajouter a la file d'attente.
-    return 0;
+    // Si plein, retourne -1 pour ajouter a la file d'attente.
+    return -1;
   }
   // Cherche une piste libre.
   int id = trouver_piste_libre(airport, plane);
@@ -62,7 +97,7 @@ int demandeAtt(Aeroport *airport, avion *plane) {
     plane->heure = airport->heure + 5;
     return id;
   }
-  // Sinon, retourne 0 pour ajouter a la file d'attente.
+  // Sinon, retourne -1 pour ajouter a la file d'attente.
   else {
     // Affichage d'erreur.
     printf("Aucune Piste n'est disponible pour votre type d'avion, veuillez "
@@ -72,14 +107,28 @@ int demandeAtt(Aeroport *airport, avion *plane) {
 }
 
 void demande_file_aerienne(Aeroport *aeroport, avion *plane) {
+  // Vérifications de sécurité
+  if (!aeroport) {
+    printf("Erreur: Aéroport invalide dans demande_file_aerienne.\n");
+    return;
+  }
   if (plane == NULL) {
     printf(" \n! SKIP AUCUN AVION DISPO !\n");
     return;
   }
+  if (!aeroport->liste_avions_en_vol) {
+    printf("Erreur: Liste des avions en vol invalide.\n");
+    return;
+  }
+
   int request = demandeAtt(aeroport, plane);
   if (request == -1 && aeroport->file_attente_aerienne != NULL) {
     // Affichage d'attente de l'avion dans la file d'attente aerienne.
     printf("Ajout de l'avion %d a la file d'attente aerienne. \n", plane->id);
+    if (!aeroport->file_attente_aerienne) {
+      printf("Erreur: File d'attente aérienne invalide.\n");
+      return;
+    }
     ajouterFinFile(aeroport->file_attente_aerienne, plane);
     retirerAvion(aeroport->liste_avions_en_vol, plane->id);
   } else if (request >= 0 && request < 3) {
@@ -87,94 +136,187 @@ void demande_file_aerienne(Aeroport *aeroport, avion *plane) {
     printf("L'avion %d se dirige vers la piste %d pour atterrir.\n", plane->id,
            request);
     PISTE *piste = aeroport->pistes[request];
-    if (piste) {
+    if (piste && piste->liste_avions_attente) {
       ajouterFinFile(piste->liste_avions_attente, plane);
       retirerAvion(aeroport->liste_avions_en_vol, plane->id);
+    } else {
+      printf("Erreur: Piste %d ou sa liste d'attente invalide.\n", request);
     }
   }
   return;
 }
 
 void demandeDec(Aeroport *airport, avion *plane) {
+  // Vérifications de sécurité
+  if (!airport) {
+    // Cas ou l'aeroport n'as pas été creer.
+    printf("\nErreur: Aéroport invalide dans demandeDec.\n");
+    return;
+  }
   if (plane == NULL) {
+    // Si l'avion n'existe pas on ne fait rien.
     printf(" \n! SKIP AUCUN AVION DISPO !\n");
     return;
   }
+  if (!airport->parking) {
+    // Si le parking n'existe pas on ne fait rien.
+    printf("Erreur: Parking invalide dans demandeDec.\n");
+    return;
+  }
+  // On cherche une piste libre pour que l'avion s'y rende.
   int id = trouver_piste_libre(airport, plane);
   if (id != -1 && id >= 0 && id < 3) {
     // Affichage de déplacement d'avion vers la piste.
     printf("L'avion %d se dirige vers la piste %d pour decoller.\n", plane->id,
            id);
     PISTE *piste = airport->pistes[id];
-    if (piste) {
+    if (piste && piste->liste_avions_attente) {
+      // Fonction ajouter dans l'ordre après avoir verifier les crenaux.
+      // On attend azox
       ajouterFinFile(piste->liste_avions_attente, plane);
       retirerAvion(airport->parking, plane->id);
       plane->heure = airport->heure + 5;
+    } else {
+      // Cas si piste pas trouvée.
+      printf("Erreur: Piste %d ou sa liste d'attente invalide.\n", id);
     }
   } else {
     // Affichage d'erreur.
-    printf("Aucune Piste n'est disponible pour votre type d'avion, veuillez "
+    printf("\nAucune Piste n'est disponible pour votre type d'avion, veuillez "
            "patientez le temps qu'une piste se libère.\n");
     // Forcer le premier avion de la file d'attente a decoller avant son crénau.
     printf("Forcage du décollage de l'avion %d avant son crénau. \n",
            plane->id);
-    PISTE *piste_forcee = NULL;
-    for (int i = 0; i < 3; i++) {
-      if (airport->pistes[i] &&
-          airport->pistes[i]->liste_avions_attente->nbElement > 0) {
-        piste_forcee = airport->pistes[i];
-        break;
-      }
-    }
-    if (piste_forcee) {
-      decollage_atterrissage(airport, piste_forcee);
-      ajouterFinFile(piste_forcee->liste_avions_attente, plane);
+    PISTE *piste = airport->pistes[id];
+    if (piste && piste->liste_avions_attente) {
+      decollage_atterrissage(airport, piste);
+      ajouterFinFile(piste->liste_avions_attente, plane);
       retirerAvion(airport->parking, plane->id);
     } else {
-      printf("Aucun avion à forcer au décollage, opération annulée.\n");
+      printf("Aucun avion à forcer au décollage, opération annulée. -> Tout "
+             "Casse\n");
     }
   }
 }
 
-void action_on_time(Aeroport *Aeroport) {
+void action_on_time(Aeroport *airport) {
+  // Vérification de sécurité
+  if (!airport) {
+    printf("Erreur: Aéroport invalide dans action_on_time.\n");
+    return;
+  }
+
   for (int i = 0; i < 3; i++) {
-    PISTE *piste = Aeroport->pistes[i];
+    PISTE *piste = airport->pistes[i];
+    // Vérifications de sécurité pour chaque piste
+    if (!piste) {
+      continue; // Piste invalide, passer à la suivante
+    }
+    if (!piste->liste_avions_attente) {
+      continue; // Liste d'attente invalide, passer à la suivante
+    }
     if (piste->liste_avions_attente->nbElement != 0) {
-      if (piste->liste_avions_attente->premier->heure == Aeroport->heure) {
-        decollage_atterrissage(Aeroport, piste);
-      };
+      avion *premier = piste->liste_avions_attente->premier;
+      if (premier && premier->heure == airport->heure) {
+        decollage_atterrissage(airport, piste);
+      }
     }
   }
 }
 
 void incoming_plane(Aeroport *airport) {
-  int etat = rand() % 2;
-  avion *plane = creerAvion(airport);
-  plane->etat = etat;
-  if (etat == 0) {
-    // Ajout de l'avion au parking si possible.
-    if (parking_est_plein(airport->parking, airport->places)) {
+  /*
+    Incoming_plane
+    Entrée : Aeroport *airport
+    Sortie : Null
+    Fonction qui a pout but de générer un avion pour l'ajouter dans les airs ou
+    dans le parking si non plein.
+  */
+  // Vérification de sécurité
+  if (!airport) {
+    printf("Erreur: Aéroport invalide dans incoming_plane.\n");
+    return;
+  }
+
+  int etat = rand() % 2; // Choisi l'emplacement de l'avion (sol 0 / air 1);
+  avion *plane = creerAvion(airport); // Creer un avion
+
+  if (!plane) {
+    // Si l'avion n'a pas été crée, on arrete avec un message d'erreur.
+    printf("Erreur: Impossible de créer un nouvel avion.\n");
+    return;
+  } else {
+    // Sinon on creer un avion et on l'ajoute au bon endroit.
+    plane->etat = etat; // Etat de l'avion sol(0)/air(1)
+    switch (etat) {
+    case 0:
+      if (airport->parking == NULL) {
+        // Cas ou le parking n'existe pas
+        printf("\n{############################}");
+        printf("\nERROR : PARKING NOT ALIVE\n");
+        printf("{############################}\n");
+        free(plane);
+        return;
+      }
+      if (parking_est_plein(airport->parking, airport->places)) {
+        // Cas ou le parking est plein
+        printf("\n{############################}");
+        printf("\nERROR : PARKING FULL\n");
+        printf("{############################}\n");
+        free(plane);
+        return;
+      }
+      ajouterFinFile(airport->parking, plane);
+      printf("\n ### ARRIVE D'UN NOUVEL L'AVION %d AU PARKING ###", plane->id);
+      break;
+    case 1:
+      if (airport->liste_avions_en_vol == NULL) {
+        // Cas ou la file aerienne n'existe pas
+        printf("\n{############################}");
+        printf("\nERROR : NO SKY\n");
+        printf("{############################}\n");
+        free(plane);
+        return;
+      }
+      ajouterFinFile(airport->liste_avions_en_vol, plane);
+      printf("\n ### ARRIVE D'UN NOUVEL L'AVION %d DANS LES AIRS ###",
+             plane->id);
+      return;
+      break;
+    default:
+      printf("NTM T'A TT CASSÉ");
       free(plane);
       return;
+      break;
     }
-    printf("Arrivée d'un nouvel avion %d au parking.\n", plane->id);
-    ajouterFinFile(airport->parking, plane);
-  } else {
-    // Ajout de l'avion a la liste des avions en vol.
-    printf("Arrivée d'un nouvel avion %d en vol.\n", plane->id);
-    ajouterFinFile(airport->liste_avions_en_vol, plane);
+    return;
   }
 }
 
 avion *select_rand_in_list(AvionFile *list) {
-  if (list->nbElement == 0) {
+  // Vérifications de sécurité
+  if (!list) {
+    // Cas Liste pas creer
+    printf("LISTE NON FOURNIE");
     return NULL;
-  };
+  }
+  if (list->nbElement == 0) {
+    // Cas liste vide
+    printf("LISTE VIDE");
+    return NULL;
+  }
   int index = rand() % list->nbElement;
   avion *current = list->premier;
-  for (int i = 0; i < index; i++) {
+  if (!current) {
+    // Cas premier pas trouver.
+    printf("Pas d'avions dans la liste.");
+    return NULL;
+  }
+  for (int i = 0; i < index && current != NULL; i++) {
+    // Parcour de la liste pour trouver l'avion.
     current = current->next;
   }
+  // Retourne l'adresse du l'avion sur lequel effectuer l'action.
   return current;
 }
 
@@ -264,24 +406,27 @@ avion *select_rand_in_list(AvionFile *list) {
 void manageAirport(Aeroport *airport) {
   int event = rand() % 3;
   // Fonction qui fait decoler les avions en fonctions des crénaux.
-  action_on_time(airport);
+  printf("\n SI ERREUR : manageAirport -> action on time\n");
+  action_on_time(airport); // Problème ici... + avion qui disparait
   switch (event) {
   case 0:
     // Creer un avion et l'ajoute au parking ou en vol.
+    printf("Si Erreur : manageAirport case 0");
     incoming_plane(airport);
     break;
 
   case 1:
     // Selectionne un avion aleatoirement dans le parking pour decoller.
     {
-      avion *plane = select_rand_in_list(airport->parking);
-      demandeDec(airport, plane);
+      printf("Si Erreur : manageAirport case 1\n");
+      demandeDec(airport, select_rand_in_list(airport->parking));
       break;
     }
 
   case 2: {
-    avion *plane = select_rand_in_list(airport->parking);
-    demande_file_aerienne(airport, plane);
+    printf("Si Erreur : manageAirport case 2");
+    demande_file_aerienne(airport,
+                          select_rand_in_list(airport->liste_avions_en_vol));
     break;
   }
   default:

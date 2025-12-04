@@ -46,28 +46,31 @@
 
 int main() {
   srand(time(NULL));
-  Aeroport aeroport;
-  aeroport = *creerAeroport();
+  Aeroport *aeroport = creerAeroport();
+  if (!aeroport) {
+    printf("Erreur: Impossible de créer l'aéroport.\n");
+    return 1;
+  }
   while (1) {
-    manageAirport(&aeroport);
-    aeroport.heure += 5;
+    manageAirport(aeroport);
+    aeroport->heure += 5;
     printf("\n");
-    printf("Heure actuelle : %d\n", aeroport.heure);
+    printf("Heure actuelle : %d\n", aeroport->heure);
     printf("###########################################################\n");
     printf("##                        TERMINAL                       ##\n");
     printf("###########################################################\n");
     printf("--------------------PRAKING-----------------------\n");
-    afficherFile(aeroport.parking);
+    afficherFile(aeroport->parking);
     printf("\n--------------------PISTE 1-----------------------\n");
-    afficherFile(aeroport.pistes[0]->liste_avions_attente);
+    afficherFile(aeroport->pistes[0]->liste_avions_attente);
     printf("\n--------------------PISTE 2-----------------------\n");
-    afficherFile(aeroport.pistes[1]->liste_avions_attente);
+    afficherFile(aeroport->pistes[1]->liste_avions_attente);
     printf("\n--------------------PISTE 3-----------------------\n");
-    afficherFile(aeroport.pistes[2]->liste_avions_attente);
+    afficherFile(aeroport->pistes[2]->liste_avions_attente);
     printf("\n--------------------EN VOL-------------------------\n");
-    afficherFile(aeroport.liste_avions_en_vol);
+    afficherFile(aeroport->liste_avions_en_vol);
     printf("\n--------------------FILE AERIENNE-----------------\n");
-    afficherFile(aeroport.file_attente_aerienne);
+    afficherFile(aeroport->file_attente_aerienne);
     printf("\n---------------------------------------------------\n");
     printf("\n");
     sleep(2);

@@ -13,9 +13,11 @@ AvionFile *creerAvionFile() {
   return file;
 }
 
-AvionFile *ajouterDebutFile(AvionFile *file, avion *a) {
-  if (!file || !a)
-    return file;
+void ajouterDebutFile(AvionFile *file, avion *a) {
+  if (!file || !a) {
+    printf("\n Donnée manquantes dans les inputs. ajouterDebutFile (file.c)\n");
+    return;
+  }
   if (file->nbElement == 0) {
     file->premier = a;
     file->dernier = a;
@@ -28,12 +30,14 @@ AvionFile *ajouterDebutFile(AvionFile *file, avion *a) {
     file->premier = a;
   }
   file->nbElement++;
-  return file;
+  return;
 }
 
-AvionFile *ajouterFinFile(AvionFile *file, avion *a) {
-  if (!file || !a)
-    return file;
+void ajouterFinFile(AvionFile *file, avion *a) {
+  if (!file || !a) {
+    printf("\n Donnée manquantes dans les inputs. ajouterFinFile (file.c)\n");
+    return;
+  }
   if (file->nbElement == 0) {
     file->premier = a;
     file->dernier = a;
@@ -46,12 +50,15 @@ AvionFile *ajouterFinFile(AvionFile *file, avion *a) {
     file->dernier = a;
   }
   file->nbElement++;
-  return file;
+  return;
 }
 
-AvionFile *supprimerDebutFile(AvionFile *file) {
-  if (!file || file->nbElement == 0)
-    return file;
+void supprimerDebutFile(AvionFile *file) {
+  if (!file || file->nbElement == 0) {
+    printf("\n Donnée manquantes dans les inputs ou file vide. "
+           "supprimerDebutFile (file.c)\n");
+    return;
+  }
   avion *toRemove = file->premier;
   if (file->nbElement == 1) {
     file->premier = NULL;
@@ -63,12 +70,15 @@ AvionFile *supprimerDebutFile(AvionFile *file) {
   }
   free(toRemove);
   file->nbElement--;
-  return file;
+  return;
 }
 
-AvionFile *supprimerFinFile(AvionFile *file) {
-  if (!file || file->nbElement == 0)
-    return file;
+void supprimerFinFile(AvionFile *file) {
+  if (!file || file->nbElement == 0) {
+    printf("\n Donnée manquantes dans les inputs ou file vide. "
+           "supprimerFinFile (file.c)\n");
+    return;
+  }
   avion *toRemove = file->dernier;
   if (file->nbElement == 1) {
     file->premier = NULL;
@@ -80,13 +90,15 @@ AvionFile *supprimerFinFile(AvionFile *file) {
   }
   free(toRemove);
   file->nbElement--;
-  return file;
+  return;
 }
 
 /* Libère tous les avions d'une file puis la file elle‑même. */
 void detruireAvionFile(AvionFile *file) {
-  if (!file)
+  if (!file) {
+    printf("\n Erreur file vide. detruireAvionFile (file.c)\n");
     return;
+  }
 
   avion *courant = file->premier;
   while (courant) {
@@ -94,6 +106,5 @@ void detruireAvionFile(AvionFile *file) {
     free(courant);
     courant = suivant;
   }
-
   free(file);
 }

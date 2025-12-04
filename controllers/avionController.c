@@ -30,36 +30,48 @@ avion *rechercherAvion(AvionFile *file, int id) {
   return NULL;
 }
 
-avion *retirerAvion(AvionFile *file, int id) {
-  if (!file)
-    return NULL;
-  avion *aSupprimer = rechercherAvion(file, id);
-  if (!aSupprimer)
-    return NULL;
-
-  if (file->nbElement == 1) {
-    /* seul élément */
-    file->premier = NULL;
-    file->dernier = NULL;
-  } else if (aSupprimer == file->premier) {
-    /* tête */
-    file->premier = aSupprimer->next;
-    if (file->premier)
-      file->premier->prev = NULL;
-  } else if (aSupprimer == file->dernier) {
-    /* queue */
-    file->dernier = aSupprimer->prev;
-    if (file->dernier)
-      file->dernier->next = NULL;
-  } else {
-    /* milieu */
-    if (aSupprimer->prev)
-      aSupprimer->prev->next = aSupprimer->next;
-    if (aSupprimer->next)
-      aSupprimer->next->prev = aSupprimer->prev;
+void retirerAvion(AvionFile *file, int id) {
+  if (!file) {
+    printf("\n file attendue en entrée vide dans la fonction retirerAvion "
+           "(avionController)\n");
+    return;
   }
 
+  /* On parcourt la file en mémorisant le précédent pour être sûr
+   * d'utiliser les bons pointeurs, même si l'avion a été réutilisé
+   * dans une autre file entre-temps. */
+  avion *current = file->premier;
+  avion *prev = NULL;
+  while (current && current->id != id) {
+    prev = current;
+    current = current->next;
+  }
+
+  if (!current) {
+    printf("\n avion rechercher pas trouvé dans la fonction fonction "
+           "retirerAvion (avionController)\n");
+    return;
+  }
+
+  /* Mise à jour des extrémités de la file si besoin. */
+  if (current == file->premier) {
+    file->premier = current->next;
+  }
+  if (current == file->dernier) {
+    file->dernier = prev;
+  }
+
+  /* Rechaînage local dans la file concernée. */
+  if (prev) {
+    prev->next = current->next;
+  }
+  if (current->next) {
+    current->next->prev = prev;
+  }
+
+  /* L'avion est détaché de cette file : on nettoie ses pointeurs,
+   * mais on ne le libère pas, car il peut être réutilisé ailleurs. */
   file->nbElement--;
-  aSupprimer->next = aSupprimer->prev = NULL;
-  return aSupprimer;
+  current->next = current->prev = NULL;
+  return;
 }

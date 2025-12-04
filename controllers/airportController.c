@@ -85,9 +85,14 @@ void afficherFile(AvionFile *file) {
   }
   avion *current = file->premier;
   printf("Contenu de la file (%d éléments):\n", file->nbElement);
-  while (current) {
+  int count = 0;
+  while (current != NULL && count < file->nbElement) {
     printf("Avion ID: %d, État: %d, Heure: %d\n", current->id, current->etat,
            current->heure);
     current = current->next;
+    count++;
+  }
+  if (count >= file->nbElement && current != NULL) {
+    printf("ERREUR: Cycle détecté dans la file ! Arrêt de l'affichage.\n");
   }
 }
