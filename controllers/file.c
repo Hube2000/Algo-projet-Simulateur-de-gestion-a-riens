@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "../models/aeroport.h"
 
 AvionFile *creerAvionFile() {
   AvionFile *file = malloc(sizeof(AvionFile));
@@ -96,4 +97,26 @@ void detruireAvionFile(AvionFile *file) {
   }
 
   free(file);
+}
+
+void ajouter_bonne_place(Aeroport *airport, avion *plane){
+  avion *current = airport->parking->premier;
+  while(current && current->heure <= plane->heure) {
+    current = current->next;
+  }
+  // cas fin
+  if(!current) {
+    ajouterFinFile(airport->parking, plane);
+  } 
+  // Cas début
+  else if(current == airport->parking->premier) {
+    ajouterDebutFile(airport->parking, plane);
+  }  // Cas milieu
+  else {
+    plane->next = current;
+    plane->prev = current->prev;
+    current->prev->next = plane;
+    current->prev = plane;
+    airport->parking->nbElement++;
+  }
 }
