@@ -100,23 +100,24 @@ void detruireAvionFile(AvionFile *file) {
 }
 
 void ajouter_bonne_place(Aeroport *airport, avion *plane){
-  avion *current = airport->parking->premier;
+  int indexBonnePlace = trouver_piste_libre(airport, plane);
+  avion *current = airport->pistes[indexBonnePlace]->liste_avions_attente->premier;
   while(current && current->heure <= plane->heure) {
     current = current->next;
   }
   // cas fin
   if(!current) {
-    ajouterFinFile(airport->parking, plane);
+    ajouterFinFile(airport->pistes[indexBonnePlace]->liste_avions_attente, plane);
   } 
   // Cas début
-  else if(current == airport->parking->premier) {
-    ajouterDebutFile(airport->parking, plane);
+  else if(current == airport->pistes[indexBonnePlace]->liste_avions_attente->premier) {
+    ajouterDebutFile(airport->pistes[indexBonnePlace]->liste_avions_attente, plane);
   }  // Cas milieu
   else {
     plane->next = current;
     plane->prev = current->prev;
     current->prev->next = plane;
     current->prev = plane;
-    airport->parking->nbElement++;
+    airport->pistes[indexBonnePlace]->liste_avions_attente->nbElement++;
   }
 }
