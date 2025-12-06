@@ -19,6 +19,7 @@ typedef struct avion {
   int etat; // 0 pour au sol, 1 pour en vol
   int nombre_de_passagers;
   int heure;
+  int carburant;
   struct avion *next;
   struct avion *prev;
 } avion;
@@ -28,16 +29,5 @@ typedef struct AvionFile {
   avion *premier;
   avion *dernier;
 } AvionFile;
-
-avion *creerAvion(struct Aeroport *airport);
-AvionFile *creerAvionFile(void);
-avion *rechercherAvion(AvionFile *file, int id);
-
-void ajouterDebutFile(AvionFile *file, avion *a);
-void ajouterFinFile(AvionFile *file, avion *a);
-void supprimerDebutFile(AvionFile *file);
-void supprimerFinFile(AvionFile *file);
-void retirerAvion(AvionFile *file, int id);
-void detruireAvionFile(AvionFile *file);
 
 #endif

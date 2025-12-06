@@ -1,8 +1,8 @@
 #ifndef AIRPORT_CONTROLLER_H
 #define AIRPORT_CONTROLLER_H
 
-#include "../models/aeroport.h"
-#include "../models/piste.h"
+#include "aeroport.h"
+#include "piste.h"
 
 PISTE *creerPiste(int numero, int longueur, CATEGORIE_PISTE categorie,
                   int capacite_max_attente);
@@ -11,3 +11,4 @@ void afficherFile(AvionFile *file);
 void detruireAeroport(Aeroport *aeroport);
 
 #endif
+

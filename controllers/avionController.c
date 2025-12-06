@@ -1,5 +1,6 @@
-#include "../models/aeroport.h"
-#include "../models/avion.h"
+#include "avionController.h"
+#include "aeroport.h"
+#include "avion.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -10,8 +11,9 @@ avion *creerAvion(Aeroport *airport) {
   newAvion->id = airport->total_avions++;
   newAvion->categorie = (CATEGORIE_AVION)(rand() % 3);
   newAvion->etat = 0;
-  newAvion->nombre_de_passagers = 0;
+  newAvion->nombre_de_passagers = rand() % 200 + 1;
   newAvion->heure = 0;
+  newAvion->carburant = 100;
   newAvion->next = NULL;
   newAvion->prev = NULL;
   return newAvion;
@@ -36,10 +38,6 @@ void retirerAvion(AvionFile *file, int id) {
            "(avionController)\n");
     return;
   }
-
-  /* On parcourt la file en mémorisant le précédent pour être sûr
-   * d'utiliser les bons pointeurs, même si l'avion a été réutilisé
-   * dans une autre file entre-temps. */
   avion *current = file->premier;
   avion *prev = NULL;
   while (current && current->id != id) {
@@ -53,25 +51,45 @@ void retirerAvion(AvionFile *file, int id) {
     return;
   }
 
-  /* Mise à jour des extrémités de la file si besoin. */
+  // Mettre à jour les pointeurs de la liste
   if (current == file->premier) {
+    // C'est le premier élément
     file->premier = current->next;
-  }
-  if (current == file->dernier) {
-    file->dernier = prev;
-  }
-
-  /* Rechaînage local dans la file concernée. */
-  if (prev) {
+    if (file->premier) {
+      file->premier->prev = NULL;
+    }
+  } else {
+    // Ce n'est pas le premier élément, donc prev ne devrait jamais être NULL
+    if (!prev) {
+      printf("\n [ERREUR] prev est NULL mais current n'est pas le premier!\n");
+      return;
+    }
     prev->next = current->next;
   }
-  if (current->next) {
-    current->next->prev = prev;
+
+  if (current == file->dernier) {
+    // C'est le dernier élément
+    file->dernier = prev;
+  } else {
+    // Ce n'est pas le dernier élément, donc current->next ne devrait pas être
+    // NULL
+    if (current->next) {
+      current->next->prev = prev;
+    } else {
+      printf("\n [ERREUR] current->next est NULL mais current n'est pas le "
+             "dernier!\n");
+    }
   }
 
-  /* L'avion est détaché de cette file : on nettoie ses pointeurs,
-   * mais on ne le libère pas, car il peut être réutilisé ailleurs. */
   file->nbElement--;
-  current->next = current->prev = NULL;
+
+  if (file->nbElement == 0) {
+    file->premier = NULL;
+    file->dernier = NULL;
+  }
+
+  // Nettoyer les pointeurs de l'avion retiré
+  current->next = NULL;
+  current->prev = NULL;
   return;
 }

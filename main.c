@@ -4,13 +4,13 @@
 #include <time.h>
 #include <unistd.h>
 
-#include "models/aeroport.h"
-#include "models/avion.h"
-#include "models/piste.h"
-
-#include "controllers/airportController.h"
-#include "fonctionnement/gestion.h"
-#include "verifications/verif.h"
+#include "aeroport.h"
+#include "airportController.h"
+#include "avion.h"
+#include "gestion.h"
+#include "gestionEssence.h"
+#include "piste.h"
+#include "verif.h"
 
 #define NB_PISTES 3
 
@@ -52,27 +52,10 @@ int main() {
     return 1;
   }
   while (1) {
+    consume_carburant_vol(aeroport);
     manageAirport(aeroport);
-    aeroport->heure += 5;
-    printf("\n");
-    printf("Heure actuelle : %d\n", aeroport->heure);
-    printf("###########################################################\n");
-    printf("##                        TERMINAL                       ##\n");
-    printf("###########################################################\n");
-    printf("--------------------PRAKING-----------------------\n");
-    afficherFile(aeroport->parking);
-    printf("\n--------------------PISTE 1-----------------------\n");
-    afficherFile(aeroport->pistes[0]->liste_avions_attente);
-    printf("\n--------------------PISTE 2-----------------------\n");
-    afficherFile(aeroport->pistes[1]->liste_avions_attente);
-    printf("\n--------------------PISTE 3-----------------------\n");
-    afficherFile(aeroport->pistes[2]->liste_avions_attente);
-    printf("\n--------------------EN VOL-------------------------\n");
-    afficherFile(aeroport->liste_avions_en_vol);
-    printf("\n--------------------FILE AERIENNE-----------------\n");
-    afficherFile(aeroport->file_attente_aerienne);
-    printf("\n---------------------------------------------------\n");
-    printf("\n");
+    displayAirport(aeroport);
+    aeroport->heure += 5; // Incrementer l'heure apres l'affichage
     sleep(2);
   }
 }

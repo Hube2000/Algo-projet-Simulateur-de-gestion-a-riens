@@ -1,4 +1,5 @@
 #include "verif.h"
+#include "file.h"
 #include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -44,10 +45,14 @@ bool parking_est_plein(AvionFile *liste_parking, int capacite_max_parking) {
   return (nb_avions >= capacite_max_parking);
 }
 
-// bool file_attente_piste_pleine(PISTE *piste) {
-// a faire quand file (pr la liste d'attente) sera fini et que la brnaches de
-// gestion de file sois ok
-// }
+bool parking_est_plein_avec_reservations(Aeroport *aeroport) {
+  if (!aeroport || !aeroport->parking) {
+    return true;
+  }
+  int nb_avions = compter_elements(aeroport->parking);
+  int total_occupation = nb_avions + aeroport->places_reservees;
+  return (total_occupation >= aeroport->places);
+}
 
 void afficher_compatibilite(avion *av, PISTE *p) {
   if (verifier_compatibilite(av, p)) {
@@ -102,119 +107,19 @@ int trouver_piste_libre(Aeroport *aeroport, avion *plane) {
   return -1;
 }
 
-void chargement(void) {
-  // Animation en 5 frames de 600ms chacune (total: 3 secondes)
+int trouver_piste(Aeroport *airport, avion *plane) {
+  if (!airport || !plane) {
+    return -1;
+  }
 
-  // Frame 1
-  system("cls||clear");
-  printf("\n");
-  printf("       _\n");
-  printf("      -=\\`\\\n");
-  printf("  |\\ ____\\_\\__\n");
-  printf("-=\\c`\"\"\"\"\"\"\" \"`)\n");
-  printf("  `~~~~~/ /~~`\n");
-  printf("   -==/ /\n");
-  printf("     '-'\n");
-  printf("\n");
-  printf("      _  _\n");
-  printf("     ( `   )_\n");
-  printf("    (    )    `)\n");
-  printf("  (_   (_ .  _) _)\n");
-  printf("                                 _\n");
-  printf("                                (  )\n");
-  printf(" _ .                         ( `  ) . )\n");
-  printf("(  _ )_                      (_, _(  ,_)_)\n");
-  printf("(_  _(_ ,)\n");
-  usleep(600000); // 600ms
-
-  // Frame 2
-  system("cls||clear");
-  printf("\n");
-  printf("              _\n");
-  printf("             -=\\`\\\n");
-  printf("        |\\ ____\\_\\__\n");
-  printf("       -=\\c`\"\"\"\"\"\"\" \"`)\n");
-  printf("         `~~~~~/ /~~`\n");
-  printf("            -==/ /\n");
-  printf("              '-'\n");
-  printf("\n");
-  printf("      _  _\n");
-  printf("     ( `   )_\n");
-  printf("    (    )    `)\n");
-  printf("  (_   (_ .  _) _)\n");
-  printf("                                 _\n");
-  printf("                                (  )\n");
-  printf(" _ .                         ( `  ) . )\n");
-  printf("(  _ )_                      (_, _(  ,_)_)\n");
-  printf("(_  _(_ ,)\n");
-  usleep(60000); // 600ms
-
-  // Frame 3
-  system("cls||clear");
-  printf("\n");
-  printf("                     _\n");
-  printf("                    -=\\`\\\n");
-  printf("               |\\ ____\\_\\__\n");
-  printf("              -=\\c`\"\"\"\"\"\"\" \"`)\n");
-  printf("                `~~~~~/ /~~`\n");
-  printf("                   -==/ /\n");
-  printf("                     '-'\n");
-  printf("\n");
-  printf("      _  _\n");
-  printf("     ( `   )_\n");
-  printf("    (    )    `)\n");
-  printf("  (_   (_ .  _) _)\n");
-  printf("                                 _\n");
-  printf("                                (  )\n");
-  printf(" _ .                         ( `  ) . )\n");
-  printf("(  _ )_                      (_, _(  ,_)_)\n");
-  printf("(_  _(_ ,)\n");
-  usleep(60000); // 600ms
-
-  // Frame 4
-  system("cls||clear");
-  printf("\n");
-  printf("                                      _\n");
-  printf("                                     -=\\`\\\n");
-  printf("                                |\\ ____\\_\\__\n");
-  printf("                               -=\\c`\"\"\"\"\"\"\" \"`)\n");
-  printf("                                 `~~~~~/ /~~`\n");
-  printf("                                    -==/ /\n");
-  printf("                                      '-'\n");
-  printf("\n");
-  printf("      _  _\n");
-  printf("     ( `   )_\n");
-  printf("    (    )    `)\n");
-  printf("  (_   (_ .  _) _)\n");
-  printf("                                 _\n");
-  printf("                                (  )\n");
-  printf(" _ .                         ( `  ) . )\n");
-  printf("(  _ )_                      (_, _(  ,_)_)\n");
-  printf("(_  _(_ ,)\n");
-  usleep(60000); // 600ms
-
-  // Frame 5
-  system("cls||clear");
-  printf("\n");
-  printf("                                                   _\n");
-  printf("                                                  -=\\`\\\n");
-  printf("                                             |\\ ____\\_\\__\n");
-  printf("                                            -=\\c`\"\"\"\"\"\"\" "
-         "\"`)\n");
-  printf("                                              `~~~~~/ /~~`\n");
-  printf("                                                 -==/ /\n");
-  printf("                                                   '-'\n");
-  printf("\n");
-  printf("      _  _\n");
-  printf("     ( `   )_\n");
-  printf("    (    )    `)\n");
-  printf("  (_   (_ .  _) _)\n");
-  printf("                                 _\n");
-  printf("                                (  )\n");
-  printf(" _ .                         ( `  ) . )\n");
-  printf("(  _ )_                      (_, _(  ,_)_)\n");
-  printf("(_  _(_ ,)\n");
-  usleep(60000); // 600ms
-
-  system("cls||clear");
+  for (int i = 0; i < 3; i++) {
+    PISTE *piste = airport->pistes[i];
+    if (!piste || !piste->liste_avions_attente) {
+      continue;
+    }
+    if (verifier_compatibilite(plane, piste)) {
+      return i;
+    }
+  }
+  return -1;
 }

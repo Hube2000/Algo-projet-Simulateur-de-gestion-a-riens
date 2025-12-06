@@ -1,4 +1,6 @@
-#include "../models/avion.h"
+#include "file.h"
+#include "aeroport.h"
+#include "avion.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -93,7 +95,6 @@ void supprimerFinFile(AvionFile *file) {
   return;
 }
 
-/* Libère tous les avions d'une file puis la file elle‑même. */
 void detruireAvionFile(AvionFile *file) {
   if (!file) {
     printf("\n Erreur file vide. detruireAvionFile (file.c)\n");
@@ -107,4 +108,81 @@ void detruireAvionFile(AvionFile *file) {
     courant = suivant;
   }
   free(file);
+}
+
+void ajouter_bonne_place(Aeroport *airport, avion *plane, int indexBonnePlace) {
+  if (!airport || !plane || indexBonnePlace < 0 || indexBonnePlace >= 3 ||
+      !airport->pistes[indexBonnePlace] ||
+      !airport->pistes[indexBonnePlace]->liste_avions_attente) {
+    printf("Erreur: Paramètres invalides dans ajouter_bonne_place.\n");
+    return;
+  }
+  if (plane->next != NULL || plane->prev != NULL) {
+    printf("Erreur: L'avion %d est déjà dans une liste!\n", plane->id);
+    plane->next = NULL;
+    plane->prev = NULL;
+  }
+  avion *current =
+      airport->pistes[indexBonnePlace]->liste_avions_attente->premier;
+  while (current && current->heure <= plane->heure) {
+    current = current->next;
+  }
+  // cas fin
+  if (!current) {
+    ajouterFinFile(airport->pistes[indexBonnePlace]->liste_avions_attente,
+                   plane);
+  }
+  // Cas début
+  else if (current ==
+           airport->pistes[indexBonnePlace]->liste_avions_attente->premier) {
+    ajouterDebutFile(airport->pistes[indexBonnePlace]->liste_avions_attente,
+                     plane);
+  } // Cas milieu
+  else {
+    if (current->prev) {
+      plane->next = current;
+      plane->prev = current->prev;
+      current->prev->next = plane;
+      current->prev = plane;
+      airport->pistes[indexBonnePlace]->liste_avions_attente->nbElement++;
+    } else {
+      ajouterDebutFile(airport->pistes[indexBonnePlace]->liste_avions_attente,
+                       plane);
+    }
+  }
+}
+
+void ajouter_bonne_place_essence(Aeroport *airport, avion *plane) {
+  if (!airport || !plane || !airport->file_attente_aerienne) {
+    printf("Erreur: Paramètres invalides dans ajouter_bonne_place_essence.\n");
+    return;
+  }
+  if (plane->next != NULL || plane->prev != NULL) {
+    printf("Erreur: L'avion %d est déjà dans une liste!\n", plane->id);
+    plane->next = NULL;
+    plane->prev = NULL;
+  }
+  avion *current = airport->file_attente_aerienne->premier;
+  while (current && current->carburant <= plane->carburant) {
+    current = current->next;
+  }
+  // cas fin
+  if (!current) {
+    ajouterFinFile(airport->file_attente_aerienne, plane);
+  }
+  // Cas début
+  else if (current == airport->file_attente_aerienne->premier) {
+    ajouterDebutFile(airport->file_attente_aerienne, plane);
+  } // Cas milieu
+  else {
+    if (current->prev) {
+      plane->next = current;
+      plane->prev = current->prev;
+      current->prev->next = plane;
+      current->prev = plane;
+      airport->file_attente_aerienne->nbElement++;
+    } else {
+      ajouterDebutFile(airport->file_attente_aerienne, plane);
+    }
+  }
 }

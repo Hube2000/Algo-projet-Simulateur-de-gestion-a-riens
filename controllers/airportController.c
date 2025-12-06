@@ -1,4 +1,6 @@
 #include "airportController.h"
+#include "avion.h"
+#include "file.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -26,6 +28,7 @@ Aeroport *creerAeroport() {
   if (!aeroport)
     return NULL;
   aeroport->places = 50;
+  aeroport->places_reservees = 0;
   aeroport->parking = creerAvionFile();
   aeroport->liste_avions_en_vol = creerAvionFile();
   aeroport->file_attente_aerienne = creerAvionFile();
@@ -39,8 +42,6 @@ Aeroport *creerAeroport() {
   aeroport->pistes[1] = creerPiste(2, 2000, PISTE_MOYENNE, 5);
   aeroport->pistes[2] = creerPiste(3, 3000, PISTE_GRANDE, 5);
 
-  /* Si une des pistes ou files principales n'a pas pu être allouée,
-   * on libère tout proprement et on retourne NULL. */
   if (!aeroport->parking || !aeroport->liste_avions_en_vol ||
       !aeroport->file_attente_aerienne || !aeroport->pistes[0] ||
       !aeroport->pistes[1] || !aeroport->pistes[2]) {
@@ -50,17 +51,14 @@ Aeroport *creerAeroport() {
   return aeroport;
 }
 
-/* Libère complètement un aéroport et toutes ses structures associées. */
 void detruireAeroport(Aeroport *aeroport) {
   if (!aeroport)
     return;
 
-  /* Libère les files principales de l'aéroport. */
   detruireAvionFile(aeroport->parking);
   detruireAvionFile(aeroport->liste_avions_en_vol);
   detruireAvionFile(aeroport->file_attente_aerienne);
 
-  /* Libère les pistes et leurs files. */
   for (int i = 0; i < 3; ++i) {
     if (aeroport->pistes[i]) {
       if (aeroport->pistes[i]->liste_avions_attente) {

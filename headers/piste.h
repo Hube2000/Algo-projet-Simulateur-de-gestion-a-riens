@@ -6,7 +6,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-
 typedef enum CATEGORIE_PISTE {
   PISTE_PETITE,
   PISTE_MOYENNE,
