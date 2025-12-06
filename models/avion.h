@@ -5,7 +5,8 @@
 
 struct Aeroport;
 
-typedef enum CATEGORIE_AVION {
+typedef enum CATEGORIE_AVION
+{
   AVION_DE_LIGNE,
   AVION_D_AFFAIRE,
   AVION_LEGER
@@ -13,7 +14,8 @@ typedef enum CATEGORIE_AVION {
 
 typedef struct avion avion;
 
-typedef struct avion {
+typedef struct avion
+{
   int id;
   CATEGORIE_AVION categorie;
   int etat; // 0 pour au sol, 1 pour en vol
@@ -23,7 +25,8 @@ typedef struct avion {
   struct avion *prev;
 } avion;
 
-typedef struct AvionFile {
+typedef struct AvionFile
+{
   int nbElement;
   avion *premier;
   avion *dernier;

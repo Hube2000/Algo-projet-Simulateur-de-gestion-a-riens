@@ -6,14 +6,15 @@
 #include <stdlib.h>
 #include <string.h>
 
-
-typedef enum CATEGORIE_PISTE {
+typedef enum CATEGORIE_PISTE
+{
   PISTE_PETITE,
   PISTE_MOYENNE,
   PISTE_GRANDE
 } CATEGORIE_PISTE;
 
-typedef struct piste {
+typedef struct piste
+{
   int numero_de_piste;
   int longueur;
   CATEGORIE_PISTE categorie_piste;

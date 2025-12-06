@@ -3,7 +3,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-avion *creerAvion(Aeroport *airport) {
+avion *creerAvion(Aeroport *airport)
+{
   avion *newAvion = malloc(sizeof(avion));
   if (!newAvion)
     return NULL;
@@ -17,12 +18,15 @@ avion *creerAvion(Aeroport *airport) {
   return newAvion;
 }
 
-avion *rechercherAvion(AvionFile *file, int id) {
+avion *rechercherAvion(AvionFile *file, int id)
+{
   if (!file)
     return NULL;
   avion *current = file->premier;
-  while (current != NULL) {
-    if (current->id == id) {
+  while (current != NULL)
+  {
+    if (current->id == id)
+    {
       return current;
     }
     current = current->next;
@@ -30,8 +34,10 @@ avion *rechercherAvion(AvionFile *file, int id) {
   return NULL;
 }
 
-void retirerAvion(AvionFile *file, int id) {
-  if (!file) {
+void retirerAvion(AvionFile *file, int id)
+{
+  if (!file)
+  {
     printf("\n file attendue en entrée vide dans la fonction retirerAvion "
            "(avionController)\n");
     return;
@@ -42,30 +48,36 @@ void retirerAvion(AvionFile *file, int id) {
    * dans une autre file entre-temps. */
   avion *current = file->premier;
   avion *prev = NULL;
-  while (current && current->id != id) {
+  while (current && current->id != id)
+  {
     prev = current;
     current = current->next;
   }
 
-  if (!current) {
+  if (!current)
+  {
     printf("\n avion rechercher pas trouvé dans la fonction fonction "
            "retirerAvion (avionController)\n");
     return;
   }
 
   /* Mise à jour des extrémités de la file si besoin. */
-  if (current == file->premier) {
+  if (current == file->premier)
+  {
     file->premier = current->next;
   }
-  if (current == file->dernier) {
+  if (current == file->dernier)
+  {
     file->dernier = prev;
   }
 
   /* Rechaînage local dans la file concernée. */
-  if (prev) {
+  if (prev)
+  {
     prev->next = current->next;
   }
-  if (current->next) {
+  if (current->next)
+  {
     current->next->prev = prev;
   }
 

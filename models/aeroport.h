@@ -7,7 +7,8 @@
 #include "avion.h"
 #include "piste.h"
 
-typedef struct Aeroport {
+typedef struct Aeroport
+{
   PISTE *pistes[3];
   AvionFile *parking;
   AvionFile *liste_avions_en_vol;

@@ -15,4 +15,3 @@ avion *select_rand_in_list(AvionFile *list);
 void manageAirport(Aeroport *airport);
 
 #endif
-

@@ -3,6 +3,7 @@
 #include <string.h>
 #include <time.h>
 #include <unistd.h>
+#include <signal.h>
 
 #include "models/aeroport.h"
 #include "models/avion.h"
@@ -10,69 +11,94 @@
 
 #include "controllers/airportController.h"
 #include "fonctionnement/gestion.h"
+#include "fonctionnement/bdd.h"
 #include "verifications/verif.h"
 
 #define NB_PISTES 3
 
-/*
-    bool verifier_compatibilite(avion *avion, PISTE *piste);
-    bool parking_est_plein(AvionFile *liste_parking, int capacite_max_parking);
+// Variable globale pour l'aéroport (nécessaire pour le gestionnaire de signal)
+static Aeroport *aeroport_global = NULL;
 
-    int compter_elements(AvionFile *file);
-    int trouver_piste_libre(Aeroport *aeroport, avion *avion);
+// Gestionnaire de signal pour sauvegarder avant de quitter (Ctrl+C)
+void gestionnaire_arret(int sig)
+{
+    (void)sig; // Évite l'avertissement du compilateur
+    printf("\n\n>>> Arrêt demandé, sauvegarde en cours...\n");
+    if (aeroport_global)
+    {
+        sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+        detruireAeroport(aeroport_global);
+        printf(">>> Sauvegarde terminée. Au revoir !\n");
+    }
+    exit(0);
+}
 
-    void afficher_compatibilite(avion *av, PISTE *p);
-    void chargement(void);
-    void incoming_plane(Aeroport *airport);
-    void manageAirport(Aeroport *airport);
-    void action_on_time(Aeroport *airport);
-    void demandeDec(Aeroport *airport, avion *plane);
-    void demande_file_aerienne(Aeroport *aeroport, avion *plane);
-    void demanderAtt(Aeroport *aeroport, avion *avion);
-    void decollage_atterrissage(Aeroport *airport, PISTE *piste);
+int main()
+{
+    srand(time(NULL));
 
-    AvionFile *creerAvionFile(void);
-    AvionFile *ajouterDebutFile(AvionFile *file, avion *a);
-    AvionFile *ajouterFinFile(AvionFile *file, avion *a);
-    AvionFile *supprimerDebutFile(AvionFile *file);
-    AvionFile *supprimerFinFile(AvionFile *file);
+    // IMPORTANT CA EN GROS SIGINIT c'est le signal interrupt ça se declenche par exemple avec le ctrl+c
+    // ET LE SIGTERM c'est le signal term envoyé par le systeme (un kill processus)
+    // signal c'est une fonction natif au c qui permet d'enregister le signal systeme
+    signal(SIGINT, gestionnaire_arret);
+    signal(SIGTERM, gestionnaire_arret);
 
-    avion *creerAvion(void);
-    avion *rechercherAvion(AvionFile *file, int id);
-    avion *retirerAvion(AvionFile *file, int id);
-    avion *select_rand_in_list(AvionFile *list);
+    printf("========================================\n");
+    printf("  SIMULATEUR DE GESTION AÉRIENNE\n");
+    printf("========================================\n\n");
 
-*/
+    aeroport_global = initAeroportBDD("aeroport.bin");
+    if (!aeroport_global)
+    {
+        printf("ERREUR: Impossible de créer/charger l'aéroport.\n");
+        return 1;
+    }
 
-int main() {
-  srand(time(NULL));
-  Aeroport *aeroport = creerAeroport();
-  if (!aeroport) {
-    printf("Erreur: Impossible de créer l'aéroport.\n");
-    return 1;
-  }
-  while (1) {
-    manageAirport(aeroport);
-    aeroport->heure += 5;
-    printf("\n");
-    printf("Heure actuelle : %d\n", aeroport->heure);
-    printf("###########################################################\n");
-    printf("##                        TERMINAL                       ##\n");
-    printf("###########################################################\n");
-    printf("--------------------PRAKING-----------------------\n");
-    afficherFile(aeroport->parking);
-    printf("\n--------------------PISTE 1-----------------------\n");
-    afficherFile(aeroport->pistes[0]->liste_avions_attente);
-    printf("\n--------------------PISTE 2-----------------------\n");
-    afficherFile(aeroport->pistes[1]->liste_avions_attente);
-    printf("\n--------------------PISTE 3-----------------------\n");
-    afficherFile(aeroport->pistes[2]->liste_avions_attente);
-    printf("\n--------------------EN VOL-------------------------\n");
-    afficherFile(aeroport->liste_avions_en_vol);
-    printf("\n--------------------FILE AERIENNE-----------------\n");
-    afficherFile(aeroport->file_attente_aerienne);
-    printf("\n---------------------------------------------------\n");
-    printf("\n");
-    sleep(2);
-  }
+    printf("\n >>> Aéroport initialisé avec succès !\n");
+    printf(">>> Appuyez sur Ctrl+C pour quitter et sauvegarder.\n");
+    printf(">>> Sauvegarde automatique tous les 10 cycles.\n\n");
+
+    int cycle_sauvegarde = 0;
+    while (1)
+    {
+        manageAirport(aeroport_global);
+        aeroport_global->heure += 5;
+
+        printf("\n");
+        printf("Heure actuelle : %d\n", aeroport_global->heure);
+        printf("###########################################################\n");
+        printf("##                        TERMINAL                       ##\n");
+        printf("###########################################################\n");
+        printf("--------------------PARKING-----------------------\n");
+        afficherFile(aeroport_global->parking);
+        printf("\n--------------------PISTE 1-----------------------\n");
+        afficherFile(aeroport_global->pistes[0]->liste_avions_attente);
+        printf("\n--------------------PISTE 2-----------------------\n");
+        afficherFile(aeroport_global->pistes[1]->liste_avions_attente);
+        printf("\n--------------------PISTE 3-----------------------\n");
+        afficherFile(aeroport_global->pistes[2]->liste_avions_attente);
+        printf("\n--------------------EN VOL-------------------------\n");
+        afficherFile(aeroport_global->liste_avions_en_vol);
+        printf("\n--------------------FILE AERIENNE-----------------\n");
+        afficherFile(aeroport_global->file_attente_aerienne);
+        printf("\n---------------------------------------------------\n");
+        printf("\n");
+
+        // Save automatique tous les 10 cycles
+        cycle_sauvegarde++;
+        if (cycle_sauvegarde >= 10)
+        {
+            printf(">>> Sauvegarde automatique...\n");
+            sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+            cycle_sauvegarde = 0;
+            printf(">>> Sauvegarde terminée \n\n");
+        }
+
+        sleep(2);
+    }
+
+    // Normalement cette ligne ne sera pas lu mais on sait jamais (sécurité)
+    sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+    detruireAeroport(aeroport_global);
+    return 0;
 }
