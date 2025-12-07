@@ -112,11 +112,11 @@ void triggerRandomEvent(Aeroport *airport) {
   
   int random = rand() % 100;
   
-  if (random < 3) {
+  if (random < 4) {
     MeteoEvent(airport);
-  } else if (random >= 3 && random < 5) {
+  } else if (random >= 4 && random < 7) {
     AttaqueTerroristeEvent(airport);
-  } else if (random >= 5 && random < 7) {
+  } else if (random >= 7 && random < 10) {
     HackEvent(airport);
   }
 }

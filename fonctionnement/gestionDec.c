@@ -42,11 +42,10 @@ void force_action(Aeroport *airport, PISTE *piste, avion *plane) {
     demander_decollage(airport, piste, plane);
     return;
   } else if (plane->etat == 1) {
-
-    printf("Forcage du décollage de l'avion %d sur la piste %d", plane->id,
+    printf("Forcage de l'atterrissage de l'avion %d sur la piste %d", plane->id,
            piste->numero_de_piste);
     atterissage(airport, piste);
-    demander_decollage(airport, piste, plane);
+    demander_atterissage(airport, piste, plane);
     return;
   }
   return;
