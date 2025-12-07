@@ -9,9 +9,19 @@
 
 #include "couleur.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP_MS(x) Sleep(x)
+#define CLEAR_SCREEN() system("cls")
+#else
+#include <unistd.h>
+#define SLEEP_MS(x) usleep((x) * 1000)
+#define CLEAR_SCREEN() system("clear")
+#endif
+
 void crash_UI(){
 
-    system("cls");
+    CLEAR_SCREEN();
     printf("%s", CYAN);
     printf("   Big airplane                           .------,\n");
     printf("   Joan Stark                              =\\      \\\n");
@@ -27,8 +37,8 @@ void crash_UI(){
     printf("                                          /_____,'\n");
 
     
-    Sleep(150);
-    system("cls");
+    SLEEP_MS(150);
+    CLEAR_SCREEN();
 
     printf("   Big airplane                                          .------,\n");
     printf("   Joan Stark                                  =\\      \\\n");
@@ -44,8 +54,8 @@ void crash_UI(){
     printf("                                                         /_____,'\n");
 
     
-    Sleep(150);
-    system("cls");
+    SLEEP_MS(150);
+    CLEAR_SCREEN();
 
     printf("   Big airplane                                                                   .------,\n");
     printf("   Joan Stark                                                           =\\      \\\n");
@@ -64,9 +74,9 @@ void crash_UI(){
 
     if (isShiny())
     {
-    Sleep(300);
-    system("cls");
-        system("cls");
+    SLEEP_MS(300);
+    CLEAR_SCREEN();
+        CLEAR_SCREEN();
         printf("%s\n", BRIGHT_YELLOW);
         printf("     .\"         \".\n");
         printf("     /             \\\\\n");
@@ -86,10 +96,10 @@ void crash_UI(){
         printf("    .-.  \\     /   .-.\n");
         printf("   (___\\o'     'o___)\n");
         printf("%s\n", RESET);
-        Sleep(500);
+        SLEEP_MS(500);
         printf("%s\n", BRIGHT_YELLOW);
         
-        system("cls");
+        CLEAR_SCREEN();
 
         printf(" ____   ___   ___  __  __ \n");
         printf("| __ ) / _ \\ / _ \\|  \\/  |\n");
@@ -97,7 +107,7 @@ void crash_UI(){
         printf("| |_) | |_| | |_| | |  | |\n");
         printf("|____/ \\___/ \\___/|_|  |_|\n");
         printf("\n");
-        Sleep(2000);
+        SLEEP_MS(2000);
 
                 //sans 2eme
         printf("     .\"         \".\n");
@@ -118,8 +128,8 @@ void crash_UI(){
         printf("    .-.  \\     /   .-.\n");
         printf("   (___\\o'     'o___)\n");
         printf("%s\n", RESET);
-        Sleep(1500);
-        system("cls");
+        SLEEP_MS(1500);
+        CLEAR_SCREEN();
     }else{
     
         printf("           %s_\n", BRIGHT_WHITE);
@@ -141,8 +151,8 @@ void crash_UI(){
     printf(" (_  _(_ ,)\n");
     printf("\n");
     
-    Sleep(800);
-    system("cls");
+    SLEEP_MS(800);
+    CLEAR_SCREEN();
 
     printf("\n");
     printf("          _  _\n");
@@ -164,8 +174,8 @@ void crash_UI(){
     printf("\n");
 
 
-     Sleep(800);
-    system("cls");
+     SLEEP_MS(800);
+    CLEAR_SCREEN();
 
 
         printf("          _  _\n");
@@ -187,8 +197,8 @@ void crash_UI(){
     
     printf("\n");
 
-    Sleep(800);
-    system("cls");
+    SLEEP_MS(800);
+    CLEAR_SCREEN();
 
     printf("          _  _\n");
     printf("         ( `   )_\n");
@@ -200,8 +210,8 @@ void crash_UI(){
     printf("   (  _ )_                      (_, _(  ,_)_)\n");
     printf(" (_  _(_ ,)\n");
 
-    Sleep(500);
-    system("cls");
+    SLEEP_MS(500);
+    CLEAR_SCREEN();
 
     printf("                  %s _.-^^---....,,-- %s\n", YELLOW, RESET);
     printf("               %s3_--                --_%s\n", YELLOW, RESET);

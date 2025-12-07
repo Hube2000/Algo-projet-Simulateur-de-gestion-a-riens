@@ -1,12 +1,12 @@
-HEURE ACTUELLE: 1255 minutes
+HEURE ACTUELLE: 2225 minutes
 
 STATISTIQUES:
-  - Avions au parking: 8 / 50 places
-  - Avions en vol: 9
+  - Avions au parking: 31 / 50 places
+  - Avions en vol: 0
   - Avions en file aerienne: 0
-  - Total avions geres: 20
+  - Total avions geres: 35
 
 ETAT DES PISTES:
-  Piste 1: Aucun avion en attente
+  Piste 1: 1 avion(s) en attente
   Piste 2: 2 avion(s) en attente
   Piste 3: Aucun avion en attente

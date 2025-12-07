@@ -15,6 +15,16 @@
 #include "piste.h"
 #include "verif.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP_MS(x) SLEEP_MS(x)
+#define CLEAR_SCREEN() CLEAR_SCREEN()
+#else
+#include <unistd.h>
+#define SLEEP_MS(x) uSLEEP_MS((x) * 1000)
+#define CLEAR_SCREEN() system("clear")
+#endif
+
 #define NB_PISTES 3
 
 /*  PK IL Y A TT CES DECLARATION ICI ???
@@ -100,7 +110,7 @@ int main() {
       cycle_sauvegarde = 0;
       printf(">>> Sauvegarde terminée \n\n");
     }
-    sleep(2);
+    SLEEP_MS(2);
   }
   // Normalement cette ligne ne sera pas lu mais on sait jamais (sécurité)
   sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");

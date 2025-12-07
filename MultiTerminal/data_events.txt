@@ -1,22 +1,11 @@
 En attente d'evenements...
-[18:29:17] ATTERRISSAGE - Avion atterri avec succes
-[18:29:21] DECOLLAGE - Avion decolle avec succes
-[18:29:21] ATTERRISSAGE - Avion atterri avec succes
-[18:29:23] DECOLLAGE - Avion decolle avec succes
-[18:29:34] ATTERRISSAGE - Avion atterri avec succes
-[18:29:34] ATTERRISSAGE - Avion atterri avec succes
-[18:29:38] ATTERRISSAGE - Avion atterri avec succes
-[18:29:46] DECOLLAGE - Avion decolle avec succes
-[18:29:54] DECOLLAGE - Avion decolle avec succes
-[18:29:56] ATTERRISSAGE - Avion atterri avec succes
-[18:29:58] DECOLLAGE - Avion decolle avec succes
-[18:30:00] ATTERRISSAGE - Avion atterri avec succes
-[18:30:04] DECOLLAGE - Avion decolle avec succes
-[18:30:06] DECOLLAGE - Avion decolle avec succes
-[18:30:12] DECOLLAGE - Avion decolle avec succes
-[18:30:16] ATTERRISSAGE - Avion atterri avec succes
-[18:30:20] DECOLLAGE - Avion decolle avec succes
-[18:30:26] ATTERRISSAGE - Avion atterri avec succes
-[18:30:32] DECOLLAGE - Avion decolle avec succes
-[18:30:34] DECOLLAGE - Avion decolle avec succes
-[18:30:34] DECOLLAGE - Avion decolle avec succes
+[19:13:43] ATTERRISSAGE - Avion atterri avec succes
+[19:13:43] ATTERRISSAGE - Avion atterri avec succes
+[19:13:43] ATTAQUE - Attaque terroriste - Avion crash
+[19:13:45] ATTERRISSAGE - Avion atterri avec succes
+[19:13:49] ATTERRISSAGE - Avion atterri avec succes
+[19:13:55] ATTERRISSAGE - Avion atterri avec succes
+[19:14:03] DECOLLAGE - Avion decolle avec succes
+[19:14:09] DECOLLAGE - Avion decolle avec succes
+[19:14:09] ATTERRISSAGE - Avion atterri avec succes
+[19:14:11] ATTERRISSAGE - Avion atterri avec succes

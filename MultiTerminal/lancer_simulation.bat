@@ -1,3 +1,12 @@
+
+
+
+@REM c de l'ia mais pr le debug c pratique
+
+
+
+
+
 @echo off
 echo ================================================
 echo  LANCEMENT DU SYSTEME MULTI-TERMINAL

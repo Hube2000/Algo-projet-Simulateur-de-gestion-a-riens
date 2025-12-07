@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <time.h>
 
-// Fonction pour écrire les logs d'activités dans le terminal cycles
 static inline void ecrire_log_activite(const char* type, const char* message) {
     FILE *f = fopen("../MultiTerminal/data_cycles.txt", "a");
     if (f) {

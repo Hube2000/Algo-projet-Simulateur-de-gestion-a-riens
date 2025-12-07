@@ -1,312 +1,243 @@
-# ✈️ Simulateur de Gestion d'Aéroport
+# Simulateur de Gestion d'Aéroport
 
-Un simulateur en temps réel pour gérer les opérations d'un aéroport, incluant le parking des avions, les décollages, les atterrissages, la gestion du carburant, et les événements imprévisibles.
+Bienvenue dans notre simulateur de gestion d'aéroport ! Ce projet vous permet de gérer en temps réel toutes les opérations d'un aéroport : parking des avions, décollages, atterrissages, ravitaillement en carburant, et même des événements surprises comme des tempêtes ou des attaques terroristes.
 
-## 📋 Table des matières
+## Sommaire
 
+- [À propos](#à-propos)
 - [Fonctionnalités](#fonctionnalités)
-- [Architecture](#architecture)
-- [Installation](#installation)
-- [Compilation](#compilation)
-- [Utilisation](#utilisation)
+- [Installation et démarrage](#installation-et-démarrage)
+- [Comment ça marche ?](#comment-ça-marche-)
 - [Structure du projet](#structure-du-projet)
-- [API Principale](#api-principale)
+- [Améliorations futures](#améliorations-futures)
 
 ---
 
-## ✨ Fonctionnalités
+## À propos
 
-### Gestion de l'Aéroport
-- 🅿️ **Parking** : Gestion de l'espace disponible pour les avions au sol
-- ✈️ **Avions en vol** : Suivi des avions en cours de vol
-- 🛬 **Attente aérienne** : File d'attente pour l'atterrissage
-- 🛫 **Pistes** : 3 pistes avec capacités différentes (petite, moyenne, grande)
-
-### Gestion des Avions
-- **Types d'avions** : Ligne, Affaire, Léger
-- **Passagers** : Suivi du nombre de passagers par avion
-- **Carburant** : Gestion du carburant et consommation en vol
-- **ID unique** : Identification automatique de chaque avion
-
-### Événements
-- 🌧️ **Météo** : Pluie, Orage, Neige (décalage des décollages)
-- 💥 **Attaque terroriste** : Destruction aléatoire d'un avion en vol
-
-### Persistance
-- 💾 **Sauvegarde automatique** : Tous les 10 cycles
-- 📂 **Base de données binaire** : Fichier `aeroport.bin` pour charger l'état précédent
-- 🔄 **Charger/Reprendre** : Reprenez votre simulation exactement où vous l'aviez laissée
+Ce simulateur a été développé en C dans le cadre d'un projet académique. Il simule les opérations quotidiennes d'un aéroport avec une interface multi-terminaux pour visualiser différents aspects de la simulation en temps réel.
 
 ---
 
-## 🏗️ Architecture
+## Fonctionnalités
 
-### Couches du Projet
+### Ce que vous pouvez faire
 
-```
-┌─────────────────────────────────┐
-│        main.c (Boucle)          │  Gestion de la simulation
-├─────────────────────────────────┤
-│    Gestionnaires (gestion.*)    │  Logique métier
-├─────────────────────────────────┤
-│   Contrôleurs (controllers/)    │  Manipulation des structures
-├─────────────────────────────────┤
-│   Modèles (headers/*.h)         │  Définitions de structures
-└─────────────────────────────────┘
-```
+**Gérer votre aéroport**
 
-### Modules Principaux
+- Voir en temps réel le nombre d'avions au parking (50 places maximum)
+- Suivre les avions en vol et ceux en attente pour atterrir
+- Gérer 3 pistes de différentes tailles (petite, moyenne, grande)
 
-| Module | Description |
-|--------|-------------|
-| `aeroport.h / airportController.c` | Création et gestion de l'aéroport |
-| `avion.h / avionController.c` | Création et manipulation des avions |
-| `file.h / file.c` | File doublement chaînée pour les avions |
-| `gestion.c` | Boucle principale de simulation |
-| `gestionAtt.c` | Gestion des atterrissages |
-| `gestionDec.c` | Gestion des décollages |
-| `gestionEssence.c` | Gestion du carburant |
-| `events.c` | Événements météo et terroristes |
-| `verif.c` | Vérifications de compatibilité |
-| `bdd.c` | Persistance (sauvegarde/chargement) |
+**Types d'avions**
+
+- Avions de ligne : pour les vols commerciaux avec beaucoup de passagers
+- Avions d'affaires : plus petits, pour les vols privés
+- Avions légers : pour les vols courts
+
+**Événements imprévisibles**
+
+- Météo difficile : pluie, orages ou neige qui retardent les décollages
+- Attaques terroristes : peuvent détruire un avion en vol (rare mais possible)
+- Animations visuelles : décollages, atterrissages et crashs affichés en ASCII art
+
+**Sauvegarde automatique**
+
+- Votre progression est sauvegardée tous les 10 cycles
+- Vous pouvez fermer et reprendre plus tard exactement où vous en étiez
 
 ---
 
-## 🔧 Installation
+## Installation et démarrage
 
-### Prérequis
-- **Compilateur C** : GCC ou Clang (C11 minimum)
-- **Make** : Pour automatiser la compilation
-- **Système d'exploitation** : Windows, Linux, macOS
+### Ce dont vous avez besoin
 
-### Étapes
+- Un compilateur C (comme GCC)
+- Make (pour compiler facilement)
+- Windows, Linux ou macOS
 
-1. **Cloner le dépôt**
+### Étapes pour commencer
+
+**1. Télécharger le projet**
+
 ```bash
-git clone https://github.com/votre-utilisateur/Algo-projet-Simulateur-de-gestion-a-riens.git
+git clone https://github.com/Hube2000/Algo-projet-Simulateur-de-gestion-a-riens.git
 cd Algo-projet-Simulateur-de-gestion-a-riens
 ```
 
-2. **Vérifier les fichiers**
-```bash
-ls
-# Doit contenir: main.c, Makefile, README.md, controllers/, fonctionnement/, headers/, verifications/
-```
+**2. Compiler le programme**
 
----
-
-## 🔨 Compilation
-
-### Compiler le projet
 ```bash
 make
 ```
 
-### Nettoyer les fichiers compilés
+C'est tout ! Le programme est prêt.
+
+**3. Lancer la simulation**
+
+Pour lancer avec les terminaux multiples (affichage visuel) :
+
 ```bash
-make clean
+cd MultiTerminal
+.\lancer_simulation.bat
 ```
 
-### Recompiler à partir de zéro
-```bash
-make clean && make
-```
+Ou pour lancer le simulateur simple :
 
-### Compiler avec flags personnalisés (optionnel)
-```bash
-make CC=clang CFLAGS="-Wall -Wextra -O2"
-```
-
----
-
-## ▶️ Utilisation
-
-### Lancer le simulateur
 ```bash
 ./simulateur.exe    # Windows
-./simulateur        # Linux/macOS
 ```
 
-### Première exécution
-- ✅ Un aéroport est créé automatiquement
-- ✅ 5 à 15 avions aléatoires sont générés
-- ✅ La base de données `aeroport.bin` est créée
+**4. Première fois**
+Au premier lancement, un aéroport sera créé automatiquement avec quelques avions. Les fois suivantes, votre aéroport sauvegardé sera chargé.
 
-### Exécutions suivantes
-- 📂 L'aéroport sauvegardé est automatiquement chargé
-- 🔄 Vous pouvez continuer votre simulation
-- 🗑️ Pour recommencer, supprimez `aeroport.bin`
+**5. Arrêter la simulation**
+Appuyez sur `Ctrl + C` - tout sera sauvegardé automatiquement.
 
-### Arrêt du simulateur
-```bash
-Ctrl + C    # Sauvegarde automatique avant arrêt
-```
+**6. Recommencer à zéro**
+Supprimez le fichier `aeroport.bin` et relancez le programme.
 
 ---
 
-## 📁 Structure du projet
+## Comment ça marche ?
+
+### Le système multi-terminaux
+
+Quand vous lancez la simulation avec `lancer_simulation.bat`, trois terminaux s'ouvrent :
+
+**Terminal Visuel (Cyan)**
+
+- Affiche les logs de la simulation cycle par cycle
+- Montre les arrivées et départs d'avions
+- Signale les événements spéciaux
+
+**Terminal Info (Vert)**
+
+- Affiche les statistiques en temps réel
+- Nombre d'avions au parking, en vol, en attente
+- État des pistes et niveau de carburant
+
+**Terminal Events (Magenta)**
+
+- Affiche les animations ASCII art
+- Décollages, atterrissages, crashs
+- Événements spéciaux (attaques, météo)
+
+### Les cycles de simulation
+
+Chaque "cycle" représente 1 minute dans la simulation. À chaque cycle :
+
+1. Les avions en vol consomment du carburant
+2. De nouveaux avions peuvent arriver pour atterrir
+3. Des avions peuvent décoller du parking
+4. Des événements aléatoires peuvent survenir
+5. Toutes les 10 minutes, la progression est sauvegardée
+
+### La gestion automatique
+
+Le simulateur gère intelligemment :
+
+- Attribution automatique des pistes selon la taille de l'avion
+- Priorisation des atterrissages selon le niveau de carburant
+- Ravitaillement en carburant au parking
+- Retards de décollage en cas de mauvais temps
+
+---
+
+## Structure du projet
+
+Voici comment le projet est organisé :
 
 ```
 Algo-projet-Simulateur-de-gestion-a-riens/
-├── main.c                          # Point d'entrée principal
-├── Makefile                         # Automatisation de la compilation
-├── README.md                        # Ce fichier
-├── aeroport.bin                     # Base de données (créée dynamiquement)
+├── main.c                          # Programme principal
+├── Makefile                        # Pour compiler le projet
+├── README.md                       # Ce guide
 │
-├── controllers/                     # Contrôleurs (manipulation)
-│   ├── airportController.c         # Gestion aéroport
-│   ├── avionController.c           # Gestion avions
-│   └── file.c                      # File chaînée
+├── MultiTerminal/                  # Version avec affichage multi-terminaux
+│   ├── lancer_simulation.bat      # Lance les 3 terminaux
+│   ├── terminal_visuel.c          # Terminal des logs
+│   ├── terminal_info.c            # Terminal des statistiques
+│   ├── terminal_events.c          # Terminal des animations
+│   └── Makefile                   # Compilation des terminaux
 │
-├── fonctionnement/                  # Logique métier
-│   ├── gestion.c                   # Boucle principale
-│   ├── gestionAtt.c                # Gestion atterrissages
-│   ├── gestionDec.c                # Gestion décollages
-│   ├── gestionEssence.c            # Gestion carburant
-│   ├── bdd.c                       # Persistance données
-│   └── events.c                    # Événements
+├── UI/                            # Animations ASCII art
+│   ├── couleur.h                  # Palette de couleurs
+│   ├── atterissage.h              # Animation d'atterrissage
+│   ├── Decollage.h                # Animation de décollage
+│   ├── crash.h                    # Animation de crash
+│   ├── Attack_Terroriste.h        # Animation d'attaque
+│   └── Hack.h                     # Animation de hack
 │
-├── headers/                         # Fichiers d'en-têtes (interfaces)
-│   ├── aeroport.h
-│   ├── airportController.h
-│   ├── avion.h
-│   ├── avionController.h
-│   ├── bdd.h
-│   ├── events.h
-│   ├── file.h
-│   ├── gestion.h
-│   ├── gestionAtt.h
-│   ├── gestionDec.h
-│   ├── gestionEssence.h
-│   ├── piste.h
-│   └── verif.h
+├── controllers/                   # Gestion des opérations
+│   ├── airportController.c        # Opérations sur l'aéroport
+│   ├── avionController.c          # Opérations sur les avions
+│   └── file.c                     # File d'attente des avions
 │
-├── verifications/                   # Vérifications
-│   └── verif.c                     # Compatibilité avion/piste
+├── fonctionnement/                # Logique de simulation
+│   ├── gestion.c                  # Boucle principale
+│   ├── gestionAtt.c               # Gestion des atterrissages
+│   ├── gestionDec.c               # Gestion des décollages
+│   ├── gestionEssence.c           # Gestion du carburant
+│   ├── events.c                   # Événements aléatoires
+│   └── bdd.c                      # Sauvegarde/Chargement
 │
-└── build/                           # Dossier de compilation (créé par make)
-    ├── controllers/
-    ├── fonctionnement/
-    └── verifications/
+├── headers/                       # Fichiers d'en-tête
+│   └── ...                        # Définitions des structures
+│
+└── verifications/                 # Vérifications
+    └── verif.c                    # Compatibilité avion/piste
 ```
 
 ---
 
-## 🎯 API Principale
+## Améliorations futures
 
-### Initialisation
-```c
-Aeroport *initAeroportBDD(const char *nom_fichier);
-void sauvegarderAeroportBDD(Aeroport *aeroport, const char *nom_fichier);
-```
+Des idées pour améliorer le simulateur :
 
-### Gestion Avions
-```c
-avion *creerAvion(Aeroport *airport);
-avion *rechercherAvion(AvionFile *file, int id);
-void retirerAvion(AvionFile *file, int id);
-```
-
-### Gestion Files
-```c
-AvionFile *creerAvionFile(void);
-void ajouterDebutFile(AvionFile *file, avion *a);
-void ajouterFinFile(AvionFile *file, avion *a);
-void supprimerDebutFile(AvionFile *file);
-void supprimerFinFile(AvionFile *file);
-```
-
-### Événements
-```c
-void MeteoEvent(Aeroport *aeroport);
-void AttaqueTerroristeEvent(Aeroport *aeroport);
-void triggerRandomEvent(Aeroport *airport);
-```
-
-### Gestion Opérations
-```c
-void manageAirport(Aeroport *aeroport);
-void displayAirport(Aeroport *aeroport);
-void consume_carburant_vol(Aeroport *aeroport);
-```
+- [ ] Ajouter une interface graphique moderne
+- [ ] Système de coûts et revenus pour chaque vol
+- [ ] Intelligence artificielle pour les décisions
+- [ ] Mode multijoueur en réseau
+- [ ] Graphiques et statistiques avancées
+- [ ] Différents niveaux de difficulté
+- [ ] Support multilingue
+- [ ] Effets sonores
 
 ---
 
-## 📊 Exemple de Sortie
+## Conseils d'utilisation
 
-```
-Fichier aeroport.bin introuvable. Création d'un nouvel aéroport...
-Aéroport créé avec 8 avions dans le parking.
-Aéroport sauvegardé dans aeroport.bin:
-  - Parking: 8 avions
-  - En vol: 0 avions
-  - File aérienne: 0 avions
+**Pour bien profiter du simulateur :**
 
-======================================================================
-                    SIMULATEUR DE GESTION
-                         D'AEROPORT
-======================================================================
+- Laissez tourner quelques minutes pour voir la simulation évoluer
+- Observez les trois terminaux en même temps pour tout comprendre
+- En cas de crash d'avion, pas de panique ! C'est rare mais fait partie de la simulation
+- Surveillez le niveau de carburant des avions en vol
 
-----------------------------------------------------------------------
-HEURE ACTUELLE : 0 minutes
-----------------------------------------------------------------------
+**En cas de problème :**
 
-STATISTIQUES:
-   - Passagers totaux: 0
-   - Départs: 0
-   - Retours: 0
-   - Total avions créés: 8
-
-----------------------------------------------------------------------
-PARKING (8/50 places)
-----------------------------------------------------------------------
-   - Avion #0 [Ligne] | Passagers: 148 | Carburant: 100%
-   - Avion #1 [Affaire] | Passagers: 75 | Carburant: 100%
-   ...
-```
+- Si la compilation échoue : vérifiez que GCC est bien installé
+- Si les couleurs ne s'affichent pas : votre terminal ne supporte peut-être pas les codes ANSI
+- Si les exécutables sont bloqués : fermez tous les terminaux avant de recompiler
 
 ---
 
-## 🚀 Améliorations Futures
+## Développement
 
-- [ ] Interface graphique (GTK, SDL)
-- [ ] Système de coûts et revenus
-- [ ] IA pour les décisions des avions
-- [ ] Réseau multijoueur
-- [ ] Statistiques détaillées et graphiques
-- [ ] Modes de difficulté
+Ce projet a été développé en C comme projet académique. Il utilise :
 
----
-
-## 📝 Notes de Développement
-
-### Compilation Flags
-- `-Wall -Wextra -Wpedantic` : Tous les avertissements activés
-- `-std=c11` : Norme C11
-- `-I. -Iheaders` : Chemins d'inclusion
-
-### Gestion de Mémoire
-- Allocation dynamique avec `malloc`
-- Libération avec `free` ou `detruireAeroport()`
-- Vérifications NULL systématiques
-
-### Base de Données
-- Format : Binaire pour rapidité et compacité
-- Persistance : `aeroport.bin`
-- Sauvegarde automatique : Tous les 10 cycles + Ctrl+C
+- Des structures de données dynamiques (listes chaînées)
+- La gestion de fichiers binaires pour la persistance
+- Des codes ANSI pour les couleurs dans le terminal
+- Une architecture modulaire pour faciliter la maintenance
 
 ---
 
-## 👨‍💻 Auteur
+## Licence
 
-Développé comme projet académique en C.
-
----
-
-## 📄 Licence
-
-Ce projet est fourni à titre éducatif.
+Projet à but éducatif.
 
 ---
 
-**Bon amusement avec votre simulateur d'aéroport ! 🛫✈️🛬**# Algo-projet-Simulateur-de-gestion-aeriens
+**Bon vol avec votre simulateur d'aéroport !**

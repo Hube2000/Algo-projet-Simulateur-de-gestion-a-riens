@@ -9,8 +9,18 @@
 
 #include "couleur.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP_MS(x) Sleep(x)
+#define CLEAR_SCREEN() system("cls")
+#else
+#include <unistd.h>
+#define SLEEP_MS(x) usleep((x) * 1000)
+#define CLEAR_SCREEN() system("clear")
+#endif
+
 void Decollage_UI(){    
-    system("cls");
+    CLEAR_SCREEN();
     printf("%s", BRIGHT_YELLOW);
     printf("            _______\n");
     printf("            \\=====/\n");
@@ -39,8 +49,8 @@ void Decollage_UI(){
     printf("%s", RESET);
     printf("\n%sDecollage en cours...%s\n", BRIGHT_YELLOW, RESET);
 
-    Sleep(400);
-    system("cls");
+    SLEEP_MS(400);
+    CLEAR_SCREEN();
 
     printf("%s\n", GREEN);
     printf("                                    ___\n");
@@ -61,8 +71,8 @@ void Decollage_UI(){
     printf("                       %s          O   O   O\n", CYAN);
     printf("\n");
     
-    Sleep(400);
-    system("cls");
+    SLEEP_MS(400);
+    CLEAR_SCREEN();
 
     printf("%s", CYAN);
     printf("                                              .------,\n");
@@ -79,7 +89,7 @@ void Decollage_UI(){
     printf("                                              /_____,'\n");
     printf("%s", RESET);
     printf("\n%sEn vol...%s\n", CYAN, RESET);
-    Sleep(600);
+    SLEEP_MS(600);
 
     printf("%s", RESET);
 

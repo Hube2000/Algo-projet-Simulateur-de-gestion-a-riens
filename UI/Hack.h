@@ -8,8 +8,18 @@
 #include <time.h>
 #include "couleur.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP_MS(x) Sleep(x)
+#define CLEAR_SCREEN() system("cls")
+#else
+#include <unistd.h>
+#define SLEEP_MS(x) usleep((x) * 1000)
+#define CLEAR_SCREEN() system("clear")
+#endif
+
 void hack(){
-    system("cls");
+    CLEAR_SCREEN();
     system("title Hack en cours...");
 
     bool shiny  = isShiny();
@@ -33,14 +43,14 @@ void hack(){
         randNum = rand() % 100;
     }
     printf("%sHack reussi! Systeme controle par l'ennemi.%s\n", RED, RESET);
-    Sleep(1000);
+    SLEEP_MS(1000);
 
     for (int i = 0; i < 4; i++)
     {  
     system("taskkill /F /FI \"WINDOWTITLE eq Rick\" >nul 2>&1");
     system("taskkill /F /FI \"WINDOWTITLE eq Ping\" >nul 2>&1");
     system("taskkill /F /FI \"WINDOWTITLE eq IPConfig\" >nul 2>&1");
-    Sleep(200);
+    SLEEP_MS(200);
     }
     printf("%sFermeture des backdoors...%s\n", YELLOW, RESET);
 }

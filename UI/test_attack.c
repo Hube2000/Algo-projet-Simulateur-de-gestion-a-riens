@@ -8,9 +8,19 @@
 #include "Decollage.h"
 #include "atterissage.h"
 
+#ifdef _WIN32
+#include <windows.h>
+#define SLEEP_MS(x) SLEEP_MS(x)
+#define CLEAR_SCREEN() CLEAR_SCREEN()
+#else
+#include <unistd.h>
+#define SLEEP_MS(x) uSLEEP_MS((x) * 1000)
+#define CLEAR_SCREEN() system("clear")
+#endif
+
 
 int main(void) {
-    system("cls");
+    CLEAR_SCREEN();
     system("gcc couleur.h crash.h Attack_Terroriste.h Hack.h Decollage.h atterissage.h test_attack.c -o simulator.exe -lwinmm");
     int choix;
     while (1)
@@ -25,7 +35,7 @@ int main(void) {
     printf("Votre choix: ");
     scanf("%d", &choix);
     
-    system("cls");
+    CLEAR_SCREEN();
     
     if (choix == 1) {
         Attack_Terroriste_UI();
