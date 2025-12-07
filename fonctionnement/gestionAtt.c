@@ -9,6 +9,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../UI/events_ui.h"
+#include "../UI/logs_ui.h"
 
 int test_Att(Aeroport *airport, avion *plane) {
   if (!airport || !airport->parking) {
@@ -78,6 +80,10 @@ void atterissage(Aeroport *airport, PISTE *piste) {
 
     ajouterFinFile(airport->parking, avionActif);
     airport->passagers += avionActif->nombre_de_passagers;
+    ecrire_event_UI("ATTERRISSAGE", "Avion atterri avec succes");
+    char log_msg[100];
+    sprintf(log_msg, "Avion ID %d atterri (%d passagers)", avionActif->id, avionActif->nombre_de_passagers);
+    ecrire_log_activite("ARRIVEE", log_msg);
     airport->retours++;
     airport->places_reservees--;
     printf("\n L'avion %d a atteri avec succes. (%d passagers debarques)",

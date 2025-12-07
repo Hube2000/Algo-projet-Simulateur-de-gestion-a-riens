@@ -3,7 +3,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>
-#include <mmsystem.h>
 #include "couleur.h"
 
 void atterissage_UI(){     
@@ -23,7 +22,7 @@ void atterissage_UI(){
     printf("                                          /_____,'\n");
 
     
-    Sleep(300);
+    Sleep(200);
     system("cls");
 
     printf("   Big airplane                                          .------,\n");
@@ -40,7 +39,7 @@ void atterissage_UI(){
     printf("                                                         /_____,'\n");
 
     
-    Sleep(300);
+    Sleep(200);
     system("cls");
 
     printf("   Big airplane                                                                   .------,\n");
@@ -57,10 +56,10 @@ void atterissage_UI(){
     printf("                                                                                  /_____,'\n");
     printf("%s", RESET);
     printf("\n%sEn vol...%s\n", CYAN, RESET);
-    Sleep(300);
+    Sleep(200);
     system("cls");
 
-     if (!isShiny()) {
+     if (isShiny()) {
         system("cls");
         printf("%s\n", BRIGHT_YELLOW);
         printf("*** ATTERRISSAGE CASI PARFAIT ***\n\n");
@@ -78,10 +77,10 @@ void atterissage_UI(){
         printf("             _,~'#   (/.\n");
         printf("~~~~~~~~~~~~~~~#~~#~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
         printf("%s\n", RESET);
-        Sleep(3000);
+        Sleep(1000);
         system("cls");
         printf("C'est une blague: on a atterri sans encombre !\n");
-        Sleep(2500);
+        Sleep(800);
     }
     printf("%s", BRIGHT_YELLOW);
     printf("            _______\n");
@@ -109,7 +108,7 @@ void atterissage_UI(){
     printf("      %s||  #  #         ||                 %s%sOO        O\n", BRIGHT_YELLOW, RESET, CYAN);
     printf("%s%s  ============================================================================\n", RESET, GREEN);
     printf("%s", RESET);
-    Sleep(3000);
+    Sleep(1000);
 }
 
 

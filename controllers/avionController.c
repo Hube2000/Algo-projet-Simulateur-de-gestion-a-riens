@@ -67,17 +67,13 @@ void retirerAvion(AvionFile *file, int id) {
     prev->next = current->next;
   }
 
-  if (current == file->dernier) {
+  if (current == file->dernier || current->next == NULL) {
     // C'est le dernier élément
     file->dernier = prev;
   } else {
-    // Ce n'est pas le dernier élément, donc current->next ne devrait pas être
-    // NULL
+    // Ce n'est pas le dernier élément
     if (current->next) {
       current->next->prev = prev;
-    } else {
-      printf("\n [ERREUR] current->next est NULL mais current n'est pas le "
-             "dernier!\n");
     }
   }
 

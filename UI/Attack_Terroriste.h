@@ -19,7 +19,7 @@ void Attack_Terroriste_UI(){
         system("cls");
         
         printf(" %sLA SCENE QUI SUIS ETANT TROP VIOLENTE ELLE A ETAIT CENSURER POUR VOUS PROTEGER\n %s", RED, RESET);
-        Sleep(4000);
+        Sleep(1000);
 
         system("cls");
         printf("\n\n\n");
@@ -42,7 +42,7 @@ void Attack_Terroriste_UI(){
         printf("                   %s/       \\%s\n", BRIGHT_CYAN, RESET);
         printf("                  %s/         \\%s\n", BRIGHT_CYAN, RESET);
         
-        Sleep(800);
+        Sleep(300);
         system("cls");
         
         // Frame 2 - Stickman en BRIGHT_MAGENTA
@@ -66,7 +66,7 @@ void Attack_Terroriste_UI(){
         printf("                   %s/       \\%s\n", BRIGHT_MAGENTA, RESET);
         printf("                  %s/         \\%s\n", BRIGHT_MAGENTA, RESET);
         
-        Sleep(800);
+        Sleep(300);
         system("cls");
         
         // Frame 3 - Stickman en BRIGHT_YELLOW
@@ -90,7 +90,7 @@ void Attack_Terroriste_UI(){
         printf("                   %s/       \\%s\n", BRIGHT_YELLOW, RESET);
         printf("                  %s/         \\%s\n", BRIGHT_YELLOW, RESET);
         
-        Sleep(800);
+        Sleep(300);
         system("cls");
         
         // Frame 4 - Stickman en BRIGHT_GREEN (final)

@@ -5,7 +5,6 @@
 #include<stdlib.h>
 #include<stdbool.h>
 #include<windows.h>
-#include<mmsystem.h>
 #include <time.h>
 
 #include "couleur.h"
@@ -28,7 +27,7 @@ void crash_UI(){
     printf("                                          /_____,'\n");
 
     
-    Sleep(300);
+    Sleep(150);
     system("cls");
 
     printf("   Big airplane                                          .------,\n");
@@ -45,7 +44,7 @@ void crash_UI(){
     printf("                                                         /_____,'\n");
 
     
-    Sleep(300);
+    Sleep(150);
     system("cls");
 
     printf("   Big airplane                                                                   .------,\n");
@@ -65,7 +64,7 @@ void crash_UI(){
 
     if (isShiny())
     {
-    Sleep(800);
+    Sleep(300);
     system("cls");
         system("cls");
         printf("%s\n", BRIGHT_YELLOW);
@@ -87,7 +86,7 @@ void crash_UI(){
         printf("    .-.  \\     /   .-.\n");
         printf("   (___\\o'     'o___)\n");
         printf("%s\n", RESET);
-        Sleep(1500);
+        Sleep(500);
         printf("%s\n", BRIGHT_YELLOW);
         
         system("cls");
@@ -212,12 +211,10 @@ void crash_UI(){
     printf("                %s ```--. . , ; .--'''%s\n", YELLOW, RESET);
     printf("                      %s| |   |%s\n", BRIGHT_YELLOW, RESET);
     printf("                   %s.-=||  | |=-.\n", BRIGHT_YELLOW, RESET);
-    printf("                   %s`-=#$%&%$#=-'%s\n", BRIGHT_YELLOW, RESET);
+    printf("                   %s`-=#$%%&%%$#=-'%s\n", BRIGHT_YELLOW, RESET);
     printf("                      %s| ;  :|%s\n", BRIGHT_YELLOW, RESET);
-    printf("           %s  _____.,-#%%&$@%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
+    printf("           %s  _____.,-#%%%%&$@%%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
     printf("\n");
-    // Joue plusieurs sons d'erreur en série
-    PlaySound(TEXT("SystemHand"), NULL, SND_ALIAS | SND_SYNC);
     }
 }
 #endif // UI_CRASH_H

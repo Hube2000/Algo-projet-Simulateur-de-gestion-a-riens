@@ -10,6 +10,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include "../UI/events_ui.h"
+#include "../UI/logs_ui.h"
 
 void decollage(Aeroport *airport, PISTE *piste);
 void demander_decollage(Aeroport *airport, PISTE *piste, avion *plane);
@@ -86,6 +88,10 @@ void decollage(Aeroport *airport, PISTE *piste) {
     ajouterFinFile(airport->liste_avions_en_vol, avionActif);
     airport->departs++;
     airport->passagers += avionActif->nombre_de_passagers;
+    ecrire_event_UI("DECOLLAGE", "Avion decolle avec succes");
+    char log_msg[100];
+    sprintf(log_msg, "Avion ID %d decolle (%d passagers)", avionActif->id, avionActif->nombre_de_passagers);
+    ecrire_log_activite("DEPART", log_msg);
     printf("\n L'avion %d a decoller avec succes. (%d passagers embarques)",
            avionActif->id, avionActif->nombre_de_passagers);
     return;

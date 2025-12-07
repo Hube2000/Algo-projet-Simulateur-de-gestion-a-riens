@@ -33,7 +33,7 @@ void hack(){
         randNum = rand() % 100;
     }
     printf("%sHack reussi! Systeme controle par l'ennemi.%s\n", RED, RESET);
-    Sleep(3000);
+    Sleep(1000);
 
     for (int i = 0; i < 4; i++)
     {  

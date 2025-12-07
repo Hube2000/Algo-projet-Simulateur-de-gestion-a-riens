@@ -5,7 +5,6 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <windows.h>
-#include<mmsystem.h>
 #include <time.h>
 
 #include "couleur.h"
@@ -40,7 +39,7 @@ void Decollage_UI(){
     printf("%s", RESET);
     printf("\n%sDecollage en cours...%s\n", BRIGHT_YELLOW, RESET);
 
-    Sleep(800);
+    Sleep(400);
     system("cls");
 
     printf("%s\n", GREEN);
@@ -62,7 +61,7 @@ void Decollage_UI(){
     printf("                       %s          O   O   O\n", CYAN);
     printf("\n");
     
-    Sleep(800);
+    Sleep(400);
     system("cls");
 
     printf("%s", CYAN);
@@ -80,7 +79,7 @@ void Decollage_UI(){
     printf("                                              /_____,'\n");
     printf("%s", RESET);
     printf("\n%sEn vol...%s\n", CYAN, RESET);
-    Sleep(1000);
+    Sleep(600);
 
     printf("%s", RESET);
 

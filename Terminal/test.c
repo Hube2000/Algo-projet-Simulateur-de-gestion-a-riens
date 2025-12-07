@@ -37,6 +37,19 @@ void ecrire_cycle_info(int cycle_count) {
     }
 }
 
+// Fonction pour écrire les logs d'activités
+void ecrire_log_activite(const char* type, const char* message) {
+    FILE *f = fopen("../MultiTerminal/data_cycles.txt", "a");
+    if (f) {
+        time_t now = time(NULL);
+        struct tm *t = localtime(&now);
+        fprintf(f, "[%02d:%02d:%02d] %s: %s\n", 
+                t->tm_hour, t->tm_min, t->tm_sec, 
+                type, message);
+        fclose(f);
+    }
+}
+
 // Fonction pour écrire les informations générales de l'aéroport
 void ecrire_info_generale(Aeroport *aeroport) {
     FILE *f = fopen("../MultiTerminal/data_info.txt", "w");
@@ -122,6 +135,12 @@ int main(void) {
     if (f_info) {
         fprintf(f_info, "Initialisation en cours...\n");
         fclose(f_info);
+    }
+    
+    FILE *f_events = fopen("../MultiTerminal/data_events.txt", "w");
+    if (f_events) {
+        fprintf(f_events, "En attente d'evenements...\n");
+        fclose(f_events);
     }
 
     // c quoi ce truc mdr, gab j'espère tu as pas fait n'imp...
