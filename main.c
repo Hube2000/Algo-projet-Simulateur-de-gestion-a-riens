@@ -1,3 +1,4 @@
+#include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -7,6 +8,8 @@
 #include "aeroport.h"
 #include "airportController.h"
 #include "avion.h"
+#include "bdd.h"
+#include "events.h"
 #include "gestion.h"
 #include "gestionEssence.h"
 #include "piste.h"
@@ -44,9 +47,40 @@
 
 */
 
+// Variable globale pour l'aéroport (nécessaire pour le gestionnaire de signal)
+static Aeroport *aeroport_global = NULL;
+
+// Gestionnaire de signal pour sauvegarder avant de quitter (Ctrl+C)
+void gestionnaire_arret(int sig) {
+  (void)sig; // Évite l'avertissement du compilateur
+  printf("\n\n>>> Arrêt demandé, sauvegarde en cours...\n");
+  if (aeroport_global) {
+    sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+    detruireAeroport(aeroport_global);
+    printf(">>> Sauvegarde terminée. Au revoir !\n");
+  }
+  exit(0);
+}
+
 int main() {
   srand(time(NULL));
-  Aeroport *aeroport = creerAeroport();
+
+  // IMPORTANT CA EN GROS SIGINIT c'est le signal interrupt ça se declenche par
+  // exemple avec le ctrl+c ET LE SIGTERM c'est le signal term envoyé par le
+  // systeme (un kill processus) signal c'est une fonction natif au c qui permet
+  // d'enregister le signal systeme
+
+  signal(SIGINT, gestionnaire_arret);
+  signal(SIGTERM, gestionnaire_arret);
+
+  aeroport_global = initAeroportBDD("aeroport.bin");
+  if (!aeroport_global) {
+    printf("ERREUR: Impossible de créer/charger l'aéroport.\n");
+    return 1;
+  }
+
+  Aeroport *aeroport = aeroport_global;
+  int cycle_sauvegarde = 0;
   if (!aeroport) {
     printf("Erreur: Impossible de créer l'aéroport.\n");
     return 1;
@@ -55,7 +89,19 @@ int main() {
     consume_carburant_vol(aeroport);
     manageAirport(aeroport);
     displayAirport(aeroport);
-    aeroport->heure += 5; // Incrementer l'heure apres l'affichage
+    triggerRandomEvent(aeroport);
+    aeroport->heure += 5;
+    cycle_sauvegarde++;
+    if (cycle_sauvegarde >= 10) {
+      printf(">>> Sauvegarde automatique...\n");
+      sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+      cycle_sauvegarde = 0;
+      printf(">>> Sauvegarde terminée \n\n");
+    }
     sleep(2);
   }
+  // Normalement cette ligne ne sera pas lu mais on sait jamais (sécurité)
+  sauvegarderAeroportBDD(aeroport_global, "aeroport.bin");
+  detruireAeroport(aeroport_global);
+  return 0;
 }

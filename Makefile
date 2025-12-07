@@ -23,6 +23,8 @@ SRC := \
 	controllers/avionController.c \
 	controllers/file.c \
 	fonctionnement/gestion.c \
+	fonctionnement/bdd.c \
+	fonctionnement/events.c \
 	fonctionnement/gestionAtt.c \
 	fonctionnement/gestionDec.c \
 	fonctionnement/gestionEssence.c \
