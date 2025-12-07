@@ -1,3 +1,8 @@
+
+//IMPORTANT:
+//le main ci dessous est utiliser pour creer un aeroport simplifier sur un suel terminal, c la base des termianux multiples
+//c une relique utiliser pr le debug
+
 #include <signal.h>
 #include <stdio.h>
 #include <stdlib.h>
