@@ -34,6 +34,7 @@ void sauvegarderAvion(FILE *f, avion *a) {
   fwrite(&a->etat, sizeof(int), 1, f);
   fwrite(&a->nombre_de_passagers, sizeof(int), 1, f);
   fwrite(&a->heure, sizeof(int), 1, f);
+   fwrite(&a->carburant, sizeof(int), 1, f);
 }
 
 avion *chargerAvion(FILE *f) {
@@ -44,13 +45,14 @@ avion *chargerAvion(FILE *f) {
   if (!a)
     return NULL;
 
-  int id, categorie, etat, nombre_de_passagers, heure;
+  int id, categorie, etat, nombre_de_passagers, heure, carburant;
 
   if (fread(&id, sizeof(int), 1, f) != 1 ||
       fread(&categorie, sizeof(int), 1, f) != 1 ||
       fread(&etat, sizeof(int), 1, f) != 1 ||
       fread(&nombre_de_passagers, sizeof(int), 1, f) != 1 ||
-      fread(&heure, sizeof(int), 1, f) != 1) {
+      fread(&heure, sizeof(int), 1, f) != 1 ||
+      fread(&carburant, sizeof(int), 1, f) != 1) {
     free(a);
     return NULL;
   }
@@ -62,6 +64,7 @@ avion *chargerAvion(FILE *f) {
   a->heure = heure;
   a->next = NULL;
   a->prev = NULL;
+  a->carburant = carburant;
 
   return a;
 }
