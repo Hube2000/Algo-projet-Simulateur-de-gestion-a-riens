@@ -98,7 +98,6 @@ int main(void) {
                     printf("==============================================\n\n");
                     printf("Dernier evenement: %s%s%s\n\n", RED, last_event, RESET);
                 }
-                
                 last_event[0] = '\0';
             }
         }

@@ -4,12 +4,23 @@ Bienvenue dans notre simulateur de gestion d'aéroport ! Ce projet vous permet d
 
 ## Sommaire
 
-- [À propos](#à-propos)
-- [Fonctionnalités](#fonctionnalités)
-- [Installation et démarrage](#installation-et-démarrage)
-- [Comment ça marche ?](#comment-ça-marche-)
-- [Structure du projet](#structure-du-projet)
-- [Améliorations futures](#améliorations-futures)
+- [Simulateur de Gestion d'Aéroport](#simulateur-de-gestion-daéroport)
+  - [Sommaire](#sommaire)
+  - [À propos](#à-propos)
+  - [Fonctionnalités](#fonctionnalités)
+    - [Ce que vous pouvez faire](#ce-que-vous-pouvez-faire)
+  - [Installation et démarrage](#installation-et-démarrage)
+    - [Ce dont vous avez besoin](#ce-dont-vous-avez-besoin)
+    - [Étapes pour commencer](#étapes-pour-commencer)
+  - [Comment ça marche ?](#comment-ça-marche-)
+    - [Le système multi-terminaux](#le-système-multi-terminaux)
+    - [Les cycles de simulation](#les-cycles-de-simulation)
+    - [La gestion automatique](#la-gestion-automatique)
+  - [Structure du projet](#structure-du-projet)
+  - [Améliorations futures](#améliorations-futures)
+  - [Conseils d'utilisation](#conseils-dutilisation)
+  - [Développement](#développement)
+  - [Licence](#licence)
 
 ---
 
@@ -75,17 +86,31 @@ C'est tout ! Le programme est prêt.
 
 **3. Lancer la simulation**
 
-Pour lancer avec les terminaux multiples (affichage visuel) :
+Pour lancer avec les terminaux multiples (recommandé) :
+
+```bash
+make run-simulation
+```
+
+Ou avec le script batch sur Windows :(il a etait fait par ia)
 
 ```bash
 cd MultiTerminal
 .\lancer_simulation.bat
 ```
 
-Ou pour lancer le simulateur simple :
+Pour lancer uniquement le simulateur principal :
 
 ```bash
-./simulateur.exe    # Windows
+make run
+```
+
+**Autres commandes utiles :**
+
+```bash
+make clean          # Nettoyer les fichiers compilés
+make simulation     # Compiler uniquement les terminaux
+make help           # Voir toutes les commandes disponibles
 ```
 
 **4. Première fois**

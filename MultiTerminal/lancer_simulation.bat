@@ -41,7 +41,6 @@ if %errorlevel% neq 0 (
 )
 
 echo [4/4] Compilation du programme principal...
-cd ..\Terminal
 gcc -std=c11 test.c ../fonctionnement/*.c ../controllers/*.c ../verifications/*.c -I../headers -o test.exe
 if %errorlevel% neq 0 (
     echo ERREUR lors de la compilation de test.c
@@ -76,8 +75,7 @@ REM Attendre un peu avant de lancer le programme principal
 timeout /t 1 /nobreak >nul
 
 REM Lancer le programme principal
-cd ..\Terminal
-start "Programme Principal - Simulation" cmd /k "test.exe"
+start "Programme Principal - Simulation" cmd /k "cd /d %~dp0 && test.exe"
 
 echo.
 echo ================================================

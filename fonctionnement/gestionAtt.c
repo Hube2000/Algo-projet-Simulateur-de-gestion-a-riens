@@ -78,6 +78,13 @@ void atterissage(Aeroport *airport, PISTE *piste) {
       check = check->next;
     }
 
+    if (parking_est_plein(airport->parking, airport->places)) {
+      printf("\n [ATTENTION] Parking plein! L'avion %d ne peut pas se garer.\n", avionActif->id);
+      free(avionActif);
+      airport->places_reservees--;
+      return;
+    }
+
     ajouterFinFile(airport->parking, avionActif);
     airport->passagers += avionActif->nombre_de_passagers;
     ecrire_event_UI("ATTERRISSAGE", "Avion atterri avec succes");

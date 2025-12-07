@@ -253,21 +253,55 @@ void manageAirport(Aeroport *airport) {
   }
 }
 
+void writeAirportInfo(Aeroport *airport) {
+  if (!airport) {
+    return;
+  }
+
+  FILE *file = fopen("data_info.txt", "w");
+  if (!file) {
+    return;
+  }
+
+  fprintf(file, "HEURE ACTUELLE: %d minutes\n\n", airport->heure);
+
+  fprintf(file, "STATISTIQUES:\n");
+  fprintf(file, "  - Avions au parking: %d / %d places\n", 
+          airport->parking ? airport->parking->nbElement : 0, airport->places);
+  fprintf(file, "  - Avions en vol: %d\n", 
+          airport->liste_avions_en_vol ? airport->liste_avions_en_vol->nbElement : 0);
+  fprintf(file, "  - Avions en file aerienne: %d\n", 
+          airport->file_attente_aerienne ? airport->file_attente_aerienne->nbElement : 0);
+  fprintf(file, "  - Total avions geres: %d\n\n", airport->total_avions);
+
+  fprintf(file, "ETAT DES PISTES:\n");
+  for (int i = 0; i < 3; i++) {
+    PISTE *piste = airport->pistes[i];
+    if (piste && piste->liste_avions_attente) {
+      if (piste->liste_avions_attente->nbElement > 0) {
+        fprintf(file, "  Piste %d: %d avion(s) en attente\n", 
+                i + 1, piste->liste_avions_attente->nbElement);
+      } else {
+        fprintf(file, "  Piste %d: Aucun avion en attente\n", i + 1);
+      }
+    }
+  }
+
+  fclose(file);
+}
+
 void displayAirport(Aeroport *airport) {
   if (!airport) {
     printf("Erreur: Aéroport invalide.\n");
     return;
   }
 
-  // Séparateur pour chaque cycle
-  printf("\n\n");
-  printf("====================================================================="
-         "=\n");
-  printf("                        NOUVEAU CYCLE\n");
-  printf("====================================================================="
-         "=\n\n");
+  #ifdef _WIN32
+  system("cls");
+  #else
+  system("clear");
+  #endif
 
-  // En-tête
   printf("====================================================================="
          "=\n");
   printf("                    SIMULATEUR DE GESTION\n");
@@ -275,14 +309,12 @@ void displayAirport(Aeroport *airport) {
   printf("====================================================================="
          "=\n\n");
 
-  // Heure actuelle
   printf("---------------------------------------------------------------------"
          "-\n");
   printf("HEURE ACTUELLE : %d minutes\n", airport->heure);
   printf("---------------------------------------------------------------------"
          "-\n\n");
 
-  // Statistiques
   printf("STATISTIQUES:\n");
   printf("   - Passagers totaux: %d\n", airport->passagers);
   printf("   - Departs: %d\n", airport->departs);
@@ -290,7 +322,6 @@ void displayAirport(Aeroport *airport) {
   printf("   - Total avions crees: %d\n", airport->total_avions);
   printf("\n");
 
-  // Parking
   printf("---------------------------------------------------------------------"
          "-\n");
   printf("PARKING (%d/%d places)\n",
@@ -300,17 +331,13 @@ void displayAirport(Aeroport *airport) {
   if (!airport->parking || airport->parking->nbElement == 0) {
     printf("   (vide)\n");
   } else {
-    // Si premier est NULL mais nbElement > 0, corriger l'incohérence
     if (!airport->parking->premier) {
       airport->parking->nbElement = 0;
       printf("   (vide)\n");
     } else {
       avion *current = airport->parking->premier;
       int count = 0;
-      // Parcourir tous les éléments disponibles, même si nbElement est
-      // incorrect
-      int max_iterations =
-          200; // Limite raisonnable pour éviter les boucles infinies
+      int max_iterations = 200;
 
       while (current != NULL && count < max_iterations) {
         const char *cat = "";
@@ -331,13 +358,11 @@ void displayAirport(Aeroport *airport) {
         current = current->next;
         count++;
       }
-      // Corriger nbElement pour qu'il corresponde au nombre réel
       airport->parking->nbElement = count;
     }
   }
   printf("\n");
 
-  // Pistes
   for (int i = 0; i < 3; i++) {
     PISTE *piste = airport->pistes[i];
     if (!piste)
@@ -369,14 +394,13 @@ void displayAirport(Aeroport *airport) {
         piste->liste_avions_attente->nbElement == 0) {
       printf("   (vide)\n");
     } else {
-      // Si premier est NULL mais nbElement > 0, corriger l'incohérence
       if (!piste->liste_avions_attente->premier) {
         piste->liste_avions_attente->nbElement = 0;
         printf("   (vide)\n");
       } else {
         avion *current = piste->liste_avions_attente->premier;
         int count = 0;
-        int max_iterations = 200; // Limite raisonnable
+        int max_iterations = 200;
         while (current != NULL && count < max_iterations) {
           const char *cat = "";
           const char *action = "";
@@ -397,14 +421,12 @@ void displayAirport(Aeroport *airport) {
           current = current->next;
           count++;
         }
-        // Corriger nbElement pour qu'il corresponde au nombre réel
         piste->liste_avions_attente->nbElement = count;
       }
     }
     printf("\n");
   }
 
-  // Avions en vol
   printf("---------------------------------------------------------------------"
          "-\n");
   printf("AVIONS EN VOL\n");
@@ -414,14 +436,13 @@ void displayAirport(Aeroport *airport) {
       airport->liste_avions_en_vol->nbElement == 0) {
     printf("   (aucun)\n");
   } else {
-    // Si premier est NULL mais nbElement > 0, corriger l'incohérence
     if (!airport->liste_avions_en_vol->premier) {
       airport->liste_avions_en_vol->nbElement = 0;
       printf("   (aucun)\n");
     } else {
       avion *current = airport->liste_avions_en_vol->premier;
       int count = 0;
-      int max_iterations = 200; // Limite raisonnable
+      int max_iterations = 200;
       while (current != NULL && count < max_iterations) {
         const char *cat = "";
         switch (current->categorie) {
@@ -441,13 +462,11 @@ void displayAirport(Aeroport *airport) {
         current = current->next;
         count++;
       }
-      // Corriger nbElement pour qu'il corresponde au nombre réel
       airport->liste_avions_en_vol->nbElement = count;
     }
   }
   printf("\n");
 
-  // File d'attente aérienne
   printf("---------------------------------------------------------------------"
          "-\n");
   printf("FILE D'ATTENTE AERIENNE\n");
@@ -457,14 +476,13 @@ void displayAirport(Aeroport *airport) {
       airport->file_attente_aerienne->nbElement == 0) {
     printf("   (vide)\n");
   } else {
-    // Si premier est NULL mais nbElement > 0, corriger l'incohérence
     if (!airport->file_attente_aerienne->premier) {
       airport->file_attente_aerienne->nbElement = 0;
       printf("   (vide)\n");
     } else {
       avion *current = airport->file_attente_aerienne->premier;
       int count = 0;
-      int max_iterations = 200; // Limite raisonnable
+      int max_iterations = 200;
       while (current != NULL && count < max_iterations) {
         const char *cat = "";
         switch (current->categorie) {
@@ -483,7 +501,6 @@ void displayAirport(Aeroport *airport) {
         current = current->next;
         count++;
       }
-      // Corriger nbElement pour qu'il corresponde au nombre réel
       airport->file_attente_aerienne->nbElement = count;
     }
   }

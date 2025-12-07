@@ -71,3 +71,2975 @@
            CYCLE : 15
 ========================================
 [19:14:11] ARRIVEE: Avion ID 33 atterri (105 passagers)
+[19:25:37] EVENEMENT: Neige - Decollages decales
+[19:25:37] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:37] HACK: Donnees de vol alterees
+[19:25:37] DEPART: Avion ID 3 decolle (167 passagers)
+[19:25:37] DEPART: Avion ID 4 decolle (18 passagers)
+[19:25:37] DEPART: Avion ID 2 decolle (62 passagers)
+[19:25:37] DEPART: Avion ID 0 decolle (107 passagers)
+[19:25:37] DEPART: Avion ID 9 decolle (8 passagers)
+[19:25:37] ARRIVEE: Avion ID 3 atterri (167 passagers)
+[19:25:37] DEPART: Avion ID 1 decolle (92 passagers)
+[19:25:37] DEPART: Avion ID 3 decolle (167 passagers)
+[19:25:37] DEPART: Avion ID 11 decolle (65 passagers)
+[19:25:37] ARRIVEE: Avion ID 2 atterri (62 passagers)
+[19:25:37] DEPART: Avion ID 2 decolle (62 passagers)
+[19:25:37] ARRIVEE: Avion ID 4 atterri (18 passagers)
+[19:25:37] ARRIVEE: Avion ID 10 atterri (157 passagers)
+[19:25:37] ARRIVEE: Avion ID 3 atterri (167 passagers)
+[19:25:37] DEPART: Avion ID 12 decolle (84 passagers)
+[19:25:37] ARRIVEE: Avion ID 11 atterri (65 passagers)
+[19:25:37] ARRIVEE: Avion ID 2 atterri (62 passagers)
+[19:25:37] ARRIVEE: Avion ID 0 atterri (107 passagers)
+[19:25:37] ARRIVEE: Avion ID 9 atterri (8 passagers)
+[19:25:37] EVENEMENT: Neige - Decollages decales
+[19:25:37] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:37] HACK: Donnees de vol alterees
+[19:25:37] DEPART: Avion ID 15 decolle (21 passagers)
+[19:25:37] ARRIVEE: Avion ID 13 atterri (35 passagers)
+[19:25:37] DEPART: Avion ID 0 decolle (107 passagers)
+[19:25:37] ARRIVEE: Avion ID 12 atterri (84 passagers)
+[19:25:37] ARRIVEE: Avion ID 14 atterri (180 passagers)
+[19:25:37] ARRIVEE: Avion ID 1 atterri (92 passagers)
+[19:25:37] DEPART: Avion ID 13 decolle (35 passagers)
+[19:25:37] DEPART: Avion ID 3 decolle (167 passagers)
+[19:25:37] DEPART: Avion ID 4 decolle (18 passagers)
+[19:25:37] DEPART: Avion ID 2 decolle (62 passagers)
+[19:25:37] EVENEMENT: CRASH - Avion ID 13 détruit
+[19:25:37] DEPART: Avion ID 12 decolle (84 passagers)
+[19:25:37] DEPART: Avion ID 11 decolle (65 passagers)
+[19:25:37] ARRIVEE: Avion ID 4 atterri (18 passagers)
+[19:25:37] DEPART: Avion ID 1 decolle (92 passagers)
+[19:25:37] ARRIVEE: Avion ID 15 atterri (21 passagers)
+[19:25:37] EVENEMENT: Neige - Decollages decales
+[19:25:37] DEPART: Avion ID 10 decolle (157 passagers)
+[19:25:37] ARRIVEE: Avion ID 12 atterri (84 passagers)
+[19:25:37] ARRIVEE: Avion ID 2 atterri (62 passagers)
+[19:25:37] ARRIVEE: Avion ID 20 atterri (46 passagers)
+[19:25:37] ARRIVEE: Avion ID 18 atterri (23 passagers)
+[19:25:37] ARRIVEE: Avion ID 17 atterri (182 passagers)
+[19:25:37] DEPART: Avion ID 14 decolle (180 passagers)
+[19:25:37] DEPART: Avion ID 17 decolle (182 passagers)
+[19:25:37] DEPART: Avion ID 16 decolle (121 passagers)
+[19:25:38] DEPART: Avion ID 12 decolle (84 passagers)
+[19:25:38] DEPART: Avion ID 22 decolle (130 passagers)
+[19:25:38] ARRIVEE: Avion ID 11 atterri (65 passagers)
+[19:25:38] DEPART: Avion ID 2 decolle (62 passagers)
+[19:25:38] ARRIVEE: Avion ID 16 atterri (121 passagers)
+[19:25:38] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:38] HACK: Donnees de vol alterees
+[19:25:38] ARRIVEE: Avion ID 23 atterri (149 passagers)
+[19:25:38] DEPART: Avion ID 20 decolle (46 passagers)
+[19:25:38] ARRIVEE: Avion ID 22 atterri (130 passagers)
+[19:25:38] ARRIVEE: Avion ID 2 atterri (62 passagers)
+[19:25:38] DEPART: Avion ID 19 decolle (86 passagers)
+[19:25:38] DEPART: Avion ID 23 decolle (149 passagers)
+[19:25:38] ARRIVEE: Avion ID 29 atterri (71 passagers)
+[19:25:38] ARRIVEE: Avion ID 26 atterri (128 passagers)
+[19:25:38] ARRIVEE: Avion ID 23 atterri (149 passagers)
+[19:25:38] ARRIVEE: Avion ID 25 atterri (124 passagers)
+[19:25:38] ARRIVEE: Avion ID 20 atterri (46 passagers)
+[19:25:38] ARRIVEE: Avion ID 33 atterri (150 passagers)
+[19:25:38] DEPART: Avion ID 16 decolle (121 passagers)
+[19:25:38] EVENEMENT: Orage - Decollages decales
+[19:25:38] DEPART: Avion ID 30 decolle (104 passagers)
+[19:25:38] DEPART: Avion ID 23 decolle (149 passagers)
+[19:25:38] ARRIVEE: Avion ID 28 atterri (19 passagers)
+[19:25:38] DEPART: Avion ID 32 decolle (86 passagers)
+[19:25:38] DEPART: Avion ID 25 decolle (124 passagers)
+[19:25:38] DEPART: Avion ID 38 decolle (164 passagers)
+[19:25:38] ARRIVEE: Avion ID 16 atterri (121 passagers)
+[19:25:38] DEPART: Avion ID 9 decolle (8 passagers)
+[19:25:38] DEPART: Avion ID 2 decolle (62 passagers)
+[19:25:38] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:38] HACK: Communications perturbees
+[19:25:38] DEPART: Avion ID 35 decolle (117 passagers)
+[19:25:38] DEPART: Avion ID 29 decolle (71 passagers)
+[19:25:38] ARRIVEE: Avion ID 23 atterri (149 passagers)
+[19:25:38] DEPART: Avion ID 21 decolle (132 passagers)
+[19:25:38] ARRIVEE: Avion ID 29 atterri (71 passagers)
+[19:25:38] ARRIVEE: Avion ID 21 atterri (132 passagers)
+[19:25:38] DEPART: Avion ID 15 decolle (21 passagers)
+[19:25:38] DEPART: Avion ID 29 decolle (71 passagers)
+[19:25:38] DEPART: Avion ID 18 decolle (23 passagers)
+[19:25:38] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:38] HACK: Communications perturbees
+[19:25:39] DEPART: Avion ID 11 decolle (65 passagers)
+[19:25:39] DEPART: Avion ID 28 decolle (19 passagers)
+[19:25:39] DEPART: Avion ID 23 decolle (149 passagers)
+[19:25:39] DEPART: Avion ID 40 decolle (93 passagers)
+[19:25:39] ARRIVEE: Avion ID 44 atterri (19 passagers)
+[19:25:39] DEPART: Avion ID 22 decolle (130 passagers)
+[19:25:39] ARRIVEE: Avion ID 35 atterri (117 passagers)
+[19:25:39] DEPART: Avion ID 46 decolle (81 passagers)
+[19:25:39] DEPART: Avion ID 48 decolle (10 passagers)
+[19:25:39] DEPART: Avion ID 45 decolle (85 passagers)
+[19:25:39] ARRIVEE: Avion ID 49 atterri (109 passagers)
+[19:25:39] ARRIVEE: Avion ID 46 atterri (81 passagers)
+[19:25:39] DEPART: Avion ID 47 decolle (68 passagers)
+[19:25:39] EVENEMENT: CRASH - Avion ID 22 détruit
+[19:25:39] ARRIVEE: Avion ID 48 atterri (10 passagers)
+[19:25:39] DEPART: Avion ID 52 decolle (130 passagers)
+[19:25:39] DEPART: Avion ID 33 decolle (150 passagers)
+[19:25:39] ARRIVEE: Avion ID 45 atterri (85 passagers)
+[19:25:39] ARRIVEE: Avion ID 50 atterri (122 passagers)
+[19:25:39] ARRIVEE: Avion ID 47 atterri (68 passagers)
+[19:25:39] DEPART: Avion ID 35 decolle (117 passagers)
+[19:25:39] DEPART: Avion ID 45 decolle (85 passagers)
+[19:25:39] ARRIVEE: Avion ID 52 atterri (130 passagers)
+[19:25:39] ARRIVEE: Avion ID 54 atterri (199 passagers)
+[19:25:39] ARRIVEE: Avion ID 53 atterri (4 passagers)
+[19:25:39] ARRIVEE: Avion ID 33 atterri (150 passagers)
+[19:25:39] ARRIVEE: Avion ID 45 atterri (85 passagers)
+[19:25:39] DEPART: Avion ID 34 decolle (140 passagers)
+[19:25:39] DEPART: Avion ID 20 decolle (46 passagers)
+[19:25:39] ARRIVEE: Avion ID 55 atterri (54 passagers)
+[19:25:39] ARRIVEE: Avion ID 61 atterri (26 passagers)
+[19:25:39] DEPART: Avion ID 54 decolle (199 passagers)
+[19:25:39] DEPART: Avion ID 55 decolle (54 passagers)
+[19:25:39] DEPART: Avion ID 61 decolle (26 passagers)
+[19:25:39] DEPART: Avion ID 45 decolle (85 passagers)
+[19:25:39] DEPART: Avion ID 37 decolle (77 passagers)
+[19:25:39] EVENEMENT: Neige - Decollages decales
+[19:25:39] DEPART: Avion ID 53 decolle (4 passagers)
+[19:25:39] DEPART: Avion ID 47 decolle (68 passagers)
+[19:25:39] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:39] HACK: Communications perturbees
+[19:25:39] ARRIVEE: Avion ID 54 atterri (199 passagers)
+[19:25:39] ARRIVEE: Avion ID 59 atterri (171 passagers)
+[19:25:39] ARRIVEE: Avion ID 53 atterri (4 passagers)
+[19:25:39] DEPART: Avion ID 24 decolle (24 passagers)
+[19:25:40] ARRIVEE: Avion ID 62 atterri (139 passagers)
+[19:25:40] DEPART: Avion ID 53 decolle (4 passagers)
+[19:25:40] DEPART: Avion ID 58 decolle (129 passagers)
+[19:25:40] ARRIVEE: Avion ID 24 atterri (24 passagers)
+[19:25:40] EVENEMENT: Orage - Decollages decales
+[19:25:40] DEPART: Avion ID 64 decolle (185 passagers)
+[19:25:40] DEPART: Avion ID 51 decolle (102 passagers)
+[19:25:40] DEPART: Avion ID 63 decolle (173 passagers)
+[19:25:40] DEPART: Avion ID 41 decolle (176 passagers)
+[19:25:40] ARRIVEE: Avion ID 37 atterri (77 passagers)
+[19:25:40] ARRIVEE: Avion ID 47 atterri (68 passagers)
+[19:25:40] DEPART: Avion ID 70 decolle (73 passagers)
+[19:25:40] EVENEMENT: Neige - Decollages decales
+[19:25:40] EVENEMENT: CRASH - Avion ID 68 détruit
+[19:25:40] DEPART: Avion ID 69 decolle (80 passagers)
+[19:25:40] ARRIVEE: Avion ID 51 atterri (102 passagers)
+[19:25:40] ARRIVEE: Avion ID 74 atterri (82 passagers)
+[19:25:40] ARRIVEE: Avion ID 64 atterri (185 passagers)
+[19:25:40] ARRIVEE: Avion ID 71 atterri (163 passagers)
+[19:25:40] ARRIVEE: Avion ID 41 atterri (176 passagers)
+[19:25:40] EVENEMENT: Pluie - Decollages decales
+[19:25:40] ARRIVEE: Avion ID 58 atterri (129 passagers)
+[19:25:40] DEPART: Avion ID 33 decolle (150 passagers)
+[19:25:40] ARRIVEE: Avion ID 73 atterri (55 passagers)
+[19:25:40] DEPART: Avion ID 54 decolle (199 passagers)
+[19:25:40] ARRIVEE: Avion ID 70 atterri (73 passagers)
+[19:25:40] ARRIVEE: Avion ID 33 atterri (150 passagers)
+[19:25:40] ARRIVEE: Avion ID 72 atterri (173 passagers)
+[19:25:40] DEPART: Avion ID 60 decolle (38 passagers)
+[19:25:40] ARRIVEE: Avion ID 69 atterri (80 passagers)
+[19:25:40] DEPART: Avion ID 51 decolle (102 passagers)
+[19:25:40] ARRIVEE: Avion ID 63 atterri (173 passagers)
+[19:25:40] ARRIVEE: Avion ID 60 atterri (38 passagers)
+[19:25:40] ARRIVEE: Avion ID 54 atterri (199 passagers)
+[19:25:40] EVENEMENT: CRASH - Avion ID 51 détruit
+[19:25:40] DEPART: Avion ID 69 decolle (80 passagers)
+[19:25:40] EVENEMENT: CRASH - Avion ID 77 détruit
+[19:25:40] DEPART: Avion ID 46 decolle (81 passagers)
+[19:25:40] ARRIVEE: Avion ID 69 atterri (80 passagers)
+[19:25:40] DEPART: Avion ID 26 decolle (128 passagers)
+[19:25:40] DEPART: Avion ID 64 decolle (185 passagers)
+[19:25:40] EVENEMENT: Pluie - Decollages decales
+[19:25:40] DEPART: Avion ID 60 decolle (38 passagers)
+[19:25:40] ARRIVEE: Avion ID 46 atterri (81 passagers)
+[19:25:40] DEPART: Avion ID 37 decolle (77 passagers)
+[19:25:40] DEPART: Avion ID 52 decolle (130 passagers)
+[19:25:40] ARRIVEE: Avion ID 64 atterri (185 passagers)
+[19:25:40] DEPART: Avion ID 48 decolle (10 passagers)
+[19:25:40] DEPART: Avion ID 50 decolle (122 passagers)
+[19:25:40] DEPART: Avion ID 21 decolle (132 passagers)
+[19:25:40] ARRIVEE: Avion ID 26 atterri (128 passagers)
+[19:25:40] DEPART: Avion ID 74 decolle (82 passagers)
+[19:25:40] EVENEMENT: CRASH - Avion ID 60 détruit
+[19:25:40] DEPART: Avion ID 67 decolle (200 passagers)
+[19:25:40] DEPART: Avion ID 59 decolle (171 passagers)
+[19:25:41] DEPART: Avion ID 64 decolle (185 passagers)
+[19:25:41] DEPART: Avion ID 44 decolle (19 passagers)
+[19:25:41] ARRIVEE: Avion ID 59 atterri (171 passagers)
+[19:25:41] DEPART: Avion ID 46 decolle (81 passagers)
+[19:25:41] ARRIVEE: Avion ID 21 atterri (132 passagers)
+[19:25:41] DEPART: Avion ID 76 decolle (56 passagers)
+[19:25:41] ARRIVEE: Avion ID 52 atterri (130 passagers)
+[19:25:41] EVENEMENT: Pluie - Decollages decales
+[19:25:41] ARRIVEE: Avion ID 74 atterri (82 passagers)
+[19:25:41] ARRIVEE: Avion ID 78 atterri (174 passagers)
+[19:25:41] DEPART: Avion ID 59 decolle (171 passagers)
+[19:25:41] ARRIVEE: Avion ID 82 atterri (34 passagers)
+[19:25:41] ARRIVEE: Avion ID 76 atterri (56 passagers)
+[19:25:41] DEPART: Avion ID 81 decolle (109 passagers)
+[19:25:41] DEPART: Avion ID 52 decolle (130 passagers)
+[19:25:41] DEPART: Avion ID 84 decolle (118 passagers)
+[19:25:41] DEPART: Avion ID 21 decolle (132 passagers)
+[19:25:41] ARRIVEE: Avion ID 59 atterri (171 passagers)
+[19:25:41] ARRIVEE: Avion ID 84 atterri (118 passagers)
+[19:25:41] EVENEMENT: Orage - Decollages decales
+[19:25:41] DEPART: Avion ID 76 decolle (56 passagers)
+[19:25:41] ARRIVEE: Avion ID 21 atterri (132 passagers)
+[19:25:41] DEPART: Avion ID 83 decolle (127 passagers)
+[19:25:41] DEPART: Avion ID 49 decolle (109 passagers)
+[19:25:41] ARRIVEE: Avion ID 88 atterri (190 passagers)
+[19:25:41] ARRIVEE: Avion ID 81 atterri (109 passagers)
+[19:25:41] ARRIVEE: Avion ID 83 atterri (127 passagers)
+[19:25:41] EVENEMENT: CRASH - Avion ID 49 détruit
+[19:25:41] ARRIVEE: Avion ID 76 atterri (56 passagers)
+[19:25:41] DEPART: Avion ID 78 decolle (174 passagers)
+[19:25:41] DEPART: Avion ID 85 decolle (165 passagers)
+[19:25:41] DEPART: Avion ID 58 decolle (129 passagers)
+[19:25:41] ARRIVEE: Avion ID 85 atterri (165 passagers)
+[19:25:41] ARRIVEE: Avion ID 78 atterri (174 passagers)
+[19:25:41] ARRIVEE: Avion ID 92 atterri (152 passagers)
+[19:25:41] DEPART: Avion ID 80 decolle (161 passagers)
+[19:25:41] DEPART: Avion ID 41 decolle (176 passagers)
+[19:25:41] ARRIVEE: Avion ID 58 atterri (129 passagers)
+[19:25:41] DEPART: Avion ID 24 decolle (24 passagers)
+[19:25:41] ARRIVEE: Avion ID 41 atterri (176 passagers)
+[19:25:41] ARRIVEE: Avion ID 91 atterri (4 passagers)
+[19:25:41] EVENEMENT: CRASH - Avion ID 93 détruit
+[19:25:41] ARRIVEE: Avion ID 90 atterri (187 passagers)
+[19:25:41] DEPART: Avion ID 4 decolle (18 passagers)
+[19:25:41] DEPART: Avion ID 71 decolle (163 passagers)
+[19:25:41] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:41] HACK: Donnees de vol alterees
+[19:25:41] DEPART: Avion ID 16 decolle (121 passagers)
+[19:25:41] ARRIVEE: Avion ID 71 atterri (163 passagers)
+[19:25:41] DEPART: Avion ID 82 decolle (34 passagers)
+[19:25:41] EVENEMENT: CRASH - Avion ID 82 détruit
+[19:25:42] ARRIVEE: Avion ID 80 atterri (161 passagers)
+[19:25:42] DEPART: Avion ID 81 decolle (109 passagers)
+[19:25:42] ARRIVEE: Avion ID 24 atterri (24 passagers)
+[19:25:42] DEPART: Avion ID 86 decolle (56 passagers)
+[19:25:42] DEPART: Avion ID 47 decolle (68 passagers)
+[19:25:42] DEPART: Avion ID 58 decolle (129 passagers)
+[19:25:42] DEPART: Avion ID 79 decolle (137 passagers)
+[19:25:42] DEPART: Avion ID 78 decolle (174 passagers)
+[19:25:42] ARRIVEE: Avion ID 96 atterri (59 passagers)
+[19:25:42] ARRIVEE: Avion ID 86 atterri (56 passagers)
+[19:25:42] ARRIVEE: Avion ID 16 atterri (121 passagers)
+[19:25:42] ARRIVEE: Avion ID 58 atterri (129 passagers)
+[19:25:42] DEPART: Avion ID 42 decolle (38 passagers)
+[19:25:42] DEPART: Avion ID 62 decolle (139 passagers)
+[19:25:42] EVENEMENT: Orage - Decollages decales
+[19:25:42] DEPART: Avion ID 83 decolle (127 passagers)
+[19:25:42] DEPART: Avion ID 54 decolle (199 passagers)
+[19:25:42] DEPART: Avion ID 59 decolle (171 passagers)
+[19:25:42] DEPART: Avion ID 76 decolle (56 passagers)
+[19:25:42] DEPART: Avion ID 88 decolle (190 passagers)
+[19:25:42] ARRIVEE: Avion ID 101 atterri (166 passagers)
+[19:25:42] DEPART: Avion ID 92 decolle (152 passagers)
+[19:25:42] EVENEMENT: CRASH - Avion ID 88 détruit
+[19:25:42] DEPART: Avion ID 74 decolle (82 passagers)
+[19:25:42] DEPART: Avion ID 80 decolle (161 passagers)
+[19:25:42] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:42] HACK: Donnees de vol alterees
+[19:25:42] DEPART: Avion ID 99 decolle (144 passagers)
+[19:25:42] DEPART: Avion ID 65 decolle (137 passagers)
+[19:25:42] DEPART: Avion ID 84 decolle (118 passagers)
+[19:25:42] DEPART: Avion ID 33 decolle (150 passagers)
+[19:25:42] ARRIVEE: Avion ID 65 atterri (137 passagers)
+[19:25:42] DEPART: Avion ID 69 decolle (80 passagers)
+[19:25:42] ARRIVEE: Avion ID 99 atterri (144 passagers)
+[19:25:42] DEPART: Avion ID 98 decolle (41 passagers)
+[19:25:42] DEPART: Avion ID 99 decolle (144 passagers)
+[19:25:42] ARRIVEE: Avion ID 110 atterri (30 passagers)
+[19:25:42] DEPART: Avion ID 87 decolle (110 passagers)
+[19:25:42] DEPART: Avion ID 70 decolle (73 passagers)
+[19:25:42] ARRIVEE: Avion ID 69 atterri (80 passagers)
+[19:25:42] DEPART: Avion ID 111 decolle (190 passagers)
+[19:25:42] ARRIVEE: Avion ID 87 atterri (110 passagers)
+[19:25:42] DEPART: Avion ID 113 decolle (93 passagers)
+[19:25:42] DEPART: Avion ID 16 decolle (121 passagers)
+[19:25:42] DEPART: Avion ID 97 decolle (4 passagers)
+[19:25:42] ARRIVEE: Avion ID 98 atterri (41 passagers)
+[19:25:43] DEPART: Avion ID 96 decolle (59 passagers)
+[19:25:43] DEPART: Avion ID 26 decolle (128 passagers)
+[19:25:43] ARRIVEE: Avion ID 97 atterri (4 passagers)
+[19:25:43] ARRIVEE: Avion ID 116 atterri (122 passagers)
+[19:25:43] DEPART: Avion ID 71 decolle (163 passagers)
+[19:25:43] DEPART: Avion ID 85 decolle (165 passagers)
+[19:25:43] DEPART: Avion ID 91 decolle (4 passagers)
+[19:25:43] ARRIVEE: Avion ID 121 atterri (127 passagers)
+[19:25:43] DEPART: Avion ID 90 decolle (187 passagers)
+[19:25:43] ARRIVEE: Avion ID 85 atterri (165 passagers)
+[19:25:43] DEPART: Avion ID 115 decolle (70 passagers)
+[19:25:43] DEPART: Avion ID 110 decolle (30 passagers)
+[19:25:43] ARRIVEE: Avion ID 91 atterri (4 passagers)
+[19:25:43] ARRIVEE: Avion ID 120 atterri (150 passagers)
+[19:25:43] EVENEMENT: CRASH - Avion ID 115 détruit
+[19:25:43] DEPART: Avion ID 125 decolle (109 passagers)
+[19:25:43] ARRIVEE: Avion ID 110 atterri (30 passagers)
+[19:25:43] ARRIVEE: Avion ID 126 atterri (26 passagers)
+[19:25:43] DEPART: Avion ID 98 decolle (41 passagers)
+[19:25:43] DEPART: Avion ID 85 decolle (165 passagers)
+[19:25:43] DEPART: Avion ID 24 decolle (24 passagers)
+[19:25:43] DEPART: Avion ID 105 decolle (117 passagers)
+[19:25:43] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:43] HACK: Communications perturbees
+[19:25:43] EVENEMENT: Neige - Decollages decales
+[19:25:43] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:43] HACK: Navigation compromise
+[19:25:43] DEPART: Avion ID 89 decolle (51 passagers)
+[19:25:43] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:43] HACK: Navigation compromise
+[19:25:43] DEPART: Avion ID 126 decolle (26 passagers)
+[19:25:43] ARRIVEE: Avion ID 138 atterri (159 passagers)
+[19:25:43] ARRIVEE: Avion ID 130 atterri (96 passagers)
+[19:25:43] DEPART: Avion ID 69 decolle (80 passagers)
+[19:25:43] ARRIVEE: Avion ID 133 atterri (187 passagers)
+[19:25:43] EVENEMENT: Neige - Decollages decales
+[19:25:43] DEPART: Avion ID 72 decolle (173 passagers)
+[19:25:43] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:43] HACK: Navigation compromise
+[19:25:43] ARRIVEE: Avion ID 89 atterri (51 passagers)
+[19:25:43] EVENEMENT: Neige - Decollages decales
+[19:25:44] ARRIVEE: Avion ID 69 atterri (80 passagers)
+[19:25:44] ARRIVEE: Avion ID 142 atterri (109 passagers)
+[19:25:44] DEPART: Avion ID 129 decolle (105 passagers)
+[19:25:44] ARRIVEE: Avion ID 137 atterri (126 passagers)
+[19:25:44] DEPART: Avion ID 101 decolle (166 passagers)
+[19:25:44] ARRIVEE: Avion ID 140 atterri (55 passagers)
+[19:25:44] DEPART: Avion ID 134 decolle (173 passagers)
+[19:25:44] DEPART: Avion ID 120 decolle (150 passagers)
+[19:25:44] ARRIVEE: Avion ID 101 atterri (166 passagers)
+[19:25:44] ARRIVEE: Avion ID 147 atterri (188 passagers)
+[19:25:44] DEPART: Avion ID 119 decolle (12 passagers)
+[19:25:44] ARRIVEE: Avion ID 144 atterri (32 passagers)
+[19:25:44] EVENEMENT: CRASH - Avion ID 143 détruit
+[19:25:44] DEPART: Avion ID 56 decolle (70 passagers)
+[19:25:44] ARRIVEE: Avion ID 141 atterri (58 passagers)
+[19:25:44] ARRIVEE: Avion ID 129 atterri (105 passagers)
+[19:25:44] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:25:44] HACK: Donnees de vol alterees
+[19:25:44] ARRIVEE: Avion ID 146 atterri (150 passagers)
+[19:25:44] ARRIVEE: Avion ID 150 atterri (172 passagers)
+[19:25:44] DEPART: Avion ID 146 decolle (150 passagers)
+[19:25:44] DEPART: Avion ID 142 decolle (109 passagers)
+[19:25:44] DEPART: Avion ID 21 decolle (132 passagers)
+[19:25:44] EVENEMENT: CRASH - Avion ID 119 détruit
+[19:25:44] ARRIVEE: Avion ID 149 atterri (57 passagers)
+[19:25:44] DEPART: Avion ID 95 decolle (90 passagers)
+[19:26:17] DEPART: Avion ID 146 decolle (150 passagers)
+[19:26:17] DEPART: Avion ID 142 decolle (109 passagers)
+[19:26:17] DEPART: Avion ID 121 decolle (127 passagers)
+[19:26:17] DEPART: Avion ID 95 decolle (90 passagers)
+[19:26:17] ARRIVEE: Avion ID 134 atterri (173 passagers)
+[19:26:17] DEPART: Avion ID 87 decolle (110 passagers)
+[19:26:17] DEPART: Avion ID 102 decolle (45 passagers)
+[19:26:17] ARRIVEE: Avion ID 56 atterri (70 passagers)
+[19:26:17] DEPART: Avion ID 150 decolle (172 passagers)
+[19:26:17] ARRIVEE: Avion ID 121 atterri (127 passagers)
+[19:26:17] DEPART: Avion ID 69 decolle (80 passagers)
+[19:26:17] DEPART: Avion ID 148 decolle (58 passagers)
+[19:26:17] ARRIVEE: Avion ID 48 atterri (88 passagers)
+[19:26:17] DEPART: Avion ID 128 decolle (120 passagers)
+[19:26:17] DEPART: Avion ID 136 decolle (175 passagers)
+[19:26:17] DEPART: Avion ID 127 decolle (164 passagers)
+[19:26:17] DEPART: Avion ID 73 decolle (55 passagers)
+[19:26:17] DEPART: Avion ID 116 decolle (122 passagers)
+[19:26:17] ARRIVEE: Avion ID 50 atterri (82 passagers)
+[19:26:17] DEPART: Avion ID 47 decolle (105 passagers)
+[19:26:17] ARRIVEE: Avion ID 127 atterri (164 passagers)
+[19:26:17] ARRIVEE: Avion ID 47 atterri (105 passagers)
+[19:26:17] DEPART: Avion ID 129 decolle (105 passagers)
+[19:26:17] ARRIVEE: Avion ID 148 atterri (58 passagers)
+[19:26:17] ARRIVEE: Avion ID 53 atterri (42 passagers)
+[19:26:17] DEPART: Avion ID 138 decolle (159 passagers)
+[19:26:17] DEPART: Avion ID 91 decolle (4 passagers)
+[19:26:17] ARRIVEE: Avion ID 55 atterri (199 passagers)
+[19:26:17] DEPART: Avion ID 130 decolle (96 passagers)
+[19:26:17] ARRIVEE: Avion ID 128 atterri (120 passagers)
+[19:26:17] EVENEMENT: Orage - Decollages decales
+[19:26:18] DEPART: Avion ID 137 decolle (126 passagers)
+[19:26:18] ARRIVEE: Avion ID 129 atterri (105 passagers)
+[19:26:18] DEPART: Avion ID 45 decolle (164 passagers)
+[19:26:18] DEPART: Avion ID 133 decolle (187 passagers)
+[19:26:18] DEPART: Avion ID 58 decolle (129 passagers)
+[19:26:18] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:18] HACK: Donnees de vol alterees
+[19:26:18] ARRIVEE: Avion ID 138 atterri (159 passagers)
+[19:26:18] ARRIVEE: Avion ID 137 atterri (126 passagers)
+[19:26:18] EVENEMENT: CRASH - Avion ID 45 détruit
+[19:26:18] DEPART: Avion ID 148 decolle (58 passagers)
+[19:26:18] ARRIVEE: Avion ID 57 atterri (69 passagers)
+[19:26:18] EVENEMENT: CRASH - Avion ID 148 détruit
+[19:26:18] DEPART: Avion ID 41 decolle (176 passagers)
+[19:26:18] ARRIVEE: Avion ID 62 atterri (177 passagers)
+[19:26:18] DEPART: Avion ID 59 decolle (118 passagers)
+[19:26:18] ARRIVEE: Avion ID 63 atterri (105 passagers)
+[19:26:18] ARRIVEE: Avion ID 41 atterri (176 passagers)
+[19:26:18] DEPART: Avion ID 44 decolle (109 passagers)
+[19:26:18] ARRIVEE: Avion ID 64 atterri (151 passagers)
+[19:26:18] ARRIVEE: Avion ID 59 atterri (118 passagers)
+[19:26:18] ARRIVEE: Avion ID 44 atterri (109 passagers)
+[19:26:18] DEPART: Avion ID 145 decolle (98 passagers)
+[19:26:18] DEPART: Avion ID 56 decolle (70 passagers)
+[19:26:18] ARRIVEE: Avion ID 145 atterri (98 passagers)
+[19:26:18] DEPART: Avion ID 49 decolle (194 passagers)
+[19:26:18] ARRIVEE: Avion ID 68 atterri (65 passagers)
+[19:26:18] DEPART: Avion ID 44 decolle (109 passagers)
+[19:26:18] ARRIVEE: Avion ID 67 atterri (121 passagers)
+[19:26:18] DEPART: Avion ID 89 decolle (51 passagers)
+[19:26:18] ARRIVEE: Avion ID 49 atterri (194 passagers)
+[19:26:18] ARRIVEE: Avion ID 44 atterri (109 passagers)
+[19:26:18] DEPART: Avion ID 141 decolle (58 passagers)
+[19:26:18] ARRIVEE: Avion ID 89 atterri (51 passagers)
+[19:26:19] ARRIVEE: Avion ID 74 atterri (22 passagers)
+[19:26:19] DEPART: Avion ID 140 decolle (55 passagers)
+[19:26:19] EVENEMENT: Pluie - Decollages decales
+[19:26:19] ARRIVEE: Avion ID 73 atterri (164 passagers)
+[19:26:19] DEPART: Avion ID 65 decolle (137 passagers)
+[19:26:19] ARRIVEE: Avion ID 70 atterri (37 passagers)
+[19:26:19] DEPART: Avion ID 127 decolle (164 passagers)
+[19:26:19] DEPART: Avion ID 121 decolle (127 passagers)
+[19:26:19] DEPART: Avion ID 74 decolle (22 passagers)
+[19:26:19] DEPART: Avion ID 62 decolle (177 passagers)
+[19:26:19] ARRIVEE: Avion ID 65 atterri (137 passagers)
+[19:26:19] DEPART: Avion ID 63 decolle (173 passagers)
+[19:26:19] EVENEMENT: Neige - Decollages decales
+[19:26:19] EVENEMENT: Orage - Decollages decales
+[19:26:19] ARRIVEE: Avion ID 82 atterri (23 passagers)
+[19:26:19] DEPART: Avion ID 86 decolle (56 passagers)
+[19:26:19] DEPART: Avion ID 85 decolle (83 passagers)
+[19:26:19] EVENEMENT: Neige - Decollages decales
+[19:26:19] ARRIVEE: Avion ID 87 atterri (21 passagers)
+[19:26:19] ARRIVEE: Avion ID 86 atterri (56 passagers)
+[19:26:19] ARRIVEE: Avion ID 85 atterri (83 passagers)
+[19:26:19] ARRIVEE: Avion ID 74 atterri (22 passagers)
+[19:26:19] DEPART: Avion ID 66 decolle (76 passagers)
+[19:26:19] DEPART: Avion ID 101 decolle (166 passagers)
+[19:26:19] DEPART: Avion ID 55 decolle (199 passagers)
+[19:26:19] ARRIVEE: Avion ID 62 atterri (177 passagers)
+[19:26:19] EVENEMENT: Neige - Decollages decales
+[19:26:19] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:19] HACK: Communications perturbees
+[19:26:19] ARRIVEE: Avion ID 83 atterri (186 passagers)
+[19:26:19] DEPART: Avion ID 57 decolle (69 passagers)
+[19:26:19] ARRIVEE: Avion ID 101 atterri (166 passagers)
+[19:26:19] ARRIVEE: Avion ID 66 atterri (76 passagers)
+[19:26:19] ARRIVEE: Avion ID 91 atterri (185 passagers)
+[19:26:19] DEPART: Avion ID 58 decolle (48 passagers)
+[19:26:19] DEPART: Avion ID 129 decolle (105 passagers)
+[19:26:19] DEPART: Avion ID 63 decolle (105 passagers)
+[19:26:20] ARRIVEE: Avion ID 55 atterri (199 passagers)
+[19:26:20] DEPART: Avion ID 46 decolle (168 passagers)
+[19:26:20] DEPART: Avion ID 65 decolle (15 passagers)
+[19:26:20] ARRIVEE: Avion ID 96 atterri (126 passagers)
+[19:26:20] ARRIVEE: Avion ID 46 atterri (168 passagers)
+[19:26:20] EVENEMENT: Orage - Decollages decales
+[19:26:20] ARRIVEE: Avion ID 63 atterri (105 passagers)
+[19:26:20] DEPART: Avion ID 41 decolle (176 passagers)
+[19:26:20] ARRIVEE: Avion ID 65 atterri (15 passagers)
+[19:26:20] DEPART: Avion ID 60 decolle (142 passagers)
+[19:26:20] DEPART: Avion ID 128 decolle (120 passagers)
+[19:26:20] DEPART: Avion ID 47 decolle (105 passagers)
+[19:26:20] DEPART: Avion ID 91 decolle (185 passagers)
+[19:26:20] ARRIVEE: Avion ID 58 atterri (48 passagers)
+[19:26:20] DEPART: Avion ID 138 decolle (159 passagers)
+[19:26:20] DEPART: Avion ID 134 decolle (173 passagers)
+[19:26:20] DEPART: Avion ID 104 decolle (91 passagers)
+[19:26:20] DEPART: Avion ID 61 decolle (193 passagers)
+[19:26:20] DEPART: Avion ID 63 decolle (105 passagers)
+[19:26:20] DEPART: Avion ID 55 decolle (199 passagers)
+[19:26:20] EVENEMENT: Orage - Decollages decales
+[19:26:20] ARRIVEE: Avion ID 60 atterri (142 passagers)
+[19:26:20] DEPART: Avion ID 50 decolle (82 passagers)
+[19:26:20] DEPART: Avion ID 52 decolle (89 passagers)
+[19:26:20] DEPART: Avion ID 46 decolle (168 passagers)
+[19:26:20] ARRIVEE: Avion ID 63 atterri (105 passagers)
+[19:26:20] DEPART: Avion ID 104 decolle (86 passagers)
+[19:26:20] DEPART: Avion ID 97 decolle (123 passagers)
+[19:26:20] DEPART: Avion ID 147 decolle (188 passagers)
+[19:26:20] DEPART: Avion ID 66 decolle (76 passagers)
+[19:26:20] DEPART: Avion ID 64 decolle (151 passagers)
+[19:26:20] DEPART: Avion ID 114 decolle (85 passagers)
+[19:26:20] DEPART: Avion ID 144 decolle (32 passagers)
+[19:26:20] ARRIVEE: Avion ID 97 atterri (123 passagers)
+[19:26:20] ARRIVEE: Avion ID 108 atterri (38 passagers)
+[19:26:20] ARRIVEE: Avion ID 66 atterri (76 passagers)
+[19:26:20] DEPART: Avion ID 112 decolle (82 passagers)
+[19:26:20] ARRIVEE: Avion ID 111 atterri (59 passagers)
+[19:26:20] DEPART: Avion ID 103 decolle (80 passagers)
+[19:26:20] DEPART: Avion ID 137 decolle (126 passagers)
+[19:26:20] ARRIVEE: Avion ID 112 atterri (82 passagers)
+[19:26:21] DEPART: Avion ID 54 decolle (88 passagers)
+[19:26:21] DEPART: Avion ID 21 decolle (132 passagers)
+[19:26:21] DEPART: Avion ID 113 decolle (160 passagers)
+[19:26:21] ARRIVEE: Avion ID 54 atterri (88 passagers)
+[19:26:21] DEPART: Avion ID 108 decolle (38 passagers)
+[19:26:21] ARRIVEE: Avion ID 114 atterri (85 passagers)
+[19:26:21] DEPART: Avion ID 66 decolle (76 passagers)
+[19:26:21] DEPART: Avion ID 97 decolle (123 passagers)
+[19:26:21] ARRIVEE: Avion ID 113 atterri (160 passagers)
+[19:26:21] DEPART: Avion ID 114 decolle (85 passagers)
+[19:26:21] ARRIVEE: Avion ID 108 atterri (38 passagers)
+[19:26:21] ARRIVEE: Avion ID 114 atterri (12 passagers)
+[19:26:21] ARRIVEE: Avion ID 103 atterri (80 passagers)
+[19:26:21] ARRIVEE: Avion ID 97 atterri (123 passagers)
+[19:26:21] ARRIVEE: Avion ID 114 atterri (85 passagers)
+[19:26:21] DEPART: Avion ID 108 decolle (38 passagers)
+[19:26:21] EVENEMENT: Pluie - Decollages decales
+[19:26:21] DEPART: Avion ID 114 decolle (12 passagers)
+[19:26:21] DEPART: Avion ID 53 decolle (42 passagers)
+[19:26:21] ARRIVEE: Avion ID 66 atterri (76 passagers)
+[19:26:21] ARRIVEE: Avion ID 108 atterri (38 passagers)
+[19:26:21] DEPART: Avion ID 111 decolle (59 passagers)
+[19:26:21] DEPART: Avion ID 114 decolle (85 passagers)
+[19:26:21] DEPART: Avion ID 48 decolle (88 passagers)
+[19:26:21] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:21] HACK: Donnees de vol alterees
+[19:26:21] DEPART: Avion ID 97 decolle (123 passagers)
+[19:26:21] DEPART: Avion ID 54 decolle (88 passagers)
+[19:26:21] DEPART: Avion ID 116 decolle (47 passagers)
+[19:26:21] ARRIVEE: Avion ID 114 atterri (12 passagers)
+[19:26:21] DEPART: Avion ID 66 decolle (76 passagers)
+[19:26:21] ARRIVEE: Avion ID 116 atterri (47 passagers)
+[19:26:21] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:21] HACK: Communications perturbees
+[19:26:21] ARRIVEE: Avion ID 97 atterri (123 passagers)
+[19:26:21] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:21] HACK: Navigation compromise
+[19:26:21] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:21] HACK: Navigation compromise
+[19:26:21] DEPART: Avion ID 108 decolle (38 passagers)
+[19:26:21] DEPART: Avion ID 97 decolle (123 passagers)
+[19:26:21] DEPART: Avion ID 112 decolle (82 passagers)
+[19:26:21] DEPART: Avion ID 117 decolle (146 passagers)
+[19:26:21] DEPART: Avion ID 115 decolle (66 passagers)
+[19:26:21] DEPART: Avion ID 121 decolle (85 passagers)
+[19:26:21] DEPART: Avion ID 103 decolle (80 passagers)
+[19:26:21] ARRIVEE: Avion ID 97 atterri (123 passagers)
+[19:26:21] DEPART: Avion ID 97 decolle (123 passagers)
+[19:26:21] DEPART: Avion ID 124 decolle (143 passagers)
+[19:26:21] ARRIVEE: Avion ID 115 atterri (66 passagers)
+[19:26:21] DEPART: Avion ID 110 decolle (30 passagers)
+[19:26:21] ARRIVEE: Avion ID 118 atterri (6 passagers)
+[19:26:21] DEPART: Avion ID 116 decolle (47 passagers)
+[19:26:21] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:21] HACK: Donnees de vol alterees
+[19:26:21] DEPART: Avion ID 120 decolle (193 passagers)
+[19:26:21] DEPART: Avion ID 114 decolle (12 passagers)
+[19:26:21] ARRIVEE: Avion ID 112 atterri (82 passagers)
+[19:26:21] ARRIVEE: Avion ID 124 atterri (143 passagers)
+[19:26:21] ARRIVEE: Avion ID 120 atterri (193 passagers)
+[19:26:21] DEPART: Avion ID 118 decolle (6 passagers)
+[19:26:22] DEPART: Avion ID 112 decolle (82 passagers)
+[19:26:22] DEPART: Avion ID 128 decolle (198 passagers)
+[19:26:22] ARRIVEE: Avion ID 125 atterri (22 passagers)
+[19:26:22] ARRIVEE: Avion ID 134 atterri (147 passagers)
+[19:26:22] ARRIVEE: Avion ID 128 atterri (198 passagers)
+[19:26:22] ARRIVEE: Avion ID 131 atterri (15 passagers)
+[19:26:22] DEPART: Avion ID 120 decolle (193 passagers)
+[19:26:22] ARRIVEE: Avion ID 116 atterri (47 passagers)
+[19:26:22] DEPART: Avion ID 124 decolle (143 passagers)
+[19:26:22] DEPART: Avion ID 131 decolle (15 passagers)
+[19:26:22] DEPART: Avion ID 128 decolle (198 passagers)
+[19:26:22] ARRIVEE: Avion ID 120 atterri (193 passagers)
+[19:26:22] ARRIVEE: Avion ID 133 atterri (117 passagers)
+[19:26:22] DEPART: Avion ID 123 decolle (179 passagers)
+[19:26:22] DEPART: Avion ID 113 decolle (160 passagers)
+[19:26:22] EVENEMENT: Pluie - Decollages decales
+[19:26:22] DEPART: Avion ID 132 decolle (121 passagers)
+[19:26:22] DEPART: Avion ID 127 decolle (193 passagers)
+[19:26:22] ARRIVEE: Avion ID 131 atterri (15 passagers)
+[19:26:22] EVENEMENT: Pluie - Decollages decales
+[19:26:22] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:22] HACK: Donnees de vol alterees
+[19:26:22] DEPART: Avion ID 116 decolle (47 passagers)
+[19:26:22] ARRIVEE: Avion ID 141 atterri (34 passagers)
+[19:26:22] DEPART: Avion ID 129 decolle (55 passagers)
+[19:26:22] DEPART: Avion ID 140 decolle (2 passagers)
+[19:26:22] ARRIVEE: Avion ID 143 atterri (12 passagers)
+[19:26:22] ARRIVEE: Avion ID 132 atterri (121 passagers)
+[19:26:22] ARRIVEE: Avion ID 116 atterri (47 passagers)
+[19:26:22] ARRIVEE: Avion ID 113 atterri (160 passagers)
+[19:26:22] ARRIVEE: Avion ID 129 atterri (55 passagers)
+[19:26:22] ARRIVEE: Avion ID 145 atterri (46 passagers)
+[19:26:22] DEPART: Avion ID 141 decolle (34 passagers)
+[19:26:22] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:22] DEPART: Avion ID 145 decolle (46 passagers)
+[19:26:22] ARRIVEE: Avion ID 145 atterri (46 passagers)
+[19:26:22] ARRIVEE: Avion ID 147 atterri (30 passagers)
+[19:26:22] DEPART: Avion ID 125 decolle (22 passagers)
+[19:26:22] ARRIVEE: Avion ID 141 atterri (34 passagers)
+[19:26:22] DEPART: Avion ID 129 decolle (55 passagers)
+[19:26:22] ARRIVEE: Avion ID 151 atterri (182 passagers)
+[19:26:23] ARRIVEE: Avion ID 138 atterri (18 passagers)
+[19:26:23] DEPART: Avion ID 133 decolle (117 passagers)
+[19:26:23] DEPART: Avion ID 116 decolle (47 passagers)
+[19:26:23] ARRIVEE: Avion ID 129 atterri (55 passagers)
+[19:26:23] DEPART: Avion ID 148 decolle (8 passagers)
+[19:26:23] ARRIVEE: Avion ID 133 atterri (117 passagers)
+[19:26:23] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:23] DEPART: Avion ID 146 decolle (147 passagers)
+[19:26:23] ARRIVEE: Avion ID 148 atterri (8 passagers)
+[19:26:23] ARRIVEE: Avion ID 153 atterri (171 passagers)
+[19:26:23] ARRIVEE: Avion ID 146 atterri (147 passagers)
+[19:26:23] ARRIVEE: Avion ID 138 atterri (18 passagers)
+[19:26:23] DEPART: Avion ID 145 decolle (46 passagers)
+[19:26:23] DEPART: Avion ID 129 decolle (55 passagers)
+[19:26:23] ARRIVEE: Avion ID 145 atterri (46 passagers)
+[19:26:23] DEPART: Avion ID 132 decolle (121 passagers)
+[19:26:23] DEPART: Avion ID 115 decolle (66 passagers)
+[19:26:23] ARRIVEE: Avion ID 129 atterri (55 passagers)
+[19:26:23] ARRIVEE: Avion ID 132 atterri (121 passagers)
+[19:26:23] DEPART: Avion ID 142 decolle (103 passagers)
+[19:26:23] ARRIVEE: Avion ID 158 atterri (49 passagers)
+[19:26:23] ARRIVEE: Avion ID 157 atterri (191 passagers)
+[19:26:23] DEPART: Avion ID 145 decolle (46 passagers)
+[19:26:23] ARRIVEE: Avion ID 156 atterri (161 passagers)
+[19:26:23] DEPART: Avion ID 129 decolle (55 passagers)
+[19:26:23] ARRIVEE: Avion ID 160 atterri (106 passagers)
+[19:26:23] ARRIVEE: Avion ID 145 atterri (46 passagers)
+[19:26:23] DEPART: Avion ID 147 decolle (30 passagers)
+[19:26:23] DEPART: Avion ID 134 decolle (147 passagers)
+[19:26:23] DEPART: Avion ID 148 decolle (8 passagers)
+[19:26:23] DEPART: Avion ID 146 decolle (147 passagers)
+[19:26:23] DEPART: Avion ID 149 decolle (59 passagers)
+[19:26:23] DEPART: Avion ID 155 decolle (173 passagers)
+[19:26:23] ARRIVEE: Avion ID 148 atterri (8 passagers)
+[19:26:23] DEPART: Avion ID 141 decolle (34 passagers)
+[19:26:23] ARRIVEE: Avion ID 164 atterri (130 passagers)
+[19:26:23] DEPART: Avion ID 163 decolle (197 passagers)
+[19:26:23] ARRIVEE: Avion ID 134 atterri (147 passagers)
+[19:26:23] ARRIVEE: Avion ID 155 atterri (173 passagers)
+[19:26:23] EVENEMENT: CRASH - Avion ID 169 détruit
+[19:26:23] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:23] HACK: Navigation compromise
+[19:26:23] ARRIVEE: Avion ID 129 atterri (55 passagers)
+[19:26:23] ARRIVEE: Avion ID 170 atterri (178 passagers)
+[19:26:24] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:24] ARRIVEE: Avion ID 167 atterri (164 passagers)
+[19:26:24] ARRIVEE: Avion ID 168 atterri (195 passagers)
+[19:26:24] DEPART: Avion ID 113 decolle (160 passagers)
+[19:26:24] DEPART: Avion ID 133 decolle (117 passagers)
+[19:26:24] DEPART: Avion ID 145 decolle (46 passagers)
+[19:26:24] ARRIVEE: Avion ID 163 atterri (197 passagers)
+[19:26:24] ARRIVEE: Avion ID 138 atterri (18 passagers)
+[19:26:24] ARRIVEE: Avion ID 133 atterri (117 passagers)
+[19:26:24] ARRIVEE: Avion ID 145 atterri (46 passagers)
+[19:26:24] DEPART: Avion ID 152 decolle (111 passagers)
+[19:26:24] DEPART: Avion ID 168 decolle (195 passagers)
+[19:26:24] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:24] ARRIVEE: Avion ID 152 atterri (111 passagers)
+[19:26:24] DEPART: Avion ID 131 decolle (15 passagers)
+[19:26:24] ARRIVEE: Avion ID 176 atterri (127 passagers)
+[19:26:24] EVENEMENT: CRASH - Avion ID 179 détruit
+[19:26:24] ARRIVEE: Avion ID 177 atterri (49 passagers)
+[19:26:24] DEPART: Avion ID 178 decolle (101 passagers)
+[19:26:24] DEPART: Avion ID 166 decolle (113 passagers)
+[19:26:24] DEPART: Avion ID 153 decolle (171 passagers)
+[19:26:24] ARRIVEE: Avion ID 182 atterri (53 passagers)
+[19:26:24] ARRIVEE: Avion ID 178 atterri (101 passagers)
+[19:26:24] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:24] DEPART: Avion ID 175 decolle (59 passagers)
+[19:26:24] DEPART: Avion ID 176 decolle (127 passagers)
+[19:26:24] DEPART: Avion ID 167 decolle (164 passagers)
+[19:26:24] EVENEMENT: CRASH - Avion ID 167 détruit
+[19:26:24] ARRIVEE: Avion ID 166 atterri (113 passagers)
+[19:26:24] ARRIVEE: Avion ID 175 atterri (59 passagers)
+[19:26:24] ARRIVEE: Avion ID 177 atterri (49 passagers)
+[19:26:24] DEPART: Avion ID 172 decolle (185 passagers)
+[19:26:24] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:24] HACK: Navigation compromise
+[19:26:25] ARRIVEE: Avion ID 185 atterri (95 passagers)
+[19:26:25] DEPART: Avion ID 135 decolle (108 passagers)
+[19:26:25] DEPART: Avion ID 178 decolle (101 passagers)
+[19:26:25] ARRIVEE: Avion ID 178 atterri (101 passagers)
+[19:26:25] DEPART: Avion ID 160 decolle (106 passagers)
+[19:26:25] ARRIVEE: Avion ID 188 atterri (173 passagers)
+[19:26:25] ARRIVEE: Avion ID 192 atterri (114 passagers)
+[19:26:25] ARRIVEE: Avion ID 135 atterri (108 passagers)
+[19:26:25] ARRIVEE: Avion ID 191 atterri (46 passagers)
+[19:26:25] DEPART: Avion ID 133 decolle (117 passagers)
+[19:26:25] EVENEMENT: Pluie - Decollages decales
+[19:26:25] ARRIVEE: Avion ID 196 atterri (114 passagers)
+[19:26:25] ARRIVEE: Avion ID 197 atterri (104 passagers)
+[19:26:25] DEPART: Avion ID 148 decolle (8 passagers)
+[19:26:25] DEPART: Avion ID 188 decolle (173 passagers)
+[19:26:25] ARRIVEE: Avion ID 194 atterri (113 passagers)
+[19:26:25] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:25] ARRIVEE: Avion ID 201 atterri (200 passagers)
+[19:26:25] ARRIVEE: Avion ID 203 atterri (97 passagers)
+[19:26:25] ARRIVEE: Avion ID 198 atterri (127 passagers)
+[19:26:25] ARRIVEE: Avion ID 138 atterri (18 passagers)
+[19:26:25] EVENEMENT: CRASH - Avion ID 207 détruit
+[19:26:25] DEPART: Avion ID 174 decolle (134 passagers)
+[19:26:25] ARRIVEE: Avion ID 204 atterri (116 passagers)
+[19:26:25] ARRIVEE: Avion ID 205 atterri (118 passagers)
+[19:26:25] DEPART: Avion ID 202 decolle (153 passagers)
+[19:26:25] ARRIVEE: Avion ID 174 atterri (134 passagers)
+[19:26:25] DEPART: Avion ID 192 decolle (114 passagers)
+[19:26:25] DEPART: Avion ID 145 decolle (46 passagers)
+[19:26:25] DEPART: Avion ID 120 decolle (193 passagers)
+[19:26:25] DEPART: Avion ID 135 decolle (108 passagers)
+[19:26:25] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:25] HACK: Donnees de vol alterees
+[19:26:25] DEPART: Avion ID 185 decolle (95 passagers)
+[19:26:25] DEPART: Avion ID 189 decolle (91 passagers)
+[19:26:25] EVENEMENT: CRASH - Avion ID 210 détruit
+[19:26:25] ARRIVEE: Avion ID 208 atterri (79 passagers)
+[19:26:26] ARRIVEE: Avion ID 135 atterri (108 passagers)
+[19:26:26] ARRIVEE: Avion ID 202 atterri (153 passagers)
+[19:26:26] ARRIVEE: Avion ID 209 atterri (52 passagers)
+[19:26:26] ARRIVEE: Avion ID 189 atterri (91 passagers)
+[19:26:26] DEPART: Avion ID 201 decolle (200 passagers)
+[19:26:26] DEPART: Avion ID 203 decolle (97 passagers)
+[19:26:26] DEPART: Avion ID 163 decolle (197 passagers)
+[19:26:26] DEPART: Avion ID 183 decolle (45 passagers)
+[19:26:26] ARRIVEE: Avion ID 215 atterri (128 passagers)
+[19:26:26] EVENEMENT: Pluie - Decollages decales
+[19:26:26] ARRIVEE: Avion ID 201 atterri (200 passagers)
+[19:26:26] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:26] HACK: Communications perturbees
+[19:26:26] ARRIVEE: Avion ID 183 atterri (45 passagers)
+[19:26:26] DEPART: Avion ID 191 decolle (46 passagers)
+[19:26:26] ARRIVEE: Avion ID 203 atterri (97 passagers)
+[19:26:26] ARRIVEE: Avion ID 219 atterri (78 passagers)
+[19:26:26] ARRIVEE: Avion ID 217 atterri (155 passagers)
+[19:26:26] ARRIVEE: Avion ID 191 atterri (46 passagers)
+[19:26:26] EVENEMENT: Neige - Decollages decales
+[19:26:26] EVENEMENT: CRASH - Avion ID 221 détruit
+[19:26:26] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:26] ARRIVEE: Avion ID 138 atterri (18 passagers)
+[19:26:26] DEPART: Avion ID 154 decolle (168 passagers)
+[19:26:26] DEPART: Avion ID 166 decolle (113 passagers)
+[19:26:26] ARRIVEE: Avion ID 222 atterri (70 passagers)
+[19:26:26] DEPART: Avion ID 161 decolle (11 passagers)
+[19:26:26] DEPART: Avion ID 200 decolle (174 passagers)
+[19:26:26] DEPART: Avion ID 135 decolle (108 passagers)
+[19:26:26] DEPART: Avion ID 178 decolle (101 passagers)
+[19:26:26] ARRIVEE: Avion ID 220 atterri (18 passagers)
+[19:26:26] DEPART: Avion ID 195 decolle (11 passagers)
+[19:26:26] DEPART: Avion ID 174 decolle (134 passagers)
+[19:26:26] DEPART: Avion ID 164 decolle (130 passagers)
+[19:26:26] EVENEMENT: Neige - Decollages decales
+[19:26:26] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:26] HACK: Donnees de vol alterees
+[19:26:26] ARRIVEE: Avion ID 161 atterri (11 passagers)
+[19:26:26] DEPART: Avion ID 182 decolle (53 passagers)
+[19:26:26] DEPART: Avion ID 187 decolle (85 passagers)
+[19:26:26] ARRIVEE: Avion ID 166 atterri (113 passagers)
+[19:26:26] EVENEMENT: Orage - Decollages decales
+[19:26:26] DEPART: Avion ID 227 decolle (28 passagers)
+[19:26:27] DEPART: Avion ID 175 decolle (59 passagers)
+[19:26:27] ARRIVEE: Avion ID 182 atterri (53 passagers)
+[19:26:27] ARRIVEE: Avion ID 228 atterri (172 passagers)
+[19:26:27] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:27] HACK: Donnees de vol alterees
+[19:26:27] DEPART: Avion ID 134 decolle (147 passagers)
+[19:26:27] DEPART: Avion ID 158 decolle (49 passagers)
+[19:26:27] DEPART: Avion ID 219 decolle (78 passagers)
+[19:26:27] ARRIVEE: Avion ID 195 atterri (11 passagers)
+[19:26:27] ARRIVEE: Avion ID 227 atterri (28 passagers)
+[19:26:27] ARRIVEE: Avion ID 187 atterri (85 passagers)
+[19:26:27] DEPART: Avion ID 152 decolle (111 passagers)
+[19:26:27] DEPART: Avion ID 132 decolle (121 passagers)
+[19:26:27] DEPART: Avion ID 224 decolle (29 passagers)
+[19:26:27] DEPART: Avion ID 156 decolle (161 passagers)
+[19:26:27] DEPART: Avion ID 195 decolle (11 passagers)
+[19:26:27] ARRIVEE: Avion ID 224 atterri (29 passagers)
+[19:26:27] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:27] ARRIVEE: Avion ID 156 atterri (161 passagers)
+[19:26:27] ARRIVEE: Avion ID 219 atterri (78 passagers)
+[19:26:27] DEPART: Avion ID 211 decolle (31 passagers)
+[19:26:27] ARRIVEE: Avion ID 152 atterri (111 passagers)
+[19:26:27] ARRIVEE: Avion ID 195 atterri (11 passagers)
+[19:26:27] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:27] HACK: Donnees de vol alterees
+[19:26:27] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:27] HACK: Communications perturbees
+[19:26:27] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:27] EVENEMENT: Pluie - Decollages decales
+[19:26:27] DEPART: Avion ID 156 decolle (161 passagers)
+[19:26:27] ARRIVEE: Avion ID 165 atterri (23 passagers)
+[19:26:27] DEPART: Avion ID 161 decolle (11 passagers)
+[19:26:27] ARRIVEE: Avion ID 235 atterri (178 passagers)
+[19:26:27] DEPART: Avion ID 170 decolle (178 passagers)
+[19:26:27] ARRIVEE: Avion ID 211 atterri (31 passagers)
+[19:26:27] DEPART: Avion ID 205 decolle (118 passagers)
+[19:26:27] ARRIVEE: Avion ID 161 atterri (11 passagers)
+[19:26:27] ARRIVEE: Avion ID 156 atterri (161 passagers)
+[19:26:27] ARRIVEE: Avion ID 170 atterri (178 passagers)
+[19:26:27] DEPART: Avion ID 230 decolle (33 passagers)
+[19:26:27] ARRIVEE: Avion ID 205 atterri (118 passagers)
+[19:26:27] ARRIVEE: Avion ID 239 atterri (11 passagers)
+[19:26:27] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:27] DEPART: Avion ID 215 decolle (128 passagers)
+[19:26:27] ARRIVEE: Avion ID 230 atterri (33 passagers)
+[19:26:27] ARRIVEE: Avion ID 165 atterri (23 passagers)
+[19:26:27] ARRIVEE: Avion ID 215 atterri (128 passagers)
+[19:26:28] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:28] HACK: Navigation compromise
+[19:26:28] ARRIVEE: Avion ID 240 atterri (171 passagers)
+[19:26:28] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:28] DEPART: Avion ID 166 decolle (113 passagers)
+[19:26:28] DEPART: Avion ID 144 decolle (62 passagers)
+[19:26:28] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:28] ARRIVEE: Avion ID 166 atterri (113 passagers)
+[19:26:28] ARRIVEE: Avion ID 144 atterri (62 passagers)
+[19:26:28] ARRIVEE: Avion ID 243 atterri (34 passagers)
+[19:26:28] ARRIVEE: Avion ID 244 atterri (71 passagers)
+[19:26:28] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:28] HACK: Donnees de vol alterees
+[19:26:28] DEPART: Avion ID 239 decolle (11 passagers)
+[19:26:28] DEPART: Avion ID 155 decolle (173 passagers)
+[19:26:28] ARRIVEE: Avion ID 239 atterri (11 passagers)
+[19:26:28] ARRIVEE: Avion ID 245 atterri (41 passagers)
+[19:26:28] DEPART: Avion ID 209 decolle (52 passagers)
+[19:26:28] DEPART: Avion ID 157 decolle (191 passagers)
+[19:26:28] DEPART: Avion ID 243 decolle (34 passagers)
+[19:26:28] DEPART: Avion ID 240 decolle (171 passagers)
+[19:26:28] ARRIVEE: Avion ID 155 atterri (173 passagers)
+[19:26:28] ARRIVEE: Avion ID 209 atterri (52 passagers)
+[19:26:28] ARRIVEE: Avion ID 157 atterri (191 passagers)
+[19:26:28] ARRIVEE: Avion ID 243 atterri (34 passagers)
+[19:26:28] ARRIVEE: Avion ID 240 atterri (171 passagers)
+[19:26:28] DEPART: Avion ID 227 decolle (28 passagers)
+[19:26:28] DEPART: Avion ID 196 decolle (114 passagers)
+[19:26:28] DEPART: Avion ID 143 decolle (12 passagers)
+[19:26:28] ARRIVEE: Avion ID 251 atterri (188 passagers)
+[19:26:28] DEPART: Avion ID 197 decolle (104 passagers)
+[19:26:28] DEPART: Avion ID 220 decolle (18 passagers)
+[19:26:28] ARRIVEE: Avion ID 196 atterri (114 passagers)
+[19:26:28] DEPART: Avion ID 202 decolle (153 passagers)
+[19:26:28] DEPART: Avion ID 239 decolle (11 passagers)
+[19:26:28] ARRIVEE: Avion ID 220 atterri (18 passagers)
+[19:26:28] ARRIVEE: Avion ID 253 atterri (37 passagers)
+[19:26:28] EVENEMENT: Pluie - Decollages decales
+[19:26:28] DEPART: Avion ID 152 decolle (111 passagers)
+[19:26:28] DEPART: Avion ID 161 decolle (11 passagers)
+[19:26:29] DEPART: Avion ID 243 decolle (34 passagers)
+[19:26:29] DEPART: Avion ID 217 decolle (155 passagers)
+[19:26:29] ARRIVEE: Avion ID 239 atterri (11 passagers)
+[19:26:29] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:29] DEPART: Avion ID 129 decolle (55 passagers)
+[19:26:29] ARRIVEE: Avion ID 217 atterri (155 passagers)
+[19:26:29] DEPART: Avion ID 226 decolle (63 passagers)
+[19:26:29] DEPART: Avion ID 189 decolle (91 passagers)
+[19:26:29] ARRIVEE: Avion ID 259 atterri (144 passagers)
+[19:26:29] EVENEMENT: Orage - Decollages decales
+[19:26:29] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:29] ARRIVEE: Avion ID 189 atterri (91 passagers)
+[19:26:29] DEPART: Avion ID 245 decolle (41 passagers)
+[19:26:29] ARRIVEE: Avion ID 226 atterri (63 passagers)
+[19:26:29] ARRIVEE: Avion ID 260 atterri (156 passagers)
+[19:26:29] ARRIVEE: Avion ID 243 atterri (34 passagers)
+[19:26:29] DEPART: Avion ID 183 decolle (45 passagers)
+[19:26:29] DEPART: Avion ID 151 decolle (182 passagers)
+[19:26:29] ARRIVEE: Avion ID 245 atterri (41 passagers)
+[19:26:29] ARRIVEE: Avion ID 263 atterri (11 passagers)
+[19:26:29] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:29] HACK: Communications perturbees
+[19:26:29] ARRIVEE: Avion ID 151 atterri (182 passagers)
+[19:26:29] DEPART: Avion ID 157 decolle (191 passagers)
+[19:26:29] DEPART: Avion ID 138 decolle (18 passagers)
+[19:26:29] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:29] HACK: Communications perturbees
+[19:26:29] DEPART: Avion ID 220 decolle (18 passagers)
+[19:26:29] DEPART: Avion ID 233 decolle (73 passagers)
+[19:26:29] ARRIVEE: Avion ID 157 atterri (191 passagers)
+[19:26:29] ARRIVEE: Avion ID 220 atterri (18 passagers)
+[19:26:29] EVENEMENT: CRASH - Avion ID 267 détruit
+[19:26:29] DEPART: Avion ID 239 decolle (11 passagers)
+[19:26:29] ARRIVEE: Avion ID 233 atterri (73 passagers)
+[19:26:29] ARRIVEE: Avion ID 270 atterri (198 passagers)
+[19:26:29] ARRIVEE: Avion ID 274 atterri (61 passagers)
+[19:26:29] EVENEMENT: Neige - Decollages decales
+[19:26:29] ARRIVEE: Avion ID 277 atterri (49 passagers)
+[19:26:29] ARRIVEE: Avion ID 239 atterri (11 passagers)
+[19:26:29] DEPART: Avion ID 260 decolle (156 passagers)
+[19:26:30] ARRIVEE: Avion ID 279 atterri (21 passagers)
+[19:26:30] ARRIVEE: Avion ID 280 atterri (190 passagers)
+[19:26:30] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:30] ARRIVEE: Avion ID 260 atterri (156 passagers)
+[19:26:30] DEPART: Avion ID 231 decolle (132 passagers)
+[19:26:30] ARRIVEE: Avion ID 165 atterri (23 passagers)
+[19:26:30] ARRIVEE: Avion ID 281 atterri (57 passagers)
+[19:26:30] ARRIVEE: Avion ID 231 atterri (132 passagers)
+[19:26:30] ARRIVEE: Avion ID 278 atterri (47 passagers)
+[19:26:30] DEPART: Avion ID 220 decolle (18 passagers)
+[19:26:30] ARRIVEE: Avion ID 284 atterri (172 passagers)
+[19:26:30] ARRIVEE: Avion ID 286 atterri (146 passagers)
+[19:26:30] DEPART: Avion ID 196 decolle (114 passagers)
+[19:26:30] DEPART: Avion ID 213 decolle (22 passagers)
+[19:26:30] DEPART: Avion ID 182 decolle (53 passagers)
+[19:26:30] ARRIVEE: Avion ID 196 atterri (114 passagers)
+[19:26:30] ARRIVEE: Avion ID 213 atterri (22 passagers)
+[19:26:30] ARRIVEE: Avion ID 182 atterri (53 passagers)
+[19:26:30] DEPART: Avion ID 284 decolle (172 passagers)
+[19:26:30] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:30] ARRIVEE: Avion ID 284 atterri (172 passagers)
+[19:26:30] DEPART: Avion ID 155 decolle (173 passagers)
+[19:26:30] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:30] DEPART: Avion ID 193 decolle (170 passagers)
+[19:26:30] ARRIVEE: Avion ID 289 atterri (177 passagers)
+[19:26:30] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:30] ARRIVEE: Avion ID 193 atterri (170 passagers)
+[19:26:30] DEPART: Avion ID 204 decolle (116 passagers)
+[19:26:30] ARRIVEE: Avion ID 177 atterri (49 passagers)
+[19:26:30] DEPART: Avion ID 259 decolle (144 passagers)
+[19:26:30] ARRIVEE: Avion ID 204 atterri (116 passagers)
+[19:26:30] DEPART: Avion ID 213 decolle (22 passagers)
+[19:26:30] DEPART: Avion ID 280 decolle (190 passagers)
+[19:26:30] ARRIVEE: Avion ID 259 atterri (144 passagers)
+[19:26:30] ARRIVEE: Avion ID 290 atterri (134 passagers)
+[19:26:30] DEPART: Avion ID 196 decolle (114 passagers)
+[19:26:31] EVENEMENT: CRASH - Avion ID 291 détruit
+[19:26:31] DEPART: Avion ID 212 decolle (8 passagers)
+[19:26:31] DEPART: Avion ID 215 decolle (128 passagers)
+[19:26:31] DEPART: Avion ID 243 decolle (34 passagers)
+[19:26:31] DEPART: Avion ID 235 decolle (178 passagers)
+[19:26:31] ARRIVEE: Avion ID 213 atterri (22 passagers)
+[19:26:31] ARRIVEE: Avion ID 243 atterri (34 passagers)
+[19:26:31] ARRIVEE: Avion ID 292 atterri (12 passagers)
+[19:26:31] DEPART: Avion ID 279 decolle (21 passagers)
+[19:26:31] ARRIVEE: Avion ID 300 atterri (151 passagers)
+[19:26:31] ARRIVEE: Avion ID 294 atterri (171 passagers)
+[19:26:31] ARRIVEE: Avion ID 299 atterri (67 passagers)
+[19:26:31] ARRIVEE: Avion ID 303 atterri (193 passagers)
+[19:26:31] DEPART: Avion ID 151 decolle (182 passagers)
+[19:26:31] DEPART: Avion ID 294 decolle (171 passagers)
+[19:26:31] DEPART: Avion ID 263 decolle (11 passagers)
+[19:26:31] DEPART: Avion ID 193 decolle (170 passagers)
+[19:26:31] DEPART: Avion ID 198 decolle (127 passagers)
+[19:26:31] ARRIVEE: Avion ID 305 atterri (89 passagers)
+[19:26:31] ARRIVEE: Avion ID 193 atterri (170 passagers)
+[19:26:31] ARRIVEE: Avion ID 198 atterri (127 passagers)
+[19:26:31] DEPART: Avion ID 289 decolle (177 passagers)
+[19:26:31] ARRIVEE: Avion ID 302 atterri (173 passagers)
+[19:26:31] ARRIVEE: Avion ID 304 atterri (112 passagers)
+[19:26:31] ARRIVEE: Avion ID 151 atterri (182 passagers)
+[19:26:31] ARRIVEE: Avion ID 306 atterri (200 passagers)
+[19:26:31] ARRIVEE: Avion ID 263 atterri (11 passagers)
+[19:26:31] ARRIVEE: Avion ID 307 atterri (154 passagers)
+[19:26:31] ARRIVEE: Avion ID 309 atterri (175 passagers)
+[19:26:31] DEPART: Avion ID 150 decolle (39 passagers)
+[19:26:31] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:31] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:31] HACK: Donnees de vol alterees
+[19:26:31] DEPART: Avion ID 211 decolle (31 passagers)
+[19:26:31] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:31] HACK: Communications perturbees
+[19:26:31] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:31] DEPART: Avion ID 251 decolle (188 passagers)
+[19:26:32] ARRIVEE: Avion ID 310 atterri (103 passagers)
+[19:26:32] DEPART: Avion ID 305 decolle (89 passagers)
+[19:26:32] ARRIVEE: Avion ID 251 atterri (188 passagers)
+[19:26:32] ARRIVEE: Avion ID 305 atterri (89 passagers)
+[19:26:32] ARRIVEE: Avion ID 317 atterri (130 passagers)
+[19:26:32] DEPART: Avion ID 284 decolle (172 passagers)
+[19:26:32] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:32] ARRIVEE: Avion ID 150 atterri (39 passagers)
+[19:26:32] ARRIVEE: Avion ID 320 atterri (58 passagers)
+[19:26:32] ARRIVEE: Avion ID 284 atterri (172 passagers)
+[19:26:32] DEPART: Avion ID 278 decolle (47 passagers)
+[19:26:32] DEPART: Avion ID 300 decolle (151 passagers)
+[19:26:32] ARRIVEE: Avion ID 278 atterri (47 passagers)
+[19:26:32] DEPART: Avion ID 182 decolle (53 passagers)
+[19:26:32] ARRIVEE: Avion ID 300 atterri (151 passagers)
+[19:26:32] DEPART: Avion ID 303 decolle (193 passagers)
+[19:26:32] DEPART: Avion ID 206 decolle (179 passagers)
+[19:26:32] DEPART: Avion ID 270 decolle (198 passagers)
+[19:26:32] ARRIVEE: Avion ID 182 atterri (53 passagers)
+[19:26:32] DEPART: Avion ID 187 decolle (85 passagers)
+[19:26:32] ARRIVEE: Avion ID 270 atterri (198 passagers)
+[19:26:32] DEPART: Avion ID 253 decolle (37 passagers)
+[19:26:32] DEPART: Avion ID 139 decolle (112 passagers)
+[19:26:32] ARRIVEE: Avion ID 187 atterri (85 passagers)
+[19:26:32] DEPART: Avion ID 259 decolle (144 passagers)
+[19:26:32] DEPART: Avion ID 219 decolle (78 passagers)
+[19:26:32] ARRIVEE: Avion ID 253 atterri (37 passagers)
+[19:26:32] DEPART: Avion ID 157 decolle (191 passagers)
+[19:26:32] DEPART: Avion ID 299 decolle (67 passagers)
+[19:26:33] DEPART: Avion ID 286 decolle (146 passagers)
+[19:26:33] DEPART: Avion ID 201 decolle (200 passagers)
+[19:26:33] EVENEMENT: Pluie - Decollages decales
+[19:26:33] DEPART: Avion ID 253 decolle (37 passagers)
+[19:26:33] DEPART: Avion ID 193 decolle (170 passagers)
+[19:26:33] DEPART: Avion ID 233 decolle (73 passagers)
+[19:26:33] ARRIVEE: Avion ID 330 atterri (91 passagers)
+[19:26:33] DEPART: Avion ID 226 decolle (63 passagers)
+[19:26:33] DEPART: Avion ID 270 decolle (198 passagers)
+[19:26:33] DEPART: Avion ID 228 decolle (172 passagers)
+[19:26:33] DEPART: Avion ID 213 decolle (22 passagers)
+[19:26:33] ARRIVEE: Avion ID 333 atterri (132 passagers)
+[19:26:33] ARRIVEE: Avion ID 331 atterri (141 passagers)
+[19:26:33] ARRIVEE: Avion ID 233 atterri (73 passagers)
+[19:26:33] DEPART: Avion ID 205 decolle (118 passagers)
+[19:26:33] DEPART: Avion ID 251 decolle (188 passagers)
+[19:26:33] ARRIVEE: Avion ID 193 atterri (170 passagers)
+[19:26:33] ARRIVEE: Avion ID 205 atterri (118 passagers)
+[19:26:33] ARRIVEE: Avion ID 228 atterri (172 passagers)
+[19:26:33] ARRIVEE: Avion ID 335 atterri (1 passagers)
+[19:26:33] DEPART: Avion ID 186 decolle (155 passagers)
+[19:26:33] ARRIVEE: Avion ID 251 atterri (188 passagers)
+[19:26:33] ARRIVEE: Avion ID 338 atterri (5 passagers)
+[19:26:33] DEPART: Avion ID 304 decolle (112 passagers)
+[19:26:33] DEPART: Avion ID 166 decolle (113 passagers)
+[19:26:33] DEPART: Avion ID 150 decolle (39 passagers)
+[19:26:33] DEPART: Avion ID 181 decolle (116 passagers)
+[19:26:33] DEPART: Avion ID 333 decolle (132 passagers)
+[19:26:33] ARRIVEE: Avion ID 304 atterri (112 passagers)
+[19:26:33] ARRIVEE: Avion ID 150 atterri (39 passagers)
+[19:26:33] DEPART: Avion ID 304 decolle (112 passagers)
+[19:26:33] DEPART: Avion ID 292 decolle (12 passagers)
+[19:26:34] DEPART: Avion ID 260 decolle (156 passagers)
+[19:26:34] DEPART: Avion ID 331 decolle (141 passagers)
+[19:26:34] DEPART: Avion ID 170 decolle (178 passagers)
+[19:26:34] ARRIVEE: Avion ID 331 atterri (141 passagers)
+[19:26:34] ARRIVEE: Avion ID 350 atterri (74 passagers)
+[19:26:34] DEPART: Avion ID 204 decolle (116 passagers)
+[19:26:34] DEPART: Avion ID 290 decolle (134 passagers)
+[19:26:34] EVENEMENT: Orage - Decollages decales
+[19:26:34] DEPART: Avion ID 194 decolle (113 passagers)
+[19:26:34] ARRIVEE: Avion ID 352 atterri (153 passagers)
+[19:26:34] DEPART: Avion ID 217 decolle (155 passagers)
+[19:26:34] ARRIVEE: Avion ID 204 atterri (116 passagers)
+[19:26:34] DEPART: Avion ID 307 decolle (154 passagers)
+[19:26:34] ARRIVEE: Avion ID 353 atterri (63 passagers)
+[19:26:34] DEPART: Avion ID 320 decolle (58 passagers)
+[19:26:34] DEPART: Avion ID 251 decolle (188 passagers)
+[19:26:34] DEPART: Avion ID 277 decolle (49 passagers)
+[19:26:34] DEPART: Avion ID 352 decolle (153 passagers)
+[19:26:34] DEPART: Avion ID 198 decolle (127 passagers)
+[19:26:34] DEPART: Avion ID 300 decolle (151 passagers)
+[19:26:34] ARRIVEE: Avion ID 251 atterri (188 passagers)
+[19:26:34] DEPART: Avion ID 278 decolle (47 passagers)
+[19:26:34] ARRIVEE: Avion ID 363 atterri (126 passagers)
+[19:26:34] ARRIVEE: Avion ID 278 atterri (47 passagers)
+[19:26:34] DEPART: Avion ID 306 decolle (200 passagers)
+[19:26:34] DEPART: Avion ID 209 decolle (52 passagers)
+[19:26:34] ARRIVEE: Avion ID 352 atterri (153 passagers)
+[19:26:34] DEPART: Avion ID 224 decolle (29 passagers)
+[19:26:35] DEPART: Avion ID 245 decolle (41 passagers)
+[19:26:35] DEPART: Avion ID 263 decolle (11 passagers)
+[19:26:35] ARRIVEE: Avion ID 366 atterri (130 passagers)
+[19:26:35] DEPART: Avion ID 352 decolle (153 passagers)
+[19:26:35] ARRIVEE: Avion ID 300 atterri (151 passagers)
+[19:26:35] ARRIVEE: Avion ID 306 atterri (200 passagers)
+[19:26:35] ARRIVEE: Avion ID 224 atterri (29 passagers)
+[19:26:35] DEPART: Avion ID 284 decolle (172 passagers)
+[19:26:35] ARRIVEE: Avion ID 245 atterri (41 passagers)
+[19:26:35] ARRIVEE: Avion ID 369 atterri (123 passagers)
+[19:26:35] DEPART: Avion ID 306 decolle (200 passagers)
+[19:26:35] DEPART: Avion ID 187 decolle (85 passagers)
+[19:26:35] EVENEMENT: Orage - Decollages decales
+[19:26:35] ARRIVEE: Avion ID 284 atterri (172 passagers)
+[19:26:35] ARRIVEE: Avion ID 372 atterri (83 passagers)
+[19:26:35] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:35] HACK: Navigation compromise
+[19:26:35] DEPART: Avion ID 331 decolle (141 passagers)
+[19:26:35] DEPART: Avion ID 151 decolle (182 passagers)
+[19:26:35] ARRIVEE: Avion ID 373 atterri (79 passagers)
+[19:26:35] DEPART: Avion ID 369 decolle (123 passagers)
+[19:26:35] EVENEMENT: Orage - Decollages decales
+[19:26:35] DEPART: Avion ID 244 decolle (71 passagers)
+[19:26:35] DEPART: Avion ID 330 decolle (91 passagers)
+[19:26:35] DEPART: Avion ID 224 decolle (29 passagers)
+[19:26:35] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:35] HACK: Communications perturbees
+[19:26:35] ARRIVEE: Avion ID 376 atterri (162 passagers)
+[19:26:35] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:35] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:35] ARRIVEE: Avion ID 369 atterri (123 passagers)
+[19:26:35] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:35] ARRIVEE: Avion ID 165 atterri (23 passagers)
+[19:26:35] ARRIVEE: Avion ID 383 atterri (118 passagers)
+[19:26:35] DEPART: Avion ID 281 decolle (57 passagers)
+[19:26:35] ARRIVEE: Avion ID 224 atterri (29 passagers)
+[19:26:35] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:35] HACK: Donnees de vol alterees
+[19:26:35] ARRIVEE: Avion ID 381 atterri (136 passagers)
+[19:26:35] ARRIVEE: Avion ID 177 atterri (49 passagers)
+[19:26:35] ARRIVEE: Avion ID 382 atterri (67 passagers)
+[19:26:35] DEPART: Avion ID 364 decolle (164 passagers)
+[19:26:35] ARRIVEE: Avion ID 281 atterri (57 passagers)
+[19:26:35] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:35] HACK: Navigation compromise
+[19:26:35] DEPART: Avion ID 284 decolle (172 passagers)
+[19:26:35] DEPART: Avion ID 251 decolle (188 passagers)
+[19:26:35] DEPART: Avion ID 245 decolle (41 passagers)
+[19:26:35] DEPART: Avion ID 274 decolle (61 passagers)
+[19:26:35] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:36] DEPART: Avion ID 368 decolle (10 passagers)
+[19:26:36] ARRIVEE: Avion ID 245 atterri (41 passagers)
+[19:26:36] DEPART: Avion ID 136 decolle (59 passagers)
+[19:26:36] DEPART: Avion ID 240 decolle (171 passagers)
+[19:26:36] DEPART: Avion ID 224 decolle (29 passagers)
+[19:26:36] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:36] HACK: Communications perturbees
+[19:26:36] DEPART: Avion ID 366 decolle (130 passagers)
+[19:26:36] ARRIVEE: Avion ID 386 atterri (16 passagers)
+[19:26:36] ARRIVEE: Avion ID 234 atterri (111 passagers)
+[19:26:36] DEPART: Avion ID 385 decolle (103 passagers)
+[19:26:36] EVENEMENT: CRASH - Avion ID 364 détruit
+[19:26:36] ARRIVEE: Avion ID 385 atterri (103 passagers)
+[19:26:36] ARRIVEE: Avion ID 366 atterri (130 passagers)
+[19:26:36] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:36] HACK: Navigation compromise
+[19:26:36] DEPART: Avion ID 386 decolle (16 passagers)
+[19:26:36] ARRIVEE: Avion ID 274 atterri (61 passagers)
+[19:26:36] DEPART: Avion ID 384 decolle (142 passagers)
+[19:26:36] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:36] ARRIVEE: Avion ID 177 atterri (49 passagers)
+[19:26:36] ARRIVEE: Avion ID 398 atterri (45 passagers)
+[19:26:36] DEPART: Avion ID 372 decolle (83 passagers)
+[19:26:36] EVENEMENT: CRASH - Avion ID 397 détruit
+[19:26:36] DEPART: Avion ID 243 decolle (34 passagers)
+[19:26:36] EVENEMENT: CRASH - Avion ID 384 détruit
+[19:26:36] ARRIVEE: Avion ID 390 atterri (51 passagers)
+[19:26:36] ARRIVEE: Avion ID 393 atterri (148 passagers)
+[19:26:36] DEPART: Avion ID 373 decolle (79 passagers)
+[19:26:36] DEPART: Avion ID 335 decolle (1 passagers)
+[19:26:36] EVENEMENT: Orage - Decollages decales
+[19:26:36] DEPART: Avion ID 191 decolle (46 passagers)
+[19:26:36] DEPART: Avion ID 382 decolle (67 passagers)
+[19:26:36] ARRIVEE: Avion ID 406 atterri (22 passagers)
+[19:26:36] DEPART: Avion ID 302 decolle (173 passagers)
+[19:26:36] DEPART: Avion ID 350 decolle (74 passagers)
+[19:26:36] DEPART: Avion ID 406 decolle (22 passagers)
+[19:26:36] DEPART: Avion ID 363 decolle (126 passagers)
+[19:26:36] ARRIVEE: Avion ID 413 atterri (13 passagers)
+[19:26:36] ARRIVEE: Avion ID 350 atterri (74 passagers)
+[19:26:36] DEPART: Avion ID 393 decolle (148 passagers)
+[19:26:37] ARRIVEE: Avion ID 416 atterri (71 passagers)
+[19:26:37] ARRIVEE: Avion ID 363 atterri (126 passagers)
+[19:26:37] DEPART: Avion ID 409 decolle (35 passagers)
+[19:26:37] DEPART: Avion ID 245 decolle (41 passagers)
+[19:26:37] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:37] ARRIVEE: Avion ID 415 atterri (133 passagers)
+[19:26:37] ARRIVEE: Avion ID 393 atterri (148 passagers)
+[19:26:37] DEPART: Avion ID 144 decolle (62 passagers)
+[19:26:37] ARRIVEE: Avion ID 417 atterri (82 passagers)
+[19:26:37] ARRIVEE: Avion ID 409 atterri (35 passagers)
+[19:26:37] ARRIVEE: Avion ID 420 atterri (4 passagers)
+[19:26:37] ARRIVEE: Avion ID 245 atterri (41 passagers)
+[19:26:37] ARRIVEE: Avion ID 418 atterri (83 passagers)
+[19:26:37] ARRIVEE: Avion ID 144 atterri (62 passagers)
+[19:26:37] DEPART: Avion ID 366 decolle (130 passagers)
+[19:26:37] DEPART: Avion ID 363 decolle (126 passagers)
+[19:26:37] DEPART: Avion ID 189 decolle (91 passagers)
+[19:26:37] DEPART: Avion ID 376 decolle (162 passagers)
+[19:26:37] DEPART: Avion ID 415 decolle (133 passagers)
+[19:26:37] DEPART: Avion ID 274 decolle (61 passagers)
+[19:26:37] ARRIVEE: Avion ID 366 atterri (130 passagers)
+[19:26:37] ARRIVEE: Avion ID 189 atterri (91 passagers)
+[19:26:37] ARRIVEE: Avion ID 363 atterri (126 passagers)
+[19:26:37] DEPART: Avion ID 189 decolle (91 passagers)
+[19:26:37] ARRIVEE: Avion ID 376 atterri (162 passagers)
+[19:26:37] DEPART: Avion ID 150 decolle (39 passagers)
+[19:26:37] ARRIVEE: Avion ID 274 atterri (61 passagers)
+[19:26:37] ARRIVEE: Avion ID 415 atterri (133 passagers)
+[19:26:37] ARRIVEE: Avion ID 189 atterri (91 passagers)
+[19:26:37] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:37] HACK: Communications perturbees
+[19:26:37] ARRIVEE: Avion ID 427 atterri (150 passagers)
+[19:26:37] EVENEMENT: CRASH - Avion ID 432 détruit
+[19:26:37] ARRIVEE: Avion ID 429 atterri (32 passagers)
+[19:26:37] ARRIVEE: Avion ID 437 atterri (61 passagers)
+[19:26:37] ARRIVEE: Avion ID 434 atterri (196 passagers)
+[19:26:37] DEPART: Avion ID 195 decolle (11 passagers)
+[19:26:38] DEPART: Avion ID 189 decolle (91 passagers)
+[19:26:38] EVENEMENT: Orage - Decollages decales
+[19:26:38] ARRIVEE: Avion ID 440 atterri (100 passagers)
+[19:26:38] EVENEMENT: Neige - Decollages decales
+[19:26:38] ARRIVEE: Avion ID 438 atterri (143 passagers)
+[19:26:38] DEPART: Avion ID 412 decolle (193 passagers)
+[19:26:38] DEPART: Avion ID 366 decolle (130 passagers)
+[19:26:38] ARRIVEE: Avion ID 435 atterri (132 passagers)
+[19:26:38] DEPART: Avion ID 338 decolle (5 passagers)
+[19:26:38] ARRIVEE: Avion ID 439 atterri (34 passagers)
+[19:26:38] DEPART: Avion ID 420 decolle (4 passagers)
+[19:26:38] DEPART: Avion ID 438 decolle (143 passagers)
+[19:26:38] ARRIVEE: Avion ID 444 atterri (172 passagers)
+[19:26:38] DEPART: Avion ID 390 decolle (51 passagers)
+[19:26:38] DEPART: Avion ID 144 decolle (62 passagers)
+[19:26:38] DEPART: Avion ID 415 decolle (133 passagers)
+[19:26:38] EVENEMENT: CRASH - Avion ID 450 détruit
+[19:26:38] DEPART: Avion ID 281 decolle (57 passagers)
+[19:26:38] ARRIVEE: Avion ID 144 atterri (62 passagers)
+[19:26:38] DEPART: Avion ID 184 decolle (96 passagers)
+[19:26:38] ARRIVEE: Avion ID 438 atterri (143 passagers)
+[19:26:38] ARRIVEE: Avion ID 448 atterri (10 passagers)
+[19:26:38] DEPART: Avion ID 393 decolle (148 passagers)
+[19:26:38] EVENEMENT: CRASH - Avion ID 449 détruit
+[19:26:38] DEPART: Avion ID 381 decolle (136 passagers)
+[19:26:38] ARRIVEE: Avion ID 281 atterri (57 passagers)
+[19:26:38] DEPART: Avion ID 439 decolle (34 passagers)
+[19:26:38] ARRIVEE: Avion ID 446 atterri (183 passagers)
+[19:26:38] DEPART: Avion ID 418 decolle (83 passagers)
+[19:26:38] ARRIVEE: Avion ID 381 atterri (136 passagers)
+[19:26:38] DEPART: Avion ID 245 decolle (41 passagers)
+[19:26:38] ARRIVEE: Avion ID 418 atterri (83 passagers)
+[19:26:38] ARRIVEE: Avion ID 453 atterri (139 passagers)
+[19:26:38] DEPART: Avion ID 317 decolle (130 passagers)
+[19:26:38] ARRIVEE: Avion ID 452 atterri (4 passagers)
+[19:26:38] DEPART: Avion ID 239 decolle (11 passagers)
+[19:26:38] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:38] DEPART: Avion ID 435 decolle (132 passagers)
+[19:26:38] DEPART: Avion ID 305 decolle (89 passagers)
+[19:26:38] ARRIVEE: Avion ID 317 atterri (130 passagers)
+[19:26:38] ARRIVEE: Avion ID 457 atterri (130 passagers)
+[19:26:38] ARRIVEE: Avion ID 305 atterri (89 passagers)
+[19:26:39] DEPART: Avion ID 440 decolle (100 passagers)
+[19:26:39] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:39] ARRIVEE: Avion ID 455 atterri (63 passagers)
+[19:26:39] ARRIVEE: Avion ID 435 atterri (132 passagers)
+[19:26:39] DEPART: Avion ID 434 decolle (196 passagers)
+[19:26:39] ARRIVEE: Avion ID 440 atterri (100 passagers)
+[19:26:39] DEPART: Avion ID 411 decolle (192 passagers)
+[19:26:39] DEPART: Avion ID 383 decolle (118 passagers)
+[19:26:39] EVENEMENT: CRASH - Avion ID 434 détruit
+[19:26:39] EVENEMENT: Neige - Decollages decales
+[19:26:39] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:39] HACK: Donnees de vol alterees
+[19:26:39] ARRIVEE: Avion ID 383 atterri (118 passagers)
+[19:26:39] DEPART: Avion ID 205 decolle (118 passagers)
+[19:26:39] DEPART: Avion ID 231 decolle (132 passagers)
+[19:26:39] DEPART: Avion ID 310 decolle (103 passagers)
+[19:26:39] DEPART: Avion ID 376 decolle (162 passagers)
+[19:26:39] ARRIVEE: Avion ID 462 atterri (17 passagers)
+[19:26:39] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:39] DEPART: Avion ID 399 decolle (20 passagers)
+[19:26:39] EVENEMENT: Pluie - Decollages decales
+[19:26:39] DEPART: Avion ID 204 decolle (116 passagers)
+[19:26:39] ARRIVEE: Avion ID 231 atterri (132 passagers)
+[19:26:39] DEPART: Avion ID 448 decolle (10 passagers)
+[19:26:39] DEPART: Avion ID 418 decolle (83 passagers)
+[19:26:39] ARRIVEE: Avion ID 465 atterri (181 passagers)
+[19:26:39] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:39] DEPART: Avion ID 389 decolle (49 passagers)
+[19:26:39] ARRIVEE: Avion ID 399 atterri (20 passagers)
+[19:26:39] DEPART: Avion ID 281 decolle (57 passagers)
+[19:26:39] DEPART: Avion ID 177 decolle (49 passagers)
+[19:26:39] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:39] HACK: Donnees de vol alterees
+[19:26:39] ARRIVEE: Avion ID 389 atterri (49 passagers)
+[19:26:39] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:39] ARRIVEE: Avion ID 448 atterri (10 passagers)
+[19:26:39] DEPART: Avion ID 144 decolle (62 passagers)
+[19:26:39] DEPART: Avion ID 208 decolle (79 passagers)
+[19:26:39] ARRIVEE: Avion ID 281 atterri (57 passagers)
+[19:26:39] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:39] DEPART: Avion ID 417 decolle (82 passagers)
+[19:26:39] ARRIVEE: Avion ID 474 atterri (15 passagers)
+[19:26:39] DEPART: Avion ID 309 decolle (175 passagers)
+[19:26:39] ARRIVEE: Avion ID 309 atterri (175 passagers)
+[19:26:39] ARRIVEE: Avion ID 472 atterri (52 passagers)
+[19:26:40] DEPART: Avion ID 231 decolle (132 passagers)
+[19:26:40] ARRIVEE: Avion ID 478 atterri (145 passagers)
+[19:26:40] DEPART: Avion ID 203 decolle (97 passagers)
+[19:26:40] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:40] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:40] HACK: Communications perturbees
+[19:26:40] ARRIVEE: Avion ID 473 atterri (156 passagers)
+[19:26:40] ARRIVEE: Avion ID 417 atterri (82 passagers)
+[19:26:40] ARRIVEE: Avion ID 231 atterri (132 passagers)
+[19:26:40] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:40] DEPART: Avion ID 457 decolle (130 passagers)
+[19:26:40] DEPART: Avion ID 413 decolle (13 passagers)
+[19:26:40] DEPART: Avion ID 440 decolle (100 passagers)
+[19:26:40] DEPART: Avion ID 233 decolle (73 passagers)
+[19:26:40] ARRIVEE: Avion ID 483 atterri (36 passagers)
+[19:26:40] DEPART: Avion ID 156 decolle (161 passagers)
+[19:26:40] ARRIVEE: Avion ID 233 atterri (73 passagers)
+[19:26:40] DEPART: Avion ID 462 decolle (17 passagers)
+[19:26:40] DEPART: Avion ID 222 decolle (70 passagers)
+[19:26:40] DEPART: Avion ID 363 decolle (126 passagers)
+[19:26:40] DEPART: Avion ID 474 decolle (15 passagers)
+[19:26:40] ARRIVEE: Avion ID 222 atterri (70 passagers)
+[19:26:40] ARRIVEE: Avion ID 484 atterri (94 passagers)
+[19:26:40] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:40] ARRIVEE: Avion ID 413 atterri (13 passagers)
+[19:26:40] ARRIVEE: Avion ID 485 atterri (138 passagers)
+[19:26:40] ARRIVEE: Avion ID 462 atterri (17 passagers)
+[19:26:40] EVENEMENT: Neige - Decollages decales
+[19:26:40] DEPART: Avion ID 416 decolle (71 passagers)
+[19:26:40] ARRIVEE: Avion ID 474 atterri (15 passagers)
+[19:26:40] ARRIVEE: Avion ID 416 atterri (71 passagers)
+[19:26:41] ARRIVEE: Avion ID 486 atterri (110 passagers)
+[19:26:41] DEPART: Avion ID 228 decolle (172 passagers)
+[19:26:41] DEPART: Avion ID 444 decolle (172 passagers)
+[19:26:41] DEPART: Avion ID 455 decolle (63 passagers)
+[19:26:41] DEPART: Avion ID 429 decolle (32 passagers)
+[19:26:41] ARRIVEE: Avion ID 228 atterri (172 passagers)
+[19:26:41] DEPART: Avion ID 437 decolle (61 passagers)
+[19:26:41] ARRIVEE: Avion ID 444 atterri (172 passagers)
+[19:26:41] ARRIVEE: Avion ID 429 atterri (32 passagers)
+[19:26:41] ARRIVEE: Avion ID 493 atterri (81 passagers)
+[19:26:41] ARRIVEE: Avion ID 437 atterri (61 passagers)
+[19:26:41] DEPART: Avion ID 305 decolle (89 passagers)
+[19:26:41] ARRIVEE: Avion ID 491 atterri (92 passagers)
+[19:26:41] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:41] ARRIVEE: Avion ID 494 atterri (171 passagers)
+[19:26:41] ARRIVEE: Avion ID 305 atterri (89 passagers)
+[19:26:41] DEPART: Avion ID 274 decolle (61 passagers)
+[19:26:41] ARRIVEE: Avion ID 165 atterri (23 passagers)
+[19:26:41] DEPART: Avion ID 474 decolle (15 passagers)
+[19:26:41] DEPART: Avion ID 231 decolle (132 passagers)
+[19:26:41] ARRIVEE: Avion ID 231 atterri (132 passagers)
+[19:26:41] ARRIVEE: Avion ID 274 atterri (61 passagers)
+[19:26:41] ARRIVEE: Avion ID 474 atterri (15 passagers)
+[19:26:41] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:41] HACK: Navigation compromise
+[19:26:41] ARRIVEE: Avion ID 501 atterri (164 passagers)
+[19:26:41] ARRIVEE: Avion ID 500 atterri (79 passagers)
+[19:26:41] EVENEMENT: Pluie - Decollages decales
+[19:26:41] DEPART: Avion ID 381 decolle (136 passagers)
+[19:26:41] DEPART: Avion ID 427 decolle (150 passagers)
+[19:26:41] DEPART: Avion ID 309 decolle (175 passagers)
+[19:26:41] DEPART: Avion ID 389 decolle (49 passagers)
+[19:26:41] ARRIVEE: Avion ID 503 atterri (72 passagers)
+[19:26:41] DEPART: Avion ID 452 decolle (4 passagers)
+[19:26:41] DEPART: Avion ID 416 decolle (71 passagers)
+[19:26:41] DEPART: Avion ID 501 decolle (164 passagers)
+[19:26:41] DEPART: Avion ID 233 decolle (73 passagers)
+[19:26:41] DEPART: Avion ID 278 decolle (47 passagers)
+[19:26:41] ARRIVEE: Avion ID 389 atterri (49 passagers)
+[19:26:42] ARRIVEE: Avion ID 416 atterri (71 passagers)
+[19:26:42] DEPART: Avion ID 446 decolle (183 passagers)
+[19:26:42] DEPART: Avion ID 193 decolle (170 passagers)
+[19:26:42] ARRIVEE: Avion ID 233 atterri (73 passagers)
+[19:26:42] EVENEMENT: CRASH - Avion ID 309 détruit
+[19:26:42] ARRIVEE: Avion ID 446 atterri (183 passagers)
+[19:26:42] DEPART: Avion ID 383 decolle (118 passagers)
+[19:26:42] DEPART: Avion ID 228 decolle (172 passagers)
+[19:26:42] DEPART: Avion ID 484 decolle (94 passagers)
+[19:26:42] DEPART: Avion ID 471 decolle (33 passagers)
+[19:26:42] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:42] HACK: Communications perturbees
+[19:26:42] DEPART: Avion ID 165 decolle (23 passagers)
+[19:26:42] ARRIVEE: Avion ID 484 atterri (94 passagers)
+[19:26:42] DEPART: Avion ID 493 decolle (81 passagers)
+[19:26:42] ARRIVEE: Avion ID 510 atterri (91 passagers)
+[19:26:42] ARRIVEE: Avion ID 506 atterri (19 passagers)
+[19:26:42] EVENEMENT: Pluie - Decollages decales
+[19:26:42] ARRIVEE: Avion ID 511 atterri (48 passagers)
+[19:26:42] ARRIVEE: Avion ID 508 atterri (177 passagers)
+[19:26:42] DEPART: Avion ID 417 decolle (82 passagers)
+[19:26:42] ARRIVEE: Avion ID 512 atterri (181 passagers)
+[19:26:42] DEPART: Avion ID 416 decolle (71 passagers)
+[19:26:42] EVENEMENT: Pluie - Decollages decales
+[19:26:42] DEPART: Avion ID 385 decolle (103 passagers)
+[19:26:42] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:42] DEPART: Avion ID 484 decolle (94 passagers)
+[19:26:42] ARRIVEE: Avion ID 416 atterri (71 passagers)
+[19:26:42] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:42] DEPART: Avion ID 462 decolle (17 passagers)
+[19:26:42] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:42] HACK: Communications perturbees
+[19:26:42] DEPART: Avion ID 444 decolle (172 passagers)
+[19:26:42] DEPART: Avion ID 233 decolle (73 passagers)
+[19:26:42] DEPART: Avion ID 230 decolle (33 passagers)
+[19:26:42] DEPART: Avion ID 438 decolle (143 passagers)
+[19:26:42] EVENEMENT: Neige - Decollages decales
+[19:26:43] DEPART: Avion ID 317 decolle (130 passagers)
+[19:26:43] ARRIVEE: Avion ID 230 atterri (33 passagers)
+[19:26:43] DEPART: Avion ID 491 decolle (92 passagers)
+[19:26:43] DEPART: Avion ID 410 decolle (180 passagers)
+[19:26:43] ARRIVEE: Avion ID 517 atterri (138 passagers)
+[19:26:43] DEPART: Avion ID 472 decolle (52 passagers)
+[19:26:43] ARRIVEE: Avion ID 385 atterri (103 passagers)
+[19:26:43] ARRIVEE: Avion ID 317 atterri (130 passagers)
+[19:26:43] DEPART: Avion ID 182 decolle (53 passagers)
+[19:26:43] ARRIVEE: Avion ID 444 atterri (172 passagers)
+[19:26:43] ARRIVEE: Avion ID 410 atterri (180 passagers)
+[19:26:43] ARRIVEE: Avion ID 472 atterri (52 passagers)
+[19:26:43] DEPART: Avion ID 521 decolle (172 passagers)
+[19:26:43] ARRIVEE: Avion ID 182 atterri (53 passagers)
+[19:26:43] EVENEMENT: Neige - Decollages decales
+[19:26:43] DEPART: Avion ID 353 decolle (63 passagers)
+[19:26:43] DEPART: Avion ID 416 decolle (71 passagers)
+[19:26:43] ARRIVEE: Avion ID 521 atterri (172 passagers)
+[19:26:43] EVENEMENT: Pluie - Decollages decales
+[19:26:43] DEPART: Avion ID 503 decolle (72 passagers)
+[19:26:43] DEPART: Avion ID 317 decolle (130 passagers)
+[19:26:43] DEPART: Avion ID 485 decolle (138 passagers)
+[19:26:43] ARRIVEE: Avion ID 529 atterri (29 passagers)
+[19:26:43] ARRIVEE: Avion ID 416 atterri (71 passagers)
+[19:26:43] ARRIVEE: Avion ID 526 atterri (194 passagers)
+[19:26:43] ARRIVEE: Avion ID 524 atterri (36 passagers)
+[19:26:43] DEPART: Avion ID 230 decolle (33 passagers)
+[19:26:43] EVENEMENT: CRASH - Avion ID 230 détruit
+[19:26:43] DEPART: Avion ID 453 decolle (139 passagers)
+[19:26:43] ARRIVEE: Avion ID 485 atterri (138 passagers)
+[19:26:43] EVENEMENT: CRASH - Avion ID 503 détruit
+[19:26:43] DEPART: Avion ID 529 decolle (29 passagers)
+[19:26:43] ARRIVEE: Avion ID 453 atterri (139 passagers)
+[19:26:43] ARRIVEE: Avion ID 527 atterri (159 passagers)
+[19:26:43] EVENEMENT: Orage - Decollages decales
+[19:26:43] DEPART: Avion ID 526 decolle (194 passagers)
+[19:26:43] EVENEMENT: Pluie - Decollages decales
+[19:26:43] DEPART: Avion ID 518 decolle (81 passagers)
+[19:26:43] ARRIVEE: Avion ID 526 atterri (194 passagers)
+[19:26:44] DEPART: Avion ID 300 decolle (151 passagers)
+[19:26:44] ARRIVEE: Avion ID 534 atterri (14 passagers)
+[19:26:44] ARRIVEE: Avion ID 529 atterri (29 passagers)
+[19:26:44] ARRIVEE: Avion ID 532 atterri (13 passagers)
+[19:26:44] DEPART: Avion ID 350 decolle (74 passagers)
+[19:26:44] DEPART: Avion ID 527 decolle (159 passagers)
+[19:26:44] DEPART: Avion ID 478 decolle (145 passagers)
+[19:26:44] ARRIVEE: Avion ID 518 atterri (81 passagers)
+[19:26:44] ARRIVEE: Avion ID 300 atterri (151 passagers)
+[19:26:44] DEPART: Avion ID 517 decolle (138 passagers)
+[19:26:44] ARRIVEE: Avion ID 527 atterri (159 passagers)
+[19:26:44] ARRIVEE: Avion ID 538 atterri (198 passagers)
+[19:26:44] EVENEMENT: CRASH - Avion ID 517 détruit
+[19:26:44] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:44] ARRIVEE: Avion ID 539 atterri (171 passagers)
+[19:26:44] ARRIVEE: Avion ID 478 atterri (145 passagers)
+[19:26:44] ARRIVEE: Avion ID 543 atterri (148 passagers)
+[19:26:44] DEPART: Avion ID 300 decolle (151 passagers)
+[19:26:44] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:44] DEPART: Avion ID 486 decolle (110 passagers)
+[19:26:44] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:44] ARRIVEE: Avion ID 547 atterri (98 passagers)
+[19:26:44] ARRIVEE: Avion ID 486 atterri (110 passagers)
+[19:26:44] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:44] DEPART: Avion ID 437 decolle (61 passagers)
+[19:26:44] ARRIVEE: Avion ID 550 atterri (56 passagers)
+[19:26:44] EVENEMENT: Pluie - Decollages decales
+[19:26:44] DEPART: Avion ID 527 decolle (159 passagers)
+[19:26:44] ARRIVEE: Avion ID 551 atterri (166 passagers)
+[19:26:44] ARRIVEE: Avion ID 437 atterri (61 passagers)
+[19:26:44] DEPART: Avion ID 532 decolle (13 passagers)
+[19:26:44] ARRIVEE: Avion ID 552 atterri (126 passagers)
+[19:26:44] ARRIVEE: Avion ID 532 atterri (13 passagers)
+[19:26:44] DEPART: Avion ID 465 decolle (181 passagers)
+[19:26:44] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:44] HACK: Navigation compromise
+[19:26:44] DEPART: Avion ID 222 decolle (70 passagers)
+[19:26:44] ARRIVEE: Avion ID 554 atterri (179 passagers)
+[19:26:44] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:44] ARRIVEE: Avion ID 222 atterri (70 passagers)
+[19:26:44] DEPART: Avion ID 554 decolle (179 passagers)
+[19:26:44] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:45] ARRIVEE: Avion ID 554 atterri (179 passagers)
+[19:26:45] DEPART: Avion ID 409 decolle (35 passagers)
+[19:26:45] DEPART: Avion ID 494 decolle (171 passagers)
+[19:26:45] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:45] DEPART: Avion ID 518 decolle (81 passagers)
+[19:26:45] ARRIVEE: Avion ID 553 atterri (107 passagers)
+[19:26:45] DEPART: Avion ID 524 decolle (36 passagers)
+[19:26:45] DEPART: Avion ID 554 decolle (179 passagers)
+[19:26:45] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:45] ARRIVEE: Avion ID 518 atterri (81 passagers)
+[19:26:45] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:45] HACK: Donnees de vol alterees
+[19:26:45] ARRIVEE: Avion ID 524 atterri (36 passagers)
+[19:26:45] ARRIVEE: Avion ID 409 atterri (35 passagers)
+[19:26:45] DEPART: Avion ID 510 decolle (91 passagers)
+[19:26:45] DEPART: Avion ID 444 decolle (172 passagers)
+[19:26:45] DEPART: Avion ID 398 decolle (45 passagers)
+[19:26:45] DEPART: Avion ID 437 decolle (61 passagers)
+[19:26:45] ARRIVEE: Avion ID 510 atterri (91 passagers)
+[19:26:45] DEPART: Avion ID 478 decolle (145 passagers)
+[19:26:45] DEPART: Avion ID 530 decolle (40 passagers)
+[19:26:45] ARRIVEE: Avion ID 554 atterri (179 passagers)
+[19:26:45] DEPART: Avion ID 182 decolle (53 passagers)
+[19:26:45] DEPART: Avion ID 543 decolle (148 passagers)
+[19:26:45] DEPART: Avion ID 474 decolle (15 passagers)
+[19:26:45] EVENEMENT: Orage - Decollages decales
+[19:26:45] ARRIVEE: Avion ID 543 atterri (148 passagers)
+[19:26:45] DEPART: Avion ID 518 decolle (81 passagers)
+[19:26:45] DEPART: Avion ID 486 decolle (110 passagers)
+[19:26:45] ARRIVEE: Avion ID 474 atterri (15 passagers)
+[19:26:45] DEPART: Avion ID 410 decolle (180 passagers)
+[19:26:45] DEPART: Avion ID 369 decolle (123 passagers)
+[19:26:45] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:45] DEPART: Avion ID 552 decolle (126 passagers)
+[19:26:45] ARRIVEE: Avion ID 563 atterri (21 passagers)
+[19:26:45] DEPART: Avion ID 399 decolle (20 passagers)
+[19:26:45] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:45] DEPART: Avion ID 551 decolle (166 passagers)
+[19:26:45] DEPART: Avion ID 538 decolle (198 passagers)
+[19:26:45] DEPART: Avion ID 231 decolle (132 passagers)
+[19:26:45] ARRIVEE: Avion ID 564 atterri (89 passagers)
+[19:26:45] DEPART: Avion ID 446 decolle (183 passagers)
+[19:26:45] ARRIVEE: Avion ID 551 atterri (166 passagers)
+[19:26:46] ARRIVEE: Avion ID 538 atterri (198 passagers)
+[19:26:46] ARRIVEE: Avion ID 567 atterri (91 passagers)
+[19:26:46] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:46] ARRIVEE: Avion ID 570 atterri (12 passagers)
+[19:26:46] DEPART: Avion ID 522 decolle (73 passagers)
+[19:26:46] ARRIVEE: Avion ID 568 atterri (194 passagers)
+[19:26:46] ARRIVEE: Avion ID 552 atterri (126 passagers)
+[19:26:46] ARRIVEE: Avion ID 321 atterri (166 passagers)
+[19:26:46] ARRIVEE: Avion ID 522 atterri (73 passagers)
+[19:26:46] DEPART: Avion ID 564 decolle (89 passagers)
+[19:26:46] ARRIVEE: Avion ID 566 atterri (2 passagers)
+[19:26:46] ARRIVEE: Avion ID 573 atterri (163 passagers)
+[19:26:46] DEPART: Avion ID 521 decolle (172 passagers)
+[19:26:46] DEPART: Avion ID 551 decolle (166 passagers)
+[19:26:46] DEPART: Avion ID 510 decolle (91 passagers)
+[19:26:46] ARRIVEE: Avion ID 564 atterri (89 passagers)
+[19:26:46] ARRIVEE: Avion ID 576 atterri (146 passagers)
+[19:26:46] ARRIVEE: Avion ID 551 atterri (166 passagers)
+[19:26:46] DEPART: Avion ID 528 decolle (21 passagers)
+[19:26:46] ARRIVEE: Avion ID 574 atterri (44 passagers)
+[19:26:46] ARRIVEE: Avion ID 510 atterri (91 passagers)
+[19:26:46] ARRIVEE: Avion ID 528 atterri (21 passagers)
+[19:26:46] ARRIVEE: Avion ID 521 atterri (172 passagers)
+[19:26:46] ARRIVEE: Avion ID 578 atterri (117 passagers)
+[19:26:46] DEPART: Avion ID 222 decolle (70 passagers)
+[19:26:46] DEPART: Avion ID 538 decolle (198 passagers)
+[19:26:46] EVENEMENT: Pluie - Decollages decales
+[19:26:46] EVENEMENT: Pluie - Decollages decales
+[19:26:46] DEPART: Avion ID 321 decolle (166 passagers)
+[19:26:46] DEPART: Avion ID 488 decolle (27 passagers)
+[19:26:46] ARRIVEE: Avion ID 222 atterri (70 passagers)
+[19:26:46] ARRIVEE: Avion ID 579 atterri (185 passagers)
+[19:26:46] DEPART: Avion ID 506 decolle (19 passagers)
+[19:26:46] ARRIVEE: Avion ID 580 atterri (185 passagers)
+[19:26:46] ARRIVEE: Avion ID 538 atterri (198 passagers)
+[19:26:46] DEPART: Avion ID 529 decolle (29 passagers)
+[19:26:47] DEPART: Avion ID 435 decolle (132 passagers)
+[19:26:47] EVENEMENT: Pluie - Decollages decales
+[19:26:47] ARRIVEE: Avion ID 506 atterri (19 passagers)
+[19:26:47] DEPART: Avion ID 547 decolle (98 passagers)
+[19:26:47] DEPART: Avion ID 416 decolle (71 passagers)
+[19:26:47] EVENEMENT: CRASH - Avion ID 547 détruit
+[19:26:47] DEPART: Avion ID 429 decolle (32 passagers)
+[19:26:47] DEPART: Avion ID 551 decolle (166 passagers)
+[19:26:47] DEPART: Avion ID 222 decolle (70 passagers)
+[19:26:47] DEPART: Avion ID 543 decolle (148 passagers)
+[19:26:47] ARRIVEE: Avion ID 488 atterri (27 passagers)
+[19:26:47] DEPART: Avion ID 500 decolle (79 passagers)
+[19:26:47] ARRIVEE: Avion ID 583 atterri (108 passagers)
+[19:26:47] DEPART: Avion ID 574 decolle (44 passagers)
+[19:26:47] DEPART: Avion ID 564 decolle (89 passagers)
+[19:26:47] EVENEMENT: Orage - Decollages decales
+[19:26:47] ARRIVEE: Avion ID 582 atterri (198 passagers)
+[19:26:47] ARRIVEE: Avion ID 529 atterri (29 passagers)
+[19:26:47] EVENEMENT: Neige - Decollages decales
+[19:26:47] ARRIVEE: Avion ID 584 atterri (184 passagers)
+[19:26:47] ARRIVEE: Avion ID 500 atterri (79 passagers)
+[19:26:47] DEPART: Avion ID 520 decolle (23 passagers)
+[19:26:47] DEPART: Avion ID 571 decolle (2 passagers)
+[19:26:47] DEPART: Avion ID 414 decolle (48 passagers)
+[19:26:47] ARRIVEE: Avion ID 589 atterri (34 passagers)
+[19:26:47] ARRIVEE: Avion ID 586 atterri (6 passagers)
+[19:26:47] ARRIVEE: Avion ID 571 atterri (2 passagers)
+[19:26:47] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:47] ARRIVEE: Avion ID 588 atterri (85 passagers)
+[19:26:47] ARRIVEE: Avion ID 520 atterri (23 passagers)
+[19:26:47] DEPART: Avion ID 473 decolle (156 passagers)
+[19:26:47] EVENEMENT: Orage - Decollages decales
+[19:26:47] ARRIVEE: Avion ID 473 atterri (156 passagers)
+[19:26:47] DEPART: Avion ID 488 decolle (27 passagers)
+[19:26:47] DEPART: Avion ID 566 decolle (2 passagers)
+[19:26:48] DEPART: Avion ID 506 decolle (19 passagers)
+[19:26:48] DEPART: Avion ID 385 decolle (103 passagers)
+[19:26:48] ARRIVEE: Avion ID 593 atterri (3 passagers)
+[19:26:48] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:48] HACK: Donnees de vol alterees
+[19:26:48] DEPART: Avion ID 500 decolle (79 passagers)
+[19:26:48] ARRIVEE: Avion ID 488 atterri (27 passagers)
+[19:26:48] ARRIVEE: Avion ID 385 atterri (103 passagers)
+[19:26:48] DEPART: Avion ID 448 decolle (10 passagers)
+[19:26:48] DEPART: Avion ID 539 decolle (171 passagers)
+[19:26:48] DEPART: Avion ID 571 decolle (2 passagers)
+[19:26:48] EVENEMENT: CRASH - Avion ID 571 détruit
+[19:26:48] ARRIVEE: Avion ID 448 atterri (10 passagers)
+[19:26:48] ARRIVEE: Avion ID 595 atterri (31 passagers)
+[19:26:48] DEPART: Avion ID 524 decolle (36 passagers)
+[19:26:48] ARRIVEE: Avion ID 500 atterri (79 passagers)
+[19:26:48] ARRIVEE: Avion ID 594 atterri (196 passagers)
+[19:26:48] ARRIVEE: Avion ID 539 atterri (171 passagers)
+[19:26:48] DEPART: Avion ID 409 decolle (35 passagers)
+[19:26:48] DEPART: Avion ID 579 decolle (185 passagers)
+[19:26:48] EVENEMENT: Pluie - Decollages decales
+[19:26:48] DEPART: Avion ID 553 decolle (107 passagers)
+[19:26:48] ARRIVEE: Avion ID 596 atterri (40 passagers)
+[19:26:48] ARRIVEE: Avion ID 600 atterri (34 passagers)
+[19:26:48] DEPART: Avion ID 582 decolle (198 passagers)
+[19:26:48] ARRIVEE: Avion ID 579 atterri (185 passagers)
+[19:26:48] ARRIVEE: Avion ID 599 atterri (116 passagers)
+[19:26:48] ARRIVEE: Avion ID 524 atterri (36 passagers)
+[19:26:48] EVENEMENT: Orage - Decollages decales
+[19:26:48] ARRIVEE: Avion ID 553 atterri (107 passagers)
+[19:26:48] DEPART: Avion ID 473 decolle (156 passagers)
+[19:26:48] DEPART: Avion ID 538 decolle (198 passagers)
+[19:26:48] DEPART: Avion ID 414 decolle (48 passagers)
+[19:26:48] DEPART: Avion ID 552 decolle (126 passagers)
+[19:26:48] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:48] DEPART: Avion ID 589 decolle (34 passagers)
+[19:26:48] ARRIVEE: Avion ID 473 atterri (156 passagers)
+[19:26:48] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:48] DEPART: Avion ID 554 decolle (179 passagers)
+[19:26:48] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:48] DEPART: Avion ID 588 decolle (85 passagers)
+[19:26:48] EVENEMENT: Orage - Decollages decales
+[19:26:49] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:26:49] DEPART: Avion ID 568 decolle (194 passagers)
+[19:26:49] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:49] ARRIVEE: Avion ID 614 atterri (32 passagers)
+[19:26:49] ARRIVEE: Avion ID 606 atterri (166 passagers)
+[19:26:49] ARRIVEE: Avion ID 609 atterri (146 passagers)
+[19:26:49] ARRIVEE: Avion ID 589 atterri (34 passagers)
+[19:26:49] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:49] ARRIVEE: Avion ID 613 atterri (30 passagers)
+[19:26:49] ARRIVEE: Avion ID 611 atterri (138 passagers)
+[19:26:49] ARRIVEE: Avion ID 568 atterri (194 passagers)
+[19:26:49] ARRIVEE: Avion ID 618 atterri (128 passagers)
+[19:26:49] DEPART: Avion ID 594 decolle (196 passagers)
+[19:26:49] ARRIVEE: Avion ID 619 atterri (108 passagers)
+[19:26:49] DEPART: Avion ID 448 decolle (10 passagers)
+[19:26:49] ARRIVEE: Avion ID 594 atterri (196 passagers)
+[19:26:49] ARRIVEE: Avion ID 621 atterri (25 passagers)
+[19:26:49] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:49] HACK: Communications perturbees
+[19:26:49] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:49] DEPART: Avion ID 532 decolle (13 passagers)
+[19:26:49] ARRIVEE: Avion ID 622 atterri (160 passagers)
+[19:26:50] ARRIVEE: Avion ID 487 atterri (53 passagers)
+[19:26:50] DEPART: Avion ID 485 decolle (138 passagers)
+[19:26:50] ARRIVEE: Avion ID 532 atterri (13 passagers)
+[19:26:50] ARRIVEE: Avion ID 625 atterri (160 passagers)
+[19:26:50] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:50] HACK: Communications perturbees
+[19:26:50] ARRIVEE: Avion ID 485 atterri (138 passagers)
+[19:26:50] DEPART: Avion ID 385 decolle (103 passagers)
+[19:26:50] DEPART: Avion ID 609 decolle (146 passagers)
+[19:26:50] EVENEMENT: Orage - Decollages decales
+[19:26:50] ARRIVEE: Avion ID 609 atterri (146 passagers)
+[19:26:50] EVENEMENT: Orage - Decollages decales
+[19:26:50] DEPART: Avion ID 567 decolle (91 passagers)
+[19:26:50] DEPART: Avion ID 568 decolle (194 passagers)
+[19:26:50] DEPART: Avion ID 570 decolle (12 passagers)
+[19:26:50] DEPART: Avion ID 573 decolle (163 passagers)
+[19:26:50] ARRIVEE: Avion ID 636 atterri (186 passagers)
+[19:26:50] EVENEMENT: CRASH - Avion ID 639 détruit
+[19:26:50] DEPART: Avion ID 483 decolle (36 passagers)
+[19:26:50] DEPART: Avion ID 609 decolle (146 passagers)
+[19:26:50] ARRIVEE: Avion ID 634 atterri (76 passagers)
+[19:26:51] ARRIVEE: Avion ID 483 atterri (36 passagers)
+[19:26:51] DEPART: Avion ID 522 decolle (73 passagers)
+[19:26:51] DEPART: Avion ID 576 decolle (146 passagers)
+[19:26:51] DEPART: Avion ID 528 decolle (21 passagers)
+[19:26:51] DEPART: Avion ID 595 decolle (31 passagers)
+[19:26:51] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:51] HACK: Navigation compromise
+[19:26:51] DEPART: Avion ID 594 decolle (196 passagers)
+[19:26:51] DEPART: Avion ID 614 decolle (32 passagers)
+[19:26:51] DEPART: Avion ID 532 decolle (13 passagers)
+[19:26:51] DEPART: Avion ID 512 decolle (181 passagers)
+[19:26:51] DEPART: Avion ID 586 decolle (6 passagers)
+[19:26:51] ARRIVEE: Avion ID 595 atterri (31 passagers)
+[19:26:51] ARRIVEE: Avion ID 528 atterri (21 passagers)
+[19:26:51] DEPART: Avion ID 589 decolle (34 passagers)
+[19:26:51] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:51] HACK: Navigation compromise
+[19:26:51] ARRIVEE: Avion ID 512 atterri (181 passagers)
+[19:26:51] ARRIVEE: Avion ID 586 atterri (6 passagers)
+[19:26:51] DEPART: Avion ID 580 decolle (185 passagers)
+[19:26:51] DEPART: Avion ID 485 decolle (138 passagers)
+[19:26:51] ARRIVEE: Avion ID 645 atterri (41 passagers)
+[19:26:51] DEPART: Avion ID 487 decolle (53 passagers)
+[19:26:51] DEPART: Avion ID 472 decolle (52 passagers)
+[19:26:51] ARRIVEE: Avion ID 580 atterri (185 passagers)
+[19:26:51] EVENEMENT: CRASH - Avion ID 472 détruit
+[19:26:51] DEPART: Avion ID 511 decolle (48 passagers)
+[19:26:51] DEPART: Avion ID 508 decolle (177 passagers)
+[19:26:51] DEPART: Avion ID 512 decolle (181 passagers)
+[19:26:51] ARRIVEE: Avion ID 511 atterri (48 passagers)
+[19:26:51] DEPART: Avion ID 563 decolle (21 passagers)
+[19:26:52] ARRIVEE: Avion ID 653 atterri (75 passagers)
+[19:26:52] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:52] DEPART: Avion ID 550 decolle (56 passagers)
+[19:26:52] ARRIVEE: Avion ID 380 atterri (11 passagers)
+[19:26:52] ARRIVEE: Avion ID 563 atterri (21 passagers)
+[19:26:52] ARRIVEE: Avion ID 655 atterri (124 passagers)
+[19:26:52] EVENEMENT: Orage - Decollages decales
+[19:26:52] ARRIVEE: Avion ID 657 atterri (167 passagers)
+[19:26:52] ARRIVEE: Avion ID 550 atterri (56 passagers)
+[19:26:52] DEPART: Avion ID 579 decolle (185 passagers)
+[19:26:52] DEPART: Avion ID 281 decolle (57 passagers)
+[19:26:52] DEPART: Avion ID 658 decolle (16 passagers)
+[19:26:52] EVENEMENT: Pluie - Decollages decales
+[19:26:52] DEPART: Avion ID 595 decolle (31 passagers)
+[19:26:52] ARRIVEE: Avion ID 664 atterri (111 passagers)
+[19:26:52] DEPART: Avion ID 618 decolle (128 passagers)
+[19:26:52] DEPART: Avion ID 413 decolle (13 passagers)
+[19:26:52] DEPART: Avion ID 524 decolle (36 passagers)
+[19:26:52] EVENEMENT: Orage - Decollages decales
+[19:26:52] ARRIVEE: Avion ID 618 atterri (128 passagers)
+[19:26:52] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:52] HACK: Navigation compromise
+[19:26:52] DEPART: Avion ID 625 decolle (160 passagers)
+[19:26:52] ARRIVEE: Avion ID 666 atterri (89 passagers)
+[19:26:52] EVENEMENT: Pluie - Decollages decales
+[19:26:52] ARRIVEE: Avion ID 668 atterri (166 passagers)
+[19:26:52] ARRIVEE: Avion ID 658 atterri (16 passagers)
+[19:26:52] DEPART: Avion ID 529 decolle (29 passagers)
+[19:26:52] ARRIVEE: Avion ID 625 atterri (160 passagers)
+[19:26:52] ARRIVEE: Avion ID 595 atterri (31 passagers)
+[19:26:52] DEPART: Avion ID 500 decolle (79 passagers)
+[19:26:52] ARRIVEE: Avion ID 413 atterri (13 passagers)
+[19:26:52] ARRIVEE: Avion ID 500 atterri (79 passagers)
+[19:26:52] DEPART: Avion ID 473 decolle (156 passagers)
+[19:26:53] ARRIVEE: Avion ID 669 atterri (190 passagers)
+[19:26:53] DEPART: Avion ID 611 decolle (138 passagers)
+[19:26:53] DEPART: Avion ID 634 decolle (76 passagers)
+[19:26:53] ARRIVEE: Avion ID 473 atterri (156 passagers)
+[19:26:53] ARRIVEE: Avion ID 671 atterri (65 passagers)
+[19:26:53] ARRIVEE: Avion ID 634 atterri (76 passagers)
+[19:26:53] ARRIVEE: Avion ID 611 atterri (138 passagers)
+[19:26:53] DEPART: Avion ID 500 decolle (79 passagers)
+[19:26:53] DEPART: Avion ID 274 decolle (61 passagers)
+[19:26:53] DEPART: Avion ID 414 decolle (48 passagers)
+[19:26:53] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:53] ARRIVEE: Avion ID 274 atterri (61 passagers)
+[19:26:53] DEPART: Avion ID 553 decolle (107 passagers)
+[19:26:53] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:53] HACK: Communications perturbees
+[19:26:53] ARRIVEE: Avion ID 676 atterri (52 passagers)
+[19:26:53] ARRIVEE: Avion ID 675 atterri (89 passagers)
+[19:26:53] DEPART: Avion ID 234 decolle (111 passagers)
+[19:26:53] DEPART: Avion ID 580 decolle (185 passagers)
+[19:26:53] DEPART: Avion ID 389 decolle (49 passagers)
+[19:26:53] ARRIVEE: Avion ID 580 atterri (185 passagers)
+[19:26:53] DEPART: Avion ID 671 decolle (65 passagers)
+[19:26:53] ARRIVEE: Avion ID 680 atterri (111 passagers)
+[19:26:53] DEPART: Avion ID 676 decolle (52 passagers)
+[19:26:53] DEPART: Avion ID 595 decolle (31 passagers)
+[19:26:53] ARRIVEE: Avion ID 389 atterri (49 passagers)
+[19:26:54] DEPART: Avion ID 488 decolle (27 passagers)
+[19:26:54] ARRIVEE: Avion ID 677 atterri (144 passagers)
+[19:26:54] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:54] HACK: Donnees de vol alterees
+[19:26:54] ARRIVEE: Avion ID 676 atterri (52 passagers)
+[19:26:54] ARRIVEE: Avion ID 488 atterri (27 passagers)
+[19:26:54] ARRIVEE: Avion ID 671 atterri (65 passagers)
+[19:26:54] DEPART: Avion ID 613 decolle (30 passagers)
+[19:26:54] DEPART: Avion ID 658 decolle (16 passagers)
+[19:26:54] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:54] HACK: Communications perturbees
+[19:26:54] ARRIVEE: Avion ID 689 atterri (179 passagers)
+[19:26:54] DEPART: Avion ID 539 decolle (171 passagers)
+[19:26:54] ARRIVEE: Avion ID 658 atterri (16 passagers)
+[19:26:54] ARRIVEE: Avion ID 539 atterri (171 passagers)
+[19:26:54] EVENEMENT: Orage - Decollages decales
+[19:26:54] ARRIVEE: Avion ID 690 atterri (146 passagers)
+[19:26:54] DEPART: Avion ID 578 decolle (117 passagers)
+[19:26:54] DEPART: Avion ID 618 decolle (128 passagers)
+[19:26:54] DEPART: Avion ID 511 decolle (48 passagers)
+[19:26:54] ARRIVEE: Avion ID 695 atterri (8 passagers)
+[19:26:54] ARRIVEE: Avion ID 511 atterri (48 passagers)
+[19:26:54] ARRIVEE: Avion ID 578 atterri (117 passagers)
+[19:26:54] ARRIVEE: Avion ID 693 atterri (74 passagers)
+[19:26:54] ARRIVEE: Avion ID 618 atterri (128 passagers)
+[19:26:54] ARRIVEE: Avion ID 696 atterri (39 passagers)
+[19:26:54] EVENEMENT: Pluie - Decollages decales
+[19:26:54] DEPART: Avion ID 676 decolle (52 passagers)
+[19:26:54] EVENEMENT: CRASH - Avion ID 676 détruit
+[19:26:54] DEPART: Avion ID 414 decolle (48 passagers)
+[19:26:54] ARRIVEE: Avion ID 699 atterri (77 passagers)
+[19:26:55] DEPART: Avion ID 621 decolle (25 passagers)
+[19:26:55] ARRIVEE: Avion ID 621 atterri (25 passagers)
+[19:26:55] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:55] HACK: Donnees de vol alterees
+[19:26:55] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:55] EVENEMENT: Orage - Decollages decales
+[19:26:55] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:55] HACK: Navigation compromise
+[19:26:55] DEPART: Avion ID 622 decolle (160 passagers)
+[19:26:55] ARRIVEE: Avion ID 700 atterri (120 passagers)
+[19:26:55] DEPART: Avion ID 520 decolle (23 passagers)
+[19:26:55] DEPART: Avion ID 578 decolle (117 passagers)
+[19:26:55] ARRIVEE: Avion ID 701 atterri (108 passagers)
+[19:26:55] DEPART: Avion ID 473 decolle (156 passagers)
+[19:26:55] DEPART: Avion ID 645 decolle (41 passagers)
+[19:26:55] ARRIVEE: Avion ID 703 atterri (70 passagers)
+[19:26:55] DEPART: Avion ID 510 decolle (91 passagers)
+[19:26:55] ARRIVEE: Avion ID 578 atterri (117 passagers)
+[19:26:55] DEPART: Avion ID 274 decolle (61 passagers)
+[19:26:55] DEPART: Avion ID 625 decolle (160 passagers)
+[19:26:55] DEPART: Avion ID 618 decolle (128 passagers)
+[19:26:55] EVENEMENT: Neige - Decollages decales
+[19:26:55] DEPART: Avion ID 511 decolle (48 passagers)
+[19:26:55] EVENEMENT: Orage - Decollages decales
+[19:26:55] DEPART: Avion ID 653 decolle (75 passagers)
+[19:26:55] DEPART: Avion ID 593 decolle (3 passagers)
+[19:26:55] DEPART: Avion ID 539 decolle (171 passagers)
+[19:26:55] EVENEMENT: CRASH - Avion ID 709 détruit
+[19:26:55] DEPART: Avion ID 600 decolle (34 passagers)
+[19:26:55] ARRIVEE: Avion ID 704 atterri (171 passagers)
+[19:26:55] EVENEMENT: CRASH - Avion ID 618 détruit
+[19:26:55] DEPART: Avion ID 693 decolle (74 passagers)
+[19:26:56] DEPART: Avion ID 611 decolle (138 passagers)
+[19:26:56] DEPART: Avion ID 550 decolle (56 passagers)
+[19:26:56] ARRIVEE: Avion ID 710 atterri (156 passagers)
+[19:26:56] ARRIVEE: Avion ID 653 atterri (75 passagers)
+[19:26:56] ARRIVEE: Avion ID 600 atterri (34 passagers)
+[19:26:56] DEPART: Avion ID 634 decolle (76 passagers)
+[19:26:56] DEPART: Avion ID 699 decolle (77 passagers)
+[19:26:56] ARRIVEE: Avion ID 712 atterri (92 passagers)
+[19:26:56] ARRIVEE: Avion ID 593 atterri (3 passagers)
+[19:26:56] DEPART: Avion ID 606 decolle (166 passagers)
+[19:26:56] DEPART: Avion ID 668 decolle (166 passagers)
+[19:26:56] ARRIVEE: Avion ID 693 atterri (74 passagers)
+[19:26:56] ARRIVEE: Avion ID 606 atterri (166 passagers)
+[19:26:56] DEPART: Avion ID 657 decolle (167 passagers)
+[19:26:56] ARRIVEE: Avion ID 668 atterri (166 passagers)
+[19:26:56] ARRIVEE: Avion ID 699 atterri (77 passagers)
+[19:26:56] ARRIVEE: Avion ID 657 atterri (167 passagers)
+[19:26:56] DEPART: Avion ID 658 decolle (16 passagers)
+[19:26:56] DEPART: Avion ID 413 decolle (13 passagers)
+[19:26:56] DEPART: Avion ID 569 decolle (108 passagers)
+[19:26:56] DEPART: Avion ID 305 decolle (89 passagers)
+[19:26:56] ARRIVEE: Avion ID 658 atterri (16 passagers)
+[19:26:56] DEPART: Avion ID 586 decolle (6 passagers)
+[19:26:56] ARRIVEE: Avion ID 305 atterri (89 passagers)
+[19:26:56] DEPART: Avion ID 699 decolle (77 passagers)
+[19:26:56] ARRIVEE: Avion ID 586 atterri (6 passagers)
+[19:26:56] ARRIVEE: Avion ID 699 atterri (77 passagers)
+[19:26:56] ARRIVEE: Avion ID 716 atterri (94 passagers)
+[19:26:56] DEPART: Avion ID 521 decolle (172 passagers)
+[19:26:56] DEPART: Avion ID 526 decolle (194 passagers)
+[19:26:56] DEPART: Avion ID 414 decolle (48 passagers)
+[19:26:56] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:56] HACK: Donnees de vol alterees
+[19:26:56] ARRIVEE: Avion ID 569 atterri (108 passagers)
+[19:26:56] DEPART: Avion ID 483 decolle (36 passagers)
+[19:26:56] DEPART: Avion ID 669 decolle (190 passagers)
+[19:26:56] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:26:56] ARRIVEE: Avion ID 715 atterri (21 passagers)
+[19:26:56] DEPART: Avion ID 488 decolle (27 passagers)
+[19:26:56] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:56] HACK: Donnees de vol alterees
+[19:26:56] DEPART: Avion ID 596 decolle (40 passagers)
+[19:26:56] ARRIVEE: Avion ID 669 atterri (190 passagers)
+[19:26:56] ARRIVEE: Avion ID 719 atterri (197 passagers)
+[19:26:56] DEPART: Avion ID 719 decolle (197 passagers)
+[19:26:56] ARRIVEE: Avion ID 596 atterri (40 passagers)
+[19:26:56] EVENEMENT: CRASH - Avion ID 723 détruit
+[19:26:57] DEPART: Avion ID 680 decolle (111 passagers)
+[19:26:57] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:57] HACK: Communications perturbees
+[19:26:57] ARRIVEE: Avion ID 722 atterri (190 passagers)
+[19:26:57] ARRIVEE: Avion ID 719 atterri (197 passagers)
+[19:26:57] ARRIVEE: Avion ID 720 atterri (183 passagers)
+[19:26:57] ARRIVEE: Avion ID 727 atterri (34 passagers)
+[19:26:57] ARRIVEE: Avion ID 724 atterri (175 passagers)
+[19:26:57] DEPART: Avion ID 453 decolle (139 passagers)
+[19:26:57] ARRIVEE: Avion ID 680 atterri (111 passagers)
+[19:26:57] DEPART: Avion ID 636 decolle (186 passagers)
+[19:26:57] DEPART: Avion ID 668 decolle (166 passagers)
+[19:26:57] EVENEMENT: Neige - Decollages decales
+[19:26:57] DEPART: Avion ID 380 decolle (11 passagers)
+[19:26:57] DEPART: Avion ID 720 decolle (183 passagers)
+[19:26:57] DEPART: Avion ID 713 decolle (141 passagers)
+[19:26:57] DEPART: Avion ID 653 decolle (75 passagers)
+[19:26:57] DEPART: Avion ID 657 decolle (167 passagers)
+[19:26:57] DEPART: Avion ID 586 decolle (6 passagers)
+[19:26:57] ARRIVEE: Avion ID 636 atterri (186 passagers)
+[19:26:57] DEPART: Avion ID 700 decolle (120 passagers)
+[19:26:57] EVENEMENT: Orage - Decollages decales
+[19:26:57] DEPART: Avion ID 701 decolle (108 passagers)
+[19:26:57] DEPART: Avion ID 710 decolle (156 passagers)
+[19:26:57] ARRIVEE: Avion ID 701 atterri (108 passagers)
+[19:26:57] EVENEMENT: Neige - Decollages decales
+[19:26:57] ARRIVEE: Avion ID 710 atterri (156 passagers)
+[19:26:57] DEPART: Avion ID 610 decolle (20 passagers)
+[19:26:57] DEPART: Avion ID 695 decolle (8 passagers)
+[19:26:57] DEPART: Avion ID 621 decolle (25 passagers)
+[19:26:57] ARRIVEE: Avion ID 732 atterri (115 passagers)
+[19:26:57] DEPART: Avion ID 712 decolle (92 passagers)
+[19:26:57] ARRIVEE: Avion ID 735 atterri (169 passagers)
+[19:26:57] ARRIVEE: Avion ID 653 atterri (75 passagers)
+[19:26:57] DEPART: Avion ID 600 decolle (34 passagers)
+[19:26:57] ARRIVEE: Avion ID 729 atterri (62 passagers)
+[19:26:57] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:26:57] ARRIVEE: Avion ID 700 atterri (120 passagers)
+[19:26:58] ARRIVEE: Avion ID 713 atterri (141 passagers)
+[19:26:58] ARRIVEE: Avion ID 600 atterri (34 passagers)
+[19:26:58] ARRIVEE: Avion ID 736 atterri (68 passagers)
+[19:26:58] ARRIVEE: Avion ID 621 atterri (25 passagers)
+[19:26:58] ARRIVEE: Avion ID 738 atterri (116 passagers)
+[19:26:58] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:58] HACK: Communications perturbees
+[19:26:58] DEPART: Avion ID 593 decolle (3 passagers)
+[19:26:58] ARRIVEE: Avion ID 695 atterri (8 passagers)
+[19:26:58] ARRIVEE: Avion ID 737 atterri (64 passagers)
+[19:26:58] DEPART: Avion ID 724 decolle (175 passagers)
+[19:26:58] DEPART: Avion ID 599 decolle (116 passagers)
+[19:26:58] ARRIVEE: Avion ID 739 atterri (10 passagers)
+[19:26:58] DEPART: Avion ID 675 decolle (89 passagers)
+[19:26:58] ARRIVEE: Avion ID 599 atterri (116 passagers)
+[19:26:58] DEPART: Avion ID 700 decolle (120 passagers)
+[19:26:58] DEPART: Avion ID 580 decolle (185 passagers)
+[19:26:58] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:58] HACK: Communications perturbees
+[19:26:58] ARRIVEE: Avion ID 741 atterri (144 passagers)
+[19:26:58] DEPART: Avion ID 474 decolle (15 passagers)
+[19:26:58] DEPART: Avion ID 578 decolle (117 passagers)
+[19:26:58] DEPART: Avion ID 729 decolle (62 passagers)
+[19:26:58] ARRIVEE: Avion ID 580 atterri (185 passagers)
+[19:26:58] ARRIVEE: Avion ID 675 atterri (89 passagers)
+[19:26:58] DEPART: Avion ID 584 decolle (184 passagers)
+[19:26:58] DEPART: Avion ID 664 decolle (111 passagers)
+[19:26:58] ARRIVEE: Avion ID 745 atterri (51 passagers)
+[19:26:58] DEPART: Avion ID 655 decolle (124 passagers)
+[19:26:58] DEPART: Avion ID 675 decolle (89 passagers)
+[19:26:58] DEPART: Avion ID 693 decolle (74 passagers)
+[19:26:58] ARRIVEE: Avion ID 664 atterri (111 passagers)
+[19:26:58] EVENEMENT: Pluie - Decollages decales
+[19:26:58] ARRIVEE: Avion ID 743 atterri (101 passagers)
+[19:26:58] ARRIVEE: Avion ID 655 atterri (124 passagers)
+[19:26:58] ARRIVEE: Avion ID 747 atterri (24 passagers)
+[19:26:58] ARRIVEE: Avion ID 748 atterri (162 passagers)
+[19:26:58] DEPART: Avion ID 653 decolle (75 passagers)
+[19:26:58] DEPART: Avion ID 739 decolle (10 passagers)
+[19:26:58] DEPART: Avion ID 736 decolle (68 passagers)
+[19:26:59] DEPART: Avion ID 751 decolle (152 passagers)
+[19:26:59] DEPART: Avion ID 701 decolle (108 passagers)
+[19:26:59] ARRIVEE: Avion ID 753 atterri (105 passagers)
+[19:26:59] ARRIVEE: Avion ID 751 atterri (152 passagers)
+[19:26:59] ARRIVEE: Avion ID 736 atterri (68 passagers)
+[19:26:59] DEPART: Avion ID 305 decolle (89 passagers)
+[19:26:59] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:59] HACK: Navigation compromise
+[19:26:59] DEPART: Avion ID 735 decolle (169 passagers)
+[19:26:59] DEPART: Avion ID 563 decolle (21 passagers)
+[19:26:59] ARRIVEE: Avion ID 754 atterri (199 passagers)
+[19:26:59] ARRIVEE: Avion ID 755 atterri (100 passagers)
+[19:26:59] ARRIVEE: Avion ID 752 atterri (121 passagers)
+[19:26:59] DEPART: Avion ID 722 decolle (190 passagers)
+[19:26:59] ARRIVEE: Avion ID 735 atterri (169 passagers)
+[19:26:59] DEPART: Avion ID 669 decolle (190 passagers)
+[19:26:59] ARRIVEE: Avion ID 722 atterri (190 passagers)
+[19:26:59] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:26:59] HACK: Navigation compromise
+[19:26:59] ARRIVEE: Avion ID 758 atterri (2 passagers)
+[19:26:59] DEPART: Avion ID 677 decolle (144 passagers)
+[19:26:59] DEPART: Avion ID 727 decolle (34 passagers)
+[19:26:59] DEPART: Avion ID 747 decolle (24 passagers)
+[19:26:59] DEPART: Avion ID 703 decolle (70 passagers)
+[19:26:59] DEPART: Avion ID 750 decolle (23 passagers)
+[19:26:59] ARRIVEE: Avion ID 756 atterri (3 passagers)
+[19:26:59] ARRIVEE: Avion ID 747 atterri (24 passagers)
+[19:26:59] ARRIVEE: Avion ID 677 atterri (144 passagers)
+[19:26:59] ARRIVEE: Avion ID 703 atterri (70 passagers)
+[19:26:59] DEPART: Avion ID 758 decolle (2 passagers)
+[19:26:59] ARRIVEE: Avion ID 750 atterri (23 passagers)
+[19:26:59] DEPART: Avion ID 690 decolle (146 passagers)
+[19:26:59] ARRIVEE: Avion ID 727 atterri (34 passagers)
+[19:26:59] EVENEMENT: CRASH - Avion ID 758 détruit
+[19:26:59] ARRIVEE: Avion ID 690 atterri (146 passagers)
+[19:26:59] DEPART: Avion ID 596 decolle (40 passagers)
+[19:26:59] DEPART: Avion ID 737 decolle (64 passagers)
+[19:26:59] ARRIVEE: Avion ID 760 atterri (92 passagers)
+[19:26:59] DEPART: Avion ID 658 decolle (16 passagers)
+[19:26:59] ARRIVEE: Avion ID 762 atterri (59 passagers)
+[19:26:59] DEPART: Avion ID 690 decolle (146 passagers)
+[19:27:00] DEPART: Avion ID 569 decolle (108 passagers)
+[19:27:00] ARRIVEE: Avion ID 765 atterri (158 passagers)
+[19:27:00] ARRIVEE: Avion ID 658 atterri (16 passagers)
+[19:27:00] ARRIVEE: Avion ID 690 atterri (146 passagers)
+[19:27:00] ARRIVEE: Avion ID 768 atterri (54 passagers)
+[19:27:00] DEPART: Avion ID 741 decolle (144 passagers)
+[19:27:00] ARRIVEE: Avion ID 769 atterri (131 passagers)
+[19:27:00] DEPART: Avion ID 747 decolle (24 passagers)
+[19:27:00] DEPART: Avion ID 696 decolle (39 passagers)
+[19:27:00] ARRIVEE: Avion ID 770 atterri (62 passagers)
+[19:27:00] ARRIVEE: Avion ID 772 atterri (52 passagers)
+[19:27:00] ARRIVEE: Avion ID 741 atterri (144 passagers)
+[19:27:00] ARRIVEE: Avion ID 696 atterri (39 passagers)
+[19:27:00] DEPART: Avion ID 414 decolle (48 passagers)
+[19:27:00] ARRIVEE: Avion ID 773 atterri (192 passagers)
+[19:27:00] DEPART: Avion ID 704 decolle (171 passagers)
+[19:27:00] ARRIVEE: Avion ID 414 atterri (48 passagers)
+[19:27:00] ARRIVEE: Avion ID 704 atterri (171 passagers)
+[19:27:00] ARRIVEE: Avion ID 774 atterri (148 passagers)
+[19:27:00] DEPART: Avion ID 732 decolle (115 passagers)
+[19:27:00] ARRIVEE: Avion ID 732 atterri (115 passagers)
+[19:27:00] ARRIVEE: Avion ID 775 atterri (187 passagers)
+[19:27:00] DEPART: Avion ID 696 decolle (39 passagers)
+[19:27:00] ARRIVEE: Avion ID 776 atterri (153 passagers)
+[19:27:00] ARRIVEE: Avion ID 777 atterri (25 passagers)
+[19:27:01] DEPART: Avion ID 534 decolle (14 passagers)
+[19:27:01] DEPART: Avion ID 756 decolle (3 passagers)
+[19:27:01] DEPART: Avion ID 671 decolle (65 passagers)
+[19:27:01] ARRIVEE: Avion ID 756 atterri (3 passagers)
+[19:27:01] DEPART: Avion ID 664 decolle (111 passagers)
+[19:27:01] EVENEMENT: CRASH - Avion ID 664 détruit
+[19:27:01] ARRIVEE: Avion ID 534 atterri (14 passagers)
+[19:27:01] ARRIVEE: Avion ID 781 atterri (20 passagers)
+[19:27:01] ARRIVEE: Avion ID 696 atterri (39 passagers)
+[19:27:01] DEPART: Avion ID 769 decolle (131 passagers)
+[19:27:01] EVENEMENT: CRASH - Avion ID 780 détruit
+[19:27:01] DEPART: Avion ID 736 decolle (68 passagers)
+[19:27:01] DEPART: Avion ID 600 decolle (34 passagers)
+[19:27:01] DEPART: Avion ID 760 decolle (92 passagers)
+[19:27:01] ARRIVEE: Avion ID 769 atterri (131 passagers)
+[19:27:01] DEPART: Avion ID 735 decolle (169 passagers)
+[19:27:01] EVENEMENT: Neige - Decollages decales
+[19:27:01] ARRIVEE: Avion ID 785 atterri (17 passagers)
+[19:27:01] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:27:01] HACK: Communications perturbees
+[19:27:01] ARRIVEE: Avion ID 736 atterri (68 passagers)
+[19:27:01] DEPART: Avion ID 677 decolle (144 passagers)
+[19:27:01] ARRIVEE: Avion ID 787 atterri (164 passagers)
+[19:27:01] ARRIVEE: Avion ID 735 atterri (169 passagers)
+[19:27:01] ARRIVEE: Avion ID 600 atterri (34 passagers)
+[19:27:01] DEPART: Avion ID 655 decolle (124 passagers)
+[19:27:01] DEPART: Avion ID 732 decolle (115 passagers)
+[19:27:01] ARRIVEE: Avion ID 732 atterri (115 passagers)
+[19:27:01] ARRIVEE: Avion ID 677 atterri (144 passagers)
+[19:27:01] DEPART: Avion ID 738 decolle (116 passagers)
+[19:27:01] ARRIVEE: Avion ID 655 atterri (124 passagers)
+[19:27:01] DEPART: Avion ID 600 decolle (34 passagers)
+[19:27:02] ARRIVEE: Avion ID 790 atterri (141 passagers)
+[19:27:02] ARRIVEE: Avion ID 738 atterri (116 passagers)
+[19:27:02] DEPART: Avion ID 695 decolle (8 passagers)
+[19:27:02] ARRIVEE: Avion ID 695 atterri (8 passagers)
+[19:27:02] ARRIVEE: Avion ID 600 atterri (34 passagers)
+[19:27:02] ARRIVEE: Avion ID 792 atterri (164 passagers)
+[19:27:02] DEPART: Avion ID 716 decolle (94 passagers)
+[19:27:02] ARRIVEE: Avion ID 716 atterri (94 passagers)
+[19:27:02] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:27:02] HACK: Communications perturbees
+[19:27:02] ARRIVEE: Avion ID 795 atterri (182 passagers)
+[19:27:02] DEPART: Avion ID 745 decolle (51 passagers)
+[19:27:02] ARRIVEE: Avion ID 796 atterri (49 passagers)
+[19:27:02] DEPART: Avion ID 748 decolle (162 passagers)
+[19:27:02] DEPART: Avion ID 610 decolle (20 passagers)
+[19:27:02] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:27:02] ARRIVEE: Avion ID 797 atterri (12 passagers)
+[19:27:02] DEPART: Avion ID 741 decolle (144 passagers)
+[19:27:02] ARRIVEE: Avion ID 745 atterri (51 passagers)
+[19:27:02] DEPART: Avion ID 704 decolle (171 passagers)
+[19:27:02] ARRIVEE: Avion ID 805 atterri (104 passagers)
+[19:27:02] DEPART: Avion ID 389 decolle (49 passagers)
+[19:27:02] DEPART: Avion ID 606 decolle (166 passagers)
+[19:27:02] DEPART: Avion ID 528 decolle (21 passagers)
+[19:27:03] DEPART: Avion ID 665 decolle (160 passagers)
+[19:27:03] DEPART: Avion ID 696 decolle (39 passagers)
+[19:27:03] ARRIVEE: Avion ID 606 atterri (166 passagers)
+[19:27:03] DEPART: Avion ID 777 decolle (25 passagers)
+[19:27:03] ARRIVEE: Avion ID 809 atterri (58 passagers)
+[19:27:03] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:27:03] HACK: Donnees de vol alterees
+[19:27:03] ARRIVEE: Avion ID 528 atterri (21 passagers)
+[19:27:03] ARRIVEE: Avion ID 665 atterri (160 passagers)
+[19:27:03] ARRIVEE: Avion ID 777 atterri (25 passagers)
+[19:27:03] ARRIVEE: Avion ID 810 atterri (162 passagers)
+[19:27:03] ARRIVEE: Avion ID 808 atterri (195 passagers)
+[19:27:03] DEPART: Avion ID 665 decolle (160 passagers)
+[19:27:03] EVENEMENT: Neige - Decollages decales
+[19:27:03] DEPART: Avion ID 677 decolle (144 passagers)
+[19:27:03] DEPART: Avion ID 655 decolle (124 passagers)
+[19:27:03] ARRIVEE: Avion ID 655 atterri (124 passagers)
+[19:27:03] ARRIVEE: Avion ID 665 atterri (160 passagers)
+[19:27:03] DEPART: Avion ID 775 decolle (187 passagers)
+[19:27:03] DEPART: Avion ID 666 decolle (89 passagers)
+[19:27:03] ARRIVEE: Avion ID 814 atterri (180 passagers)
+[19:27:03] DEPART: Avion ID 599 decolle (116 passagers)
+[19:27:03] DEPART: Avion ID 790 decolle (141 passagers)
+[19:27:03] ARRIVEE: Avion ID 815 atterri (22 passagers)
+[19:27:03] DEPART: Avion ID 610 decolle (20 passagers)
+[19:27:03] ARRIVEE: Avion ID 599 atterri (116 passagers)
+[19:27:03] ARRIVEE: Avion ID 666 atterri (89 passagers)
+[19:27:03] ARRIVEE: Avion ID 790 atterri (141 passagers)
+[19:27:03] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:27:03] DEPART: Avion ID 814 decolle (180 passagers)
+[19:27:03] ARRIVEE: Avion ID 775 atterri (187 passagers)
+[19:27:04] ARRIVEE: Avion ID 814 atterri (180 passagers)
+[19:27:04] ARRIVEE: Avion ID 820 atterri (144 passagers)
+[19:27:04] DEPART: Avion ID 773 decolle (192 passagers)
+[19:27:04] DEPART: Avion ID 736 decolle (68 passagers)
+[19:27:04] DEPART: Avion ID 580 decolle (185 passagers)
+[19:27:04] EVENEMENT: Pluie - Decollages decales
+[19:27:04] ARRIVEE: Avion ID 736 atterri (68 passagers)
+[19:27:04] ARRIVEE: Avion ID 817 atterri (99 passagers)
+[19:27:04] ARRIVEE: Avion ID 773 atterri (192 passagers)
+[19:27:04] ARRIVEE: Avion ID 819 atterri (13 passagers)
+[19:27:04] ARRIVEE: Avion ID 580 atterri (185 passagers)
+[19:27:04] EVENEMENT: Neige - Decollages decales
+[19:27:04] DEPART: Avion ID 735 decolle (169 passagers)
+[19:27:04] EVENEMENT: Pluie - Decollages decales
+[19:27:04] ARRIVEE: Avion ID 735 atterri (169 passagers)
+[19:27:04] DEPART: Avion ID 796 decolle (49 passagers)
+[19:27:04] ARRIVEE: Avion ID 821 atterri (185 passagers)
+[19:27:04] DEPART: Avion ID 819 decolle (13 passagers)
+[19:27:04] DEPART: Avion ID 820 decolle (144 passagers)
+[19:27:04] ARRIVEE: Avion ID 823 atterri (43 passagers)
+[19:27:04] DEPART: Avion ID 703 decolle (70 passagers)
+[19:27:04] ARRIVEE: Avion ID 824 atterri (129 passagers)
+[19:27:04] ARRIVEE: Avion ID 819 atterri (13 passagers)
+[19:27:04] DEPART: Avion ID 580 decolle (185 passagers)
+[19:27:04] DEPART: Avion ID 666 decolle (89 passagers)
+[19:27:04] DEPART: Avion ID 754 decolle (199 passagers)
+[19:27:04] ARRIVEE: Avion ID 820 atterri (144 passagers)
+[19:27:04] ARRIVEE: Avion ID 828 atterri (158 passagers)
+[19:27:04] DEPART: Avion ID 819 decolle (13 passagers)
+[19:27:05] DEPART: Avion ID 765 decolle (158 passagers)
+[19:27:05] ARRIVEE: Avion ID 754 atterri (199 passagers)
+[19:27:05] ARRIVEE: Avion ID 765 atterri (158 passagers)
+[19:27:05] DEPART: Avion ID 769 decolle (131 passagers)
+[19:27:05] DEPART: Avion ID 815 decolle (22 passagers)
+[19:27:05] DEPART: Avion ID 722 decolle (190 passagers)
+[19:27:05] DEPART: Avion ID 736 decolle (68 passagers)
+[19:27:05] DEPART: Avion ID 689 decolle (179 passagers)
+[19:27:05] DEPART: Avion ID 823 decolle (43 passagers)
+[19:27:05] DEPART: Avion ID 754 decolle (199 passagers)
+[19:27:05] DEPART: Avion ID 797 decolle (12 passagers)
+[19:27:05] ARRIVEE: Avion ID 833 atterri (146 passagers)
+[19:27:05] DEPART: Avion ID 600 decolle (34 passagers)
+[19:27:05] DEPART: Avion ID 795 decolle (182 passagers)
+[19:27:05] ARRIVEE: Avion ID 823 atterri (43 passagers)
+[19:27:05] ARRIVEE: Avion ID 754 atterri (199 passagers)
+[19:27:05] DEPART: Avion ID 823 decolle (43 passagers)
+[19:27:05] ARRIVEE: Avion ID 689 atterri (179 passagers)
+[19:27:05] ARRIVEE: Avion ID 797 atterri (12 passagers)
+[19:27:05] ARRIVEE: Avion ID 795 atterri (182 passagers)
+[19:27:05] DEPART: Avion ID 414 decolle (48 passagers)
+[19:27:05] DEPART: Avion ID 719 decolle (197 passagers)
+[19:27:05] ARRIVEE: Avion ID 841 atterri (135 passagers)
+[19:27:05] ARRIVEE: Avion ID 719 atterri (197 passagers)
+[19:27:05] DEPART: Avion ID 777 decolle (25 passagers)
+[19:27:05] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:27:05] HACK: Navigation compromise
+[19:27:05] DEPART: Avion ID 619 decolle (108 passagers)
+[19:27:05] ARRIVEE: Avion ID 619 atterri (108 passagers)
+[19:27:05] DEPART: Avion ID 833 decolle (146 passagers)
+[19:27:05] DEPART: Avion ID 775 decolle (187 passagers)
+[19:27:06] DEPART: Avion ID 817 decolle (99 passagers)
+[19:27:06] DEPART: Avion ID 680 decolle (111 passagers)
+[19:27:06] DEPART: Avion ID 665 decolle (160 passagers)
+[19:27:06] DEPART: Avion ID 824 decolle (129 passagers)
+[19:27:06] DEPART: Avion ID 655 decolle (124 passagers)
+[19:27:06] DEPART: Avion ID 719 decolle (197 passagers)
+[19:27:06] ARRIVEE: Avion ID 848 atterri (14 passagers)
+[19:27:06] ARRIVEE: Avion ID 777 atterri (25 passagers)
+[19:27:06] ARRIVEE: Avion ID 680 atterri (111 passagers)
+[19:27:06] DEPART: Avion ID 820 decolle (144 passagers)
+[19:27:06] DEPART: Avion ID 619 decolle (108 passagers)
+[19:27:06] ARRIVEE: Avion ID 665 atterri (160 passagers)
+[19:27:06] DEPART: Avion ID 610 decolle (20 passagers)
+[19:27:06] DEPART: Avion ID 753 decolle (105 passagers)
+[19:27:06] EVENEMENT: Pluie - Decollages decales
+[19:27:06] ARRIVEE: Avion ID 820 atterri (144 passagers)
+[19:27:06] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:27:06] ARRIVEE: Avion ID 824 atterri (129 passagers)
+[19:27:06] DEPART: Avion ID 749 decolle (116 passagers)
+[19:27:06] EVENEMENT: CRASH - Avion ID 753 détruit
+[19:27:06] DEPART: Avion ID 810 decolle (162 passagers)
+[19:27:06] DEPART: Avion ID 606 decolle (166 passagers)
+[19:27:06] DEPART: Avion ID 751 decolle (152 passagers)
+[19:27:06] ARRIVEE: Avion ID 856 atterri (148 passagers)
+[19:27:06] DEPART: Avion ID 745 decolle (51 passagers)
+[19:27:06] EVENEMENT: Pluie - Decollages decales
+[19:27:06] DEPART: Avion ID 610 decolle (20 passagers)
+[19:27:06] ARRIVEE: Avion ID 857 atterri (45 passagers)
+[19:27:06] ARRIVEE: Avion ID 810 atterri (162 passagers)
+[19:27:06] DEPART: Avion ID 792 decolle (164 passagers)
+[19:27:06] DEPART: Avion ID 710 decolle (156 passagers)
+[19:27:06] DEPART: Avion ID 828 decolle (158 passagers)
+[19:27:06] DEPART: Avion ID 848 decolle (14 passagers)
+[19:27:06] DEPART: Avion ID 768 decolle (54 passagers)
+[19:27:06] DEPART: Avion ID 841 decolle (135 passagers)
+[19:27:06] ARRIVEE: Avion ID 858 atterri (144 passagers)
+[19:27:06] EVENEMENT: Orage - Decollages decales
+[19:27:06] ARRIVEE: Avion ID 863 atterri (33 passagers)
+[19:27:06] DEPART: Avion ID 689 decolle (179 passagers)
+[19:27:06] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:27:06] ARRIVEE: Avion ID 768 atterri (54 passagers)
+[19:27:06] DEPART: Avion ID 621 decolle (25 passagers)
+[19:27:06] DEPART: Avion ID 856 decolle (148 passagers)
+[19:27:19] ARRIVEE: Avion ID 610 atterri (20 passagers)
+[19:27:22] ARRIVEE: Avion ID 768 atterri (54 passagers)
+[19:27:22] DEPART: Avion ID 621 decolle (25 passagers)
+[19:27:28] DEPART: Avion ID 856 decolle (148 passagers)
+[19:27:28] ARRIVEE: Avion ID 621 atterri (25 passagers)
+[19:27:28] EVENEMENT: Neige - Decollages decales
+[19:27:41] DEPART: Avion ID 821 decolle (185 passagers)
+[19:27:44] DEPART: Avion ID 795 decolle (182 passagers)
+[19:27:56] ARRIVEE: Avion ID 792 atterri (164 passagers)
+[19:27:56] ARRIVEE: Avion ID 58 atterri (176 passagers)
+[19:28:02] ARRIVEE: Avion ID 864 atterri (33 passagers)
+[19:28:05] DEPART: Avion ID 752 decolle (121 passagers)
+[19:28:08] ARRIVEE: Avion ID 856 atterri (148 passagers)
+[19:28:11] DEPART: Avion ID 773 decolle (192 passagers)
+[19:28:20] DEPART: Avion ID 699 decolle (77 passagers)
+[19:28:23] DEPART: Avion ID 776 decolle (153 passagers)
+[19:28:26] DEPART: Avion ID 713 decolle (141 passagers)
+[19:28:26] ARRIVEE: Avion ID 61 atterri (28 passagers)
+[19:28:32] ARRIVEE: Avion ID 699 atterri (77 passagers)
+[19:28:44] ARRIVEE: Avion ID 773 atterri (192 passagers)
+[19:28:44] ARRIVEE: Avion ID 63 atterri (188 passagers)
+[19:29:05] ARRIVEE: Avion ID 713 atterri (141 passagers)
+[19:29:15] DEPART: Avion ID 738 decolle (116 passagers)
+[19:29:18] ARRIVEE: Avion ID 64 atterri (195 passagers)
+[19:29:18] ARRIVEE: Avion ID 57 atterri (34 passagers)
+[19:29:24] DEPART: Avion ID 690 decolle (146 passagers)
+[19:29:24] DEPART: Avion ID 743 decolle (101 passagers)
+[19:29:33] DEPART: Avion ID 857 decolle (45 passagers)
+[19:29:36] ARRIVEE: Avion ID 690 atterri (146 passagers)
+[19:29:36] DEPART: Avion ID 727 decolle (34 passagers)
+[19:29:48] DEPART: Avion ID 790 decolle (141 passagers)
+[19:29:54] ARRIVEE: Avion ID 790 atterri (141 passagers)
+[19:29:54] ARRIVEE: Avion ID 727 atterri (34 passagers)
+[19:29:57] ARRIVEE: Avion ID 857 atterri (45 passagers)
+[19:30:00] DEPART: Avion ID 774 decolle (148 passagers)
+[19:30:03] DEPART: Avion ID 716 decolle (94 passagers)
+[19:30:03] ARRIVEE: Avion ID 738 atterri (116 passagers)
+[19:30:10] DEPART: Avion ID 808 decolle (195 passagers)
+[19:30:13] ARRIVEE: Avion ID 59 atterri (154 passagers)
+[19:30:19] ARRIVEE: Avion ID 61 atterri (140 passagers)
+[19:30:25] ARRIVEE: Avion ID 716 atterri (94 passagers)
+[19:30:25] ARRIVEE: Avion ID 808 atterri (195 passagers)
+[19:30:28] DEPART: Avion ID 857 decolle (45 passagers)
+[19:30:46] DEPART: Avion ID 534 decolle (14 passagers)
+[19:30:46] DEPART: Avion ID 756 decolle (3 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+[19:31:14] DEPART: Avion ID 534 decolle (14 passagers)
+[19:31:14] DEPART: Avion ID 621 decolle (25 passagers)
+
+========================================
+           CYCLE : 5
+========================================
+[19:31:17] DEPART: Avion ID 863 decolle (33 passagers)
+
+========================================
+           CYCLE : 6
+========================================
+[19:31:20] DEPART: Avion ID 665 decolle (160 passagers)
+[19:31:20] DEPART: Avion ID 599 decolle (116 passagers)
+
+========================================
+           CYCLE : 7
+========================================
+
+========================================
+           CYCLE : 8
+========================================
+
+========================================
+           CYCLE : 9
+========================================
+[19:31:29] ARRIVEE: Avion ID 64 atterri (22 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+[19:37:53] DEPART: Avion ID 534 decolle (14 passagers)
+[19:37:53] ARRIVEE: Avion ID 857 atterri (45 passagers)
+[19:37:53] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:37:53] HACK: Navigation compromise
+
+========================================
+           CYCLE : 5
+========================================
+
+========================================
+           CYCLE : 6
+========================================
+[19:37:59] DEPART: Avion ID 665 decolle (160 passagers)
+[19:37:59] ARRIVEE: Avion ID 63 atterri (164 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+[19:39:16] DEPART: Avion ID 534 decolle (14 passagers)
+[19:39:16] DEPART: Avion ID 814 decolle (180 passagers)
+
+========================================
+           CYCLE : 5
+========================================
+[19:39:20] ARRIVEE: Avion ID 774 atterri (148 passagers)
+
+========================================
+           CYCLE : 6
+========================================
+[19:39:23] DEPART: Avion ID 665 decolle (160 passagers)
+
+========================================
+           CYCLE : 7
+========================================
+[19:39:26] ARRIVEE: Avion ID 814 atterri (180 passagers)
+
+========================================
+           CYCLE : 8
+========================================
+[19:39:29] DEPART: Avion ID 772 decolle (52 passagers)
+
+========================================
+           CYCLE : 9
+========================================
+
+========================================
+           CYCLE : 10
+========================================
+[19:39:35] DEPART: Avion ID 770 decolle (62 passagers)
+
+========================================
+           CYCLE : 11
+========================================
+[19:39:38] ARRIVEE: Avion ID 665 atterri (160 passagers)
+[19:39:38] DEPART: Avion ID 790 decolle (141 passagers)
+
+========================================
+           CYCLE : 12
+========================================
+
+========================================
+           CYCLE : 13
+========================================
+
+========================================
+           CYCLE : 14
+========================================
+[19:39:47] ARRIVEE: Avion ID 772 atterri (52 passagers)
+
+========================================
+           CYCLE : 15
+========================================
+
+========================================
+           CYCLE : 16
+========================================
+
+========================================
+           CYCLE : 17
+========================================
+
+========================================
+           CYCLE : 18
+========================================
+
+========================================
+           CYCLE : 19
+========================================
+[19:40:02] EVENEMENT: CRASH - Avion ID 790 détruit
+
+========================================
+           CYCLE : 20
+========================================
+[19:40:05] DEPART: Avion ID 820 decolle (144 passagers)
+
+========================================
+           CYCLE : 21
+========================================
+
+========================================
+           CYCLE : 22
+========================================
+[19:40:11] ARRIVEE: Avion ID 66 atterri (199 passagers)
+
+========================================
+           CYCLE : 23
+========================================
+[19:40:14] ARRIVEE: Avion ID 770 atterri (62 passagers)
+
+========================================
+           CYCLE : 24
+========================================
+[19:40:17] DEPART: Avion ID 695 decolle (8 passagers)
+
+========================================
+           CYCLE : 25
+========================================
+
+========================================
+           CYCLE : 26
+========================================
+
+========================================
+           CYCLE : 27
+========================================
+[19:40:27] DEPART: Avion ID 824 decolle (129 passagers)
+
+========================================
+           CYCLE : 28
+========================================
+[19:40:30] ARRIVEE: Avion ID 60 atterri (165 passagers)
+[19:40:30] ARRIVEE: Avion ID 65 atterri (119 passagers)
+
+========================================
+           CYCLE : 29
+========================================
+
+========================================
+           CYCLE : 30
+========================================
+[19:40:36] DEPART: Avion ID 716 decolle (94 passagers)
+
+========================================
+           CYCLE : 31
+========================================
+[19:40:39] ARRIVEE: Avion ID 63 atterri (2 passagers)
+
+========================================
+           CYCLE : 32
+========================================
+
+========================================
+           CYCLE : 33
+========================================
+[19:40:45] EVENEMENT: CRASH - Avion ID 695 détruit
+
+========================================
+           CYCLE : 34
+========================================
+
+========================================
+           CYCLE : 35
+========================================
+[19:40:51] DEPART: Avion ID 809 decolle (58 passagers)
+[19:40:51] ARRIVEE: Avion ID 68 atterri (31 passagers)
+
+========================================
+           CYCLE : 36
+========================================
+
+========================================
+           CYCLE : 37
+========================================
+
+========================================
+           CYCLE : 38
+========================================
+
+========================================
+           CYCLE : 39
+========================================
+
+========================================
+           CYCLE : 40
+========================================
+[19:41:06] DEPART: Avion ID 610 decolle (20 passagers)
+
+========================================
+           CYCLE : 41
+========================================
+
+========================================
+           CYCLE : 42
+========================================
+
+========================================
+           CYCLE : 43
+========================================
+[19:41:15] DEPART: Avion ID 528 decolle (21 passagers)
+[19:41:15] ARRIVEE: Avion ID 716 atterri (94 passagers)
+
+========================================
+           CYCLE : 44
+========================================
+[19:41:18] DEPART: Avion ID 690 decolle (146 passagers)
+
+========================================
+           CYCLE : 45
+========================================
+
+========================================
+           CYCLE : 46
+========================================
+
+========================================
+           CYCLE : 47
+========================================
+
+========================================
+           CYCLE : 48
+========================================
+[19:41:31] ARRIVEE: Avion ID 77 atterri (57 passagers)
+
+========================================
+           CYCLE : 49
+========================================
+[19:41:34] ARRIVEE: Avion ID 70 atterri (138 passagers)
+[19:41:34] ARRIVEE: Avion ID 76 atterri (140 passagers)
+
+========================================
+           CYCLE : 50
+========================================
+[19:41:37] DEPART: Avion ID 765 decolle (158 passagers)
+
+========================================
+           CYCLE : 51
+========================================
+
+========================================
+           CYCLE : 52
+========================================
+
+========================================
+           CYCLE : 53
+========================================
+[19:41:46] ARRIVEE: Avion ID 75 atterri (86 passagers)
+[19:41:46] EVENEMENT: Neige - Decollages decales
+
+========================================
+           CYCLE : 54
+========================================
+
+========================================
+           CYCLE : 55
+========================================
+
+========================================
+           CYCLE : 56
+========================================
+
+========================================
+           CYCLE : 57
+========================================
+
+========================================
+           CYCLE : 58
+========================================
+[19:42:01] ARRIVEE: Avion ID 81 atterri (9 passagers)
+
+========================================
+           CYCLE : 59
+========================================
+[19:42:04] ARRIVEE: Avion ID 79 atterri (145 passagers)
+
+========================================
+           CYCLE : 60
+========================================
+[19:42:07] EVENEMENT: Orage - Decollages decales
+
+========================================
+           CYCLE : 61
+========================================
+
+========================================
+           CYCLE : 62
+========================================
+
+========================================
+           CYCLE : 63
+========================================
+
+========================================
+           CYCLE : 64
+========================================
+
+========================================
+           CYCLE : 1
+========================================
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+
+========================================
+           CYCLE : 5
+========================================
+
+========================================
+           CYCLE : 6
+========================================
+[19:45:26] ARRIVEE: Avion ID 78 atterri (172 passagers)
+
+========================================
+           CYCLE : 7
+========================================
+[19:45:29] DEPART: Avion ID 61 decolle (28 passagers)
+
+========================================
+           CYCLE : 8
+========================================
+[19:45:32] ARRIVEE: Avion ID 765 atterri (158 passagers)
+[19:45:32] DEPART: Avion ID 735 decolle (169 passagers)
+[19:45:32] DEPART: Avion ID 738 decolle (116 passagers)
+
+========================================
+           CYCLE : 9
+========================================
+[19:45:35] DEPART: Avion ID 810 decolle (162 passagers)
+[19:45:35] ARRIVEE: Avion ID 80 atterri (41 passagers)
+
+========================================
+           CYCLE : 10
+========================================
+[19:45:38] DEPART: Avion ID 76 decolle (140 passagers)
+
+========================================
+           CYCLE : 11
+========================================
+[19:45:41] ARRIVEE: Avion ID 61 atterri (28 passagers)
+
+========================================
+           CYCLE : 12
+========================================
+[19:45:45] DEPART: Avion ID 699 decolle (77 passagers)
+[19:45:45] ARRIVEE: Avion ID 738 atterri (116 passagers)
+
+========================================
+           CYCLE : 13
+========================================
+[19:45:48] DEPART: Avion ID 57 decolle (34 passagers)
+
+========================================
+           CYCLE : 14
+========================================
+
+========================================
+           CYCLE : 15
+========================================
+
+========================================
+           CYCLE : 16
+========================================
+[19:45:57] DEPART: Avion ID 738 decolle (116 passagers)
+
+========================================
+           CYCLE : 17
+========================================
+
+========================================
+           CYCLE : 18
+========================================
+
+========================================
+           CYCLE : 19
+========================================
+
+========================================
+           CYCLE : 20
+========================================
+
+========================================
+           CYCLE : 21
+========================================
+[19:46:12] DEPART: Avion ID 58 decolle (176 passagers)
+
+========================================
+           CYCLE : 22
+========================================
+[19:46:15] ARRIVEE: Avion ID 738 atterri (116 passagers)
+
+========================================
+           CYCLE : 23
+========================================
+
+========================================
+           CYCLE : 24
+========================================
+
+========================================
+           CYCLE : 25
+========================================
+[19:46:24] DEPART: Avion ID 765 decolle (158 passagers)
+[19:46:24] DEPART: Avion ID 797 decolle (12 passagers)
+[19:46:24] EVENEMENT: Orage - Decollages decales
+
+========================================
+           CYCLE : 26
+========================================
+
+========================================
+           CYCLE : 27
+========================================
+
+========================================
+           CYCLE : 28
+========================================
+
+========================================
+           CYCLE : 29
+========================================
+[19:46:37] DEPART: Avion ID 70 decolle (138 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+[19:48:27] DEPART: Avion ID 58 decolle (176 passagers)
+
+========================================
+           CYCLE : 2
+========================================
+[19:48:30] ARRIVEE: Avion ID 738 atterri (116 passagers)
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+[19:48:36] ARRIVEE: Avion ID 58 atterri (176 passagers)
+
+========================================
+           CYCLE : 5
+========================================
+[19:48:39] DEPART: Avion ID 797 decolle (12 passagers)
+
+========================================
+           CYCLE : 6
+========================================
+[19:48:42] ARRIVEE: Avion ID 64 atterri (154 passagers)
+[19:48:42] DEPART: Avion ID 805 decolle (104 passagers)
+
+========================================
+           CYCLE : 7
+========================================
+
+========================================
+           CYCLE : 8
+========================================
+[19:48:48] DEPART: Avion ID 70 decolle (138 passagers)
+[19:48:48] DEPART: Avion ID 727 decolle (34 passagers)
+
+========================================
+           CYCLE : 9
+========================================
+
+========================================
+           CYCLE : 1
+========================================
+[19:49:45] DEPART: Avion ID 58 decolle (176 passagers)
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+
+========================================
+           CYCLE : 4
+========================================
+
+========================================
+           CYCLE : 5
+========================================
+[19:49:57] DEPART: Avion ID 797 decolle (12 passagers)
+
+========================================
+           CYCLE : 6
+========================================
+
+========================================
+           CYCLE : 7
+========================================
+
+========================================
+           CYCLE : 8
+========================================
+[19:50:07] DEPART: Avion ID 70 decolle (138 passagers)
+
+========================================
+           CYCLE : 9
+========================================
+
+========================================
+           CYCLE : 10
+========================================
+
+========================================
+           CYCLE : 11
+========================================
+
+========================================
+           CYCLE : 12
+========================================
+
+========================================
+           CYCLE : 13
+========================================
+[19:50:22] DEPART: Avion ID 755 decolle (100 passagers)
+
+========================================
+           CYCLE : 14
+========================================
+
+========================================
+           CYCLE : 15
+========================================
+[19:50:28] DEPART: Avion ID 665 decolle (160 passagers)
+
+========================================
+           CYCLE : 16
+========================================
+[19:50:31] DEPART: Avion ID 770 decolle (62 passagers)
+[19:50:31] EVENEMENT: HACK - Systemes de l'aeroport pirates
+[19:50:31] HACK: Donnees de vol alterees
+
+========================================
+           CYCLE : 17
+========================================
+
+========================================
+           CYCLE : 18
+========================================
+[19:50:37] DEPART: Avion ID 61 decolle (28 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+
+========================================
+           CYCLE : 2
+========================================
+
+========================================
+           CYCLE : 3
+========================================
+[19:51:50] DEPART: Avion ID 755 decolle (100 passagers)
+
+========================================
+           CYCLE : 4
+========================================
+
+========================================
+           CYCLE : 5
+========================================
+
+========================================
+           CYCLE : 6
+========================================
+[19:51:59] DEPART: Avion ID 665 decolle (160 passagers)
+
+========================================
+           CYCLE : 7
+========================================
+[19:52:02] ARRIVEE: Avion ID 755 atterri (100 passagers)
+
+========================================
+           CYCLE : 8
+========================================
+[19:52:05] DEPART: Avion ID 715 decolle (21 passagers)
+
+========================================
+           CYCLE : 9
+========================================
+
+========================================
+           CYCLE : 10
+========================================
+[19:52:11] ARRIVEE: Avion ID 715 atterri (21 passagers)
+
+========================================
+           CYCLE : 11
+========================================
+[19:52:14] ARRIVEE: Avion ID 55 atterri (87 passagers)
+[19:52:14] EVENEMENT: Orage - Decollages decales
+
+========================================
+           CYCLE : 12
+========================================
+
+========================================
+           CYCLE : 13
+========================================
+
+========================================
+           CYCLE : 14
+========================================
+
+========================================
+           CYCLE : 15
+========================================
+[19:52:26] DEPART: Avion ID 61 decolle (140 passagers)
+[19:52:26] ARRIVEE: Avion ID 56 atterri (108 passagers)
+
+========================================
+           CYCLE : 16
+========================================
+
+========================================
+           CYCLE : 17
+========================================
+
+========================================
+           CYCLE : 18
+========================================
+[19:52:35] DEPART: Avion ID 64 decolle (195 passagers)
+
+========================================
+           CYCLE : 19
+========================================
+[19:52:38] DEPART: Avion ID 716 decolle (94 passagers)
+[19:52:38] DEPART: Avion ID 68 decolle (31 passagers)
+
+========================================
+           CYCLE : 20
+========================================
+[19:52:41] DEPART: Avion ID 54 decolle (183 passagers)
+
+========================================
+           CYCLE : 21
+========================================
+
+========================================
+           CYCLE : 22
+========================================
+
+========================================
+           CYCLE : 23
+========================================
+
+========================================
+           CYCLE : 24
+========================================
+[19:52:54] DEPART: Avion ID 599 decolle (116 passagers)
+[19:52:54] EVENEMENT: Orage - Decollages decales
+
+========================================
+           CYCLE : 25
+========================================
