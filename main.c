@@ -17,7 +17,9 @@
 
 #define NB_PISTES 3
 
-/*
+/*  PK IL Y A TT CES DECLARATION ICI ???
+
+
     bool verifier_compatibilite(avion *avion, PISTE *piste);
     bool parking_est_plein(AvionFile *liste_parking, int capacite_max_parking);
 
