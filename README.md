@@ -5,13 +5,15 @@
 
 ## 🍎 Utilisateurs macOS
 
-Basculez sur la branche `macos` :
+Basculez sur la branche `macOs` :
 
 ```bash
 git checkout macos
 ```
 ## 🪟 Utilisateurs Windows
 
+Basculez sur la branche `WINDOWS` :
+
 ```bash
-git checkout windows
+git checkout WINDOWS
 ```
