@@ -21,8 +21,8 @@ void consume_carburant_vol(Aeroport *airport) {
   avion *current = airport->liste_avions_en_vol->premier;
   while (current) {
     avion *next = current->next;
-    current->carburant -= 5; /* Perte de 5 unités par cycle en vol */
-
+    current->carburant -= 2; /* Perte de 5 unités par cycle en vol */
+;
     /* Alerte carburant faible */
     if (current->carburant <= 20 && current->carburant > 0) {
       printf("ALERTE CARBURANT: L'avion %d a moins de 20 unités! (Carburant: "
