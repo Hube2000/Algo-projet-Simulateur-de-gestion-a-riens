@@ -179,6 +179,7 @@ Aeroport *initAeroportBDD(const char *nom_fichier) {
   }
 
   fclose(f);
+  
 
   // Verif la cohérence de total_avions avec le nombre d'avions load
   int avions_reels = aeroport->parking->nbElement +

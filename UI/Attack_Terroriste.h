@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdbool.h>
-#include <windows.h>
 #include <time.h>
 
 // Codes de couleur
@@ -126,7 +125,7 @@ void Attack_Terroriste_UI(){
         SLEEP_MS(2000);
         CLEAR_SCREEN();
         printf("%s ET BOOOM PLUS D'AVION\n", RESET);
-        Sleep (2000);
+        SLEEP_MS(2000);
         CLEAR_SCREEN();
     }else{
 
@@ -192,10 +191,10 @@ void Attack_Terroriste_UI(){
     printf("             %s \\._                  _./%s\n", YELLOW, RESET);
     printf("                %s ```--. . , ; .--'''%s\n", YELLOW, RESET);
     printf("                      %s| |   |%s\n", BRIGHT_YELLOW, RESET);
-    printf("                   %s.-=||  | |=-.\n", BRIGHT_YELLOW, RESET);
-    printf("                   %s`-=#$%&%$#=-'%s\n", BRIGHT_YELLOW, RESET);
+    printf("                   %s.-=||  | |=-.\n", BRIGHT_YELLOW);
+    printf("                   %s`-=##$%%&%%$#=-'%s\n", BRIGHT_YELLOW, RESET);
     printf("                      %s| ;  :|%s\n", BRIGHT_YELLOW, RESET);
-    printf("           %s  _____.,-#%%&$@%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
+    printf("           %s  _____.,-#%%%%&$@%%#&#~,._____ %s\n", BRIGHT_YELLOW, RESET);
     }
 }
 
