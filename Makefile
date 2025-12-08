@@ -25,7 +25,7 @@ endif
 TARGET := $(APP)$(EXE)
 
 # Terminaux de la simulation
-TERMINAL_MAIN := Terminal/test$(EXE)
+TERMINAL_MAIN := MultiTerminal/test$(EXE)
 TERMINAL_VISUEL := MultiTerminal/terminal_visuel$(EXE)
 TERMINAL_INFO := MultiTerminal/terminal_info$(EXE)
 TERMINAL_EVENTS := MultiTerminal/terminal_events$(EXE)
@@ -64,25 +64,25 @@ terminals: $(ALL_TERMINALS)
 
 # Règle de compilation pour les fichiers dans controllers/
 $(BUILD_DIR)/controllers/%.o: controllers/%.c
-	@mkdir -p $(BUILD_DIR)/controllers
+	@if not exist $(BUILD_DIR)\controllers $(MKDIR) $(BUILD_DIR)\controllers
 	@echo Compilation de $<...
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Règle de compilation pour les fichiers dans fonctionnement/
 $(BUILD_DIR)/fonctionnement/%.o: fonctionnement/%.c
-	@mkdir -p $(BUILD_DIR)/fonctionnement
+	@if not exist $(BUILD_DIR)\fonctionnement $(MKDIR) $(BUILD_DIR)\fonctionnement
 	@echo Compilation de $<...
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Règle de compilation pour les fichiers dans verifications/
 $(BUILD_DIR)/verifications/%.o: verifications/%.c
-	@mkdir -p $(BUILD_DIR)/verifications
+	@if not exist $(BUILD_DIR)\verifications $(MKDIR) $(BUILD_DIR)\verifications
 	@echo Compilation de $<...
 	$(CC) $(CFLAGS) -c $< -o $@
 
 # Règle de compilation pour les fichiers à la racine (main.c)
 $(BUILD_DIR)/%.o: %.c
-	@mkdir -p $(BUILD_DIR)
+	@if not exist $(BUILD_DIR) $(MKDIR) $(BUILD_DIR)
 	@echo Compilation de $<...
 	$(CC) $(CFLAGS) -c $< -o $@
 
@@ -93,9 +93,9 @@ $(TARGET): $(OBJ)
 	@echo Compilation terminée !
 
 # Terminal principal (test.c)
-$(TERMINAL_MAIN): Terminal/test.c $(OBJ)
+$(TERMINAL_MAIN): MultiTerminal/test.c $(OBJ)
 	@echo Compilation du terminal principal...
-	$(CC) $(CFLAGS) Terminal/test.c $(filter-out $(BUILD_DIR)/main.o,$(OBJ)) -o $@ $(LDFLAGS)
+	$(CC) $(CFLAGS) MultiTerminal/test.c $(filter-out $(BUILD_DIR)/main.o,$(OBJ)) -o $@ $(LDFLAGS)
 
 # Terminal visuel (logs colorés)
 $(TERMINAL_VISUEL): MultiTerminal/terminal_visuel.c
@@ -120,12 +120,12 @@ run: $(TARGET)
 run-simulation: terminals
 	@echo Lancement de la simulation multi-terminaux...
 ifeq ($(OS),Windows_NT)
-	@start cmd /k "cd Terminal && test.exe"
+	@start cmd /k "cd MultiTerminal && test.exe"
 	@start cmd /k "cd MultiTerminal && terminal_visuel.exe"
 	@start cmd /k "cd MultiTerminal && terminal_info.exe"
 	@start cmd /k "cd MultiTerminal && terminal_events.exe"
 else
-	@gnome-terminal -- bash -c "cd Terminal && ./test; exec bash" &
+	@gnome-terminal -- bash -c "cd MultiTerminal && ./test; exec bash" &
 	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_visuel; exec bash" &
 	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_info; exec bash" &
 	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_events; exec bash" &

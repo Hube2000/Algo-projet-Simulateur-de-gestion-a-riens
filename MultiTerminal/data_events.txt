@@ -102,3 +102,20 @@
 [20:13:45] ATTERRISSAGE - Avion atterri avec succes
 [20:13:45] ATTERRISSAGE - Avion atterri avec succes
 [20:13:48] ATTERRISSAGE - Avion atterri avec succes
+[12:14:56] DECOLLAGE - Avion decolle avec succes
+[12:14:56] DECOLLAGE - Avion decolle avec succes
+[12:14:56] ATTERRISSAGE - Avion atterri avec succes
+[12:14:59] ATTERRISSAGE - Avion atterri avec succes
+[12:14:59] ATTERRISSAGE - Avion atterri avec succes
+[12:15:03] ATTERRISSAGE - Avion atterri avec succes
+[12:15:03] ATTERRISSAGE - Avion atterri avec succes
+[12:15:07] ATTERRISSAGE - Avion atterri avec succes
+[12:15:07] ATTERRISSAGE - Avion atterri avec succes
+[12:15:07] ATTERRISSAGE - Avion atterri avec succes
+[12:15:51] ATTERRISSAGE - Avion atterri avec succes
+[12:15:51] ATTERRISSAGE - Avion atterri avec succes
+[12:15:51] ATTERRISSAGE - Avion atterri avec succes
+[12:15:54] DECOLLAGE - Avion decolle avec succes
+[12:15:54] DECOLLAGE - Avion decolle avec succes
+[12:15:54] DECOLLAGE - Avion decolle avec succes
+[12:15:54] METEO - Orage - Decalage des decollages

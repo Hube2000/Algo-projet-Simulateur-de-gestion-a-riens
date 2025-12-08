@@ -2,6 +2,14 @@
 
 Bienvenue dans notre simulateur de gestion d'aéroport ! Ce projet vous permet de gérer en temps réel toutes les opérations d'un aéroport : parking des avions, décollages, atterrissages, ravitaillement en carburant, et même des événements surprises comme des tempêtes ou des attaques terroristes.
 
+## 🚀 Démarrage Rapide
+
+```bash
+make CC=gcc run-simulation
+```
+
+Cette commande compile et lance automatiquement la simulation avec 4 terminaux !
+
 ## Sommaire
 
 - [Simulateur de Gestion d'Aéroport](#simulateur-de-gestion-daéroport)

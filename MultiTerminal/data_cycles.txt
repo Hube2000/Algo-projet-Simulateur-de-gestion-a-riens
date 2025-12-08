@@ -721,3 +721,48 @@
 ========================================
            CYCLE : 4
 ========================================
+
+========================================
+           CYCLE : 1
+========================================
+[12:14:56] DEPART: Avion ID 13 decolle (30 passagers)
+[12:14:56] DEPART: Avion ID 13 decolle (30 passagers)
+[12:14:56] ARRIVEE: Avion ID 15 atterri (148 passagers)
+
+========================================
+           CYCLE : 2
+========================================
+[12:14:59] ARRIVEE: Avion ID 23 atterri (150 passagers)
+[12:14:59] ARRIVEE: Avion ID 23 atterri (150 passagers)
+
+========================================
+           CYCLE : 3
+========================================
+[12:15:03] ARRIVEE: Avion ID 13 atterri (30 passagers)
+[12:15:03] ARRIVEE: Avion ID 24 atterri (61 passagers)
+
+========================================
+           CYCLE : 4
+========================================
+[12:15:07] ARRIVEE: Avion ID 21 atterri (18 passagers)
+[12:15:07] ARRIVEE: Avion ID 21 atterri (18 passagers)
+[12:15:07] ARRIVEE: Avion ID 0 atterri (30 passagers)
+
+========================================
+           CYCLE : 1
+========================================
+[12:15:51] ARRIVEE: Avion ID 21 atterri (18 passagers)
+[12:15:51] ARRIVEE: Avion ID 21 atterri (18 passagers)
+[12:15:51] ARRIVEE: Avion ID 0 atterri (30 passagers)
+
+========================================
+           CYCLE : 2
+========================================
+[12:15:54] DEPART: Avion ID 20 decolle (138 passagers)
+[12:15:54] DEPART: Avion ID 20 decolle (138 passagers)
+[12:15:54] DEPART: Avion ID 15 decolle (77 passagers)
+[12:15:54] EVENEMENT: Orage - Decollages decales
+
+========================================
+           CYCLE : 3
+========================================

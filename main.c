@@ -22,11 +22,11 @@
 
 #ifdef _WIN32
 #include <windows.h>
-#define SLEEP_MS(x) SLEEP_MS(x)
-#define CLEAR_SCREEN() CLEAR_SCREEN()
+#define SLEEP_MS(x) Sleep(x)
+#define CLEAR_SCREEN() system("cls")
 #else
 #include <unistd.h>
-#define SLEEP_MS(x) uSLEEP_MS((x) * 1000)
+#define SLEEP_MS(x) usleep((x) * 1000)
 #define CLEAR_SCREEN() system("clear")
 #endif
 
