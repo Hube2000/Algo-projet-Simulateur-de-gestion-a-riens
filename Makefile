@@ -1,167 +1,168 @@
+# Makefile pour la simulation multi-terminal
+# Compatible Windows, Linux et macOS
+
+# Détection de l'OS
+ifeq ($(OS),Windows_NT)
+    # Windows
+    RM = del /Q
+    RMDIR = rmdir /S /Q
+    MKDIR = if not exist $1 mkdir $1
+    EXE_EXT = .exe
+    PATH_SEP = \\
+    CLEAR = cls
+    LAUNCH_TERMINAL = start "$(1)" cmd /k "cd /d $(2) && $(3)"
+    SLEEP = timeout /t $(1) /nobreak >nul
+    CC = gcc
+else
+    # Unix-like (Linux, macOS)
+    RM = rm -f
+    RMDIR = rm -rf
+    MKDIR = mkdir -p $1
+    EXE_EXT =
+    PATH_SEP = /
+    CLEAR = clear
+    UNAME_S := $(shell uname -s)
+    ifeq ($(UNAME_S),Darwin)
+        # macOS
+        LAUNCH_TERMINAL = osascript -e 'tell app "Terminal" to do script "cd $(2) && ./$(3)"'
+        SLEEP = sleep $(1)
+    else
+        # Linux
+        LAUNCH_TERMINAL = gnome-terminal --title="$(1)" -- bash -c "cd $(2) && ./$(3); exec bash"
+        SLEEP = sleep $(1)
+    endif
+    CC = gcc
+endif
+
 # Compilateur et flags
-CC      ?= gcc
-CFLAGS  ?= -Wall -Wextra -Wpedantic -std=c11 -I. -Iheaders
-LDFLAGS ?=
+CFLAGS = -std=c11 -Wall -Wextra
+INCLUDES = -Iheaders
 
-# Configuration de l'application
-APP := simulateur
-BUILD_DIR := build
+# Répertoires
+MULTITERMINAL_DIR = MultiTerminal
+FONCTIONNEMENT_DIR = fonctionnement
+CONTROLLERS_DIR = controllers
+VERIFICATIONS_DIR = verifications
+BUILD_DIR = build
 
-# Extension selon l'OS
+# Fichiers source
+TERMINAL_VISUEL_SRC = $(MULTITERMINAL_DIR)/terminal_visuel.c
+TERMINAL_INFO_SRC = $(MULTITERMINAL_DIR)/terminal_info.c
+TERMINAL_EVENTS_SRC = $(MULTITERMINAL_DIR)/terminal_events.c
+TEST_SRC = $(MULTITERMINAL_DIR)/test.c
+
+FONCTIONNEMENT_SRCS = $(wildcard $(FONCTIONNEMENT_DIR)/*.c)
+CONTROLLERS_SRCS = $(wildcard $(CONTROLLERS_DIR)/*.c)
+VERIFICATIONS_SRCS = $(wildcard $(VERIFICATIONS_DIR)/*.c)
+
+# Exécutables
+TERMINAL_VISUEL = $(MULTITERMINAL_DIR)/terminal_visuel$(EXE_EXT)
+TERMINAL_INFO = $(MULTITERMINAL_DIR)/terminal_info$(EXE_EXT)
+TERMINAL_EVENTS = $(MULTITERMINAL_DIR)/terminal_events$(EXE_EXT)
+TEST_EXEC = $(MULTITERMINAL_DIR)/test$(EXE_EXT)
+
+# Cible par défaut
+.PHONY: all
+all: build
+
+# Compilation de tous les exécutables
+.PHONY: build
+build: $(TERMINAL_VISUEL) $(TERMINAL_INFO) $(TERMINAL_EVENTS) $(TEST_EXEC)
+	@echo ================================================
+	@echo  COMPILATION REUSSIE!
+	@echo ================================================
+
+# Compilation du terminal visuel
+$(TERMINAL_VISUEL): $(TERMINAL_VISUEL_SRC)
+	@echo [1/4] Compilation du terminal visuel...
+	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
+
+# Compilation du terminal info
+$(TERMINAL_INFO): $(TERMINAL_INFO_SRC)
+	@echo [2/4] Compilation du terminal info...
+	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
+
+# Compilation du terminal events
+$(TERMINAL_EVENTS): $(TERMINAL_EVENTS_SRC)
+	@echo [3/4] Compilation du terminal events...
+	$(CC) $(CFLAGS) $(INCLUDES) $< -o $@
+
+# Compilation du programme principal
+$(TEST_EXEC): $(TEST_SRC) $(FONCTIONNEMENT_SRCS) $(CONTROLLERS_SRCS) $(VERIFICATIONS_SRCS)
+	@echo [4/4] Compilation du programme principal...
+	$(CC) $(CFLAGS) $(INCLUDES) $^ -o $@
+
+# Lancer la simulation
+.PHONY: run
+run: build
+	@echo ================================================
+	@echo  LANCEMENT DU SYSTEME MULTI-TERMINAL
+	@echo ================================================
 ifeq ($(OS),Windows_NT)
-	EXE := .exe
-	MKDIR := mkdir
-	RM := del /Q
-	RM_DIR := rmdir /S /Q
-	START_CMD := start cmd /k
+	@echo Lancement des terminaux dans 2 secondes...
+	@timeout /t 2 /nobreak >nul
+	@start "Terminal Visuel - Cycles" cmd /k "cd /d $(MULTITERMINAL_DIR) && terminal_visuel$(EXE_EXT)"
+	@timeout /t 1 /nobreak >nul
+	@start "Terminal Info - Informations Generales" cmd /k "cd /d $(MULTITERMINAL_DIR) && terminal_info$(EXE_EXT)"
+	@timeout /t 1 /nobreak >nul
+	@start "Terminal Events - Evenements Visuels" cmd /k "cd /d $(MULTITERMINAL_DIR) && terminal_events$(EXE_EXT)"
+	@timeout /t 1 /nobreak >nul
+	@start "Programme Principal - Simulation" cmd /k "cd /d $(MULTITERMINAL_DIR) && test$(EXE_EXT)"
+	@echo ================================================
+	@echo  TOUS LES TERMINAUX SONT LANCES!
+	@echo ================================================
+else ifeq ($(UNAME_S),Darwin)
+	@echo Lancement des terminaux...
+	@osascript -e 'tell app "Terminal" to do script "cd \"$(shell pwd)/$(MULTITERMINAL_DIR)\" && ./terminal_visuel$(EXE_EXT)"'
+	@sleep 1
+	@osascript -e 'tell app "Terminal" to do script "cd \"$(shell pwd)/$(MULTITERMINAL_DIR)\" && ./terminal_info$(EXE_EXT)"'
+	@sleep 1
+	@osascript -e 'tell app "Terminal" to do script "cd \"$(shell pwd)/$(MULTITERMINAL_DIR)\" && ./terminal_events$(EXE_EXT)"'
+	@sleep 1
+	@osascript -e 'tell app "Terminal" to do script "cd \"$(shell pwd)/$(MULTITERMINAL_DIR)\" && ./test$(EXE_EXT)"'
+	@echo ================================================
+	@echo  TOUS LES TERMINAUX SONT LANCES!
+	@echo ================================================
 else
-	EXE :=
-	MKDIR := mkdir -p
-	RM := rm -f
-	RM_DIR := rm -rf
-	START_CMD := gnome-terminal --
+	@echo Lancement des terminaux...
+	@gnome-terminal --title="Terminal Visuel - Cycles" -- bash -c "cd $(MULTITERMINAL_DIR) && ./terminal_visuel$(EXE_EXT); exec bash" &
+	@sleep 1
+	@gnome-terminal --title="Terminal Info - Informations Generales" -- bash -c "cd $(MULTITERMINAL_DIR) && ./terminal_info$(EXE_EXT); exec bash" &
+	@sleep 1
+	@gnome-terminal --title="Terminal Events - Evenements Visuels" -- bash -c "cd $(MULTITERMINAL_DIR) && ./terminal_events$(EXE_EXT); exec bash" &
+	@sleep 1
+	@gnome-terminal --title="Programme Principal - Simulation" -- bash -c "cd $(MULTITERMINAL_DIR) && ./test$(EXE_EXT); exec bash" &
+	@echo ================================================
+	@echo  TOUS LES TERMINAUX SONT LANCES!
+	@echo ================================================
 endif
 
-TARGET := $(APP)$(EXE)
-
-# Terminaux de la simulation
-TERMINAL_MAIN := MultiTerminal/test$(EXE)
-TERMINAL_VISUEL := MultiTerminal/terminal_visuel$(EXE)
-TERMINAL_INFO := MultiTerminal/terminal_info$(EXE)
-TERMINAL_EVENTS := MultiTerminal/terminal_events$(EXE)
-
-ALL_TERMINALS := $(TERMINAL_MAIN) $(TERMINAL_VISUEL) $(TERMINAL_INFO) $(TERMINAL_EVENTS)
-
-# Liste des fichiers sources
-# Note: Tous les fichiers .h sont dans le dossier headers/
-SRC := \
-	controllers/airportController.c \
-	controllers/avionController.c \
-	controllers/file.c \
-	fonctionnement/gestion.c \
-	fonctionnement/bdd.c \
-	fonctionnement/events.c \
-	fonctionnement/gestionAtt.c \
-	fonctionnement/gestionDec.c \
-	fonctionnement/gestionEssence.c \
-	verifications/verif.c \
-	main.c
-
-# Créer les chemins des fichiers .o dans le dossier build
-OBJ := $(SRC:%.c=$(BUILD_DIR)/%.o)
-
-.PHONY: all clean run simulation terminals help
-
-# Cible par défaut - compile tout
-all: $(TARGET) terminals
-
-# Compile uniquement les terminaux de simulation
-simulation: terminals
-
-# Compile tous les terminaux
-terminals: $(ALL_TERMINALS)
-	@echo Tous les terminaux ont ete compiles avec succes !
-
-# Règle de compilation pour les fichiers dans controllers/
-$(BUILD_DIR)/controllers/%.o: controllers/%.c
-	@if not exist $(BUILD_DIR)\controllers $(MKDIR) $(BUILD_DIR)\controllers
-	@echo Compilation de $<...
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Règle de compilation pour les fichiers dans fonctionnement/
-$(BUILD_DIR)/fonctionnement/%.o: fonctionnement/%.c
-	@if not exist $(BUILD_DIR)\fonctionnement $(MKDIR) $(BUILD_DIR)\fonctionnement
-	@echo Compilation de $<...
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Règle de compilation pour les fichiers dans verifications/
-$(BUILD_DIR)/verifications/%.o: verifications/%.c
-	@if not exist $(BUILD_DIR)\verifications $(MKDIR) $(BUILD_DIR)\verifications
-	@echo Compilation de $<...
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Règle de compilation pour les fichiers à la racine (main.c)
-$(BUILD_DIR)/%.o: %.c
-	@if not exist $(BUILD_DIR) $(MKDIR) $(BUILD_DIR)
-	@echo Compilation de $<...
-	$(CC) $(CFLAGS) -c $< -o $@
-
-# Linkage de l'exécutable
-$(TARGET): $(OBJ)
-	@echo Linkage de $(TARGET)...
-	$(CC) $(OBJ) -o $@ $(LDFLAGS)
-	@echo Compilation terminée !
-
-# Terminal principal (test.c)
-$(TERMINAL_MAIN): MultiTerminal/test.c $(OBJ)
-	@echo Compilation du terminal principal...
-	$(CC) $(CFLAGS) MultiTerminal/test.c $(filter-out $(BUILD_DIR)/main.o,$(OBJ)) -o $@ $(LDFLAGS)
-
-# Terminal visuel (logs colorés)
-$(TERMINAL_VISUEL): MultiTerminal/terminal_visuel.c
-	@echo Compilation du terminal visuel...
-	$(CC) $(CFLAGS) MultiTerminal/terminal_visuel.c -o $@ $(LDFLAGS)
-
-# Terminal info (statistiques)
-$(TERMINAL_INFO): MultiTerminal/terminal_info.c
-	@echo Compilation du terminal info...
-	$(CC) $(CFLAGS) MultiTerminal/terminal_info.c -o $@ $(LDFLAGS)
-
-# Terminal events (animations UI)
-$(TERMINAL_EVENTS): MultiTerminal/terminal_events.c
-	@echo Compilation du terminal events...
-	$(CC) $(CFLAGS) MultiTerminal/terminal_events.c -o $@ $(LDFLAGS)
-
-# Lancer l'application principale uniquement
-run: $(TARGET)
-	./$(TARGET)
-
-# Lancer la simulation complète avec tous les terminaux
-run-simulation: terminals
-	@echo Lancement de la simulation multi-terminaux...
-ifeq ($(OS),Windows_NT)
-	@start cmd /k "cd MultiTerminal && test.exe"
-	@start cmd /k "cd MultiTerminal && terminal_visuel.exe"
-	@start cmd /k "cd MultiTerminal && terminal_info.exe"
-	@start cmd /k "cd MultiTerminal && terminal_events.exe"
-else
-	@gnome-terminal -- bash -c "cd MultiTerminal && ./test; exec bash" &
-	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_visuel; exec bash" &
-	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_info; exec bash" &
-	@gnome-terminal -- bash -c "cd MultiTerminal && ./terminal_events; exec bash" &
-endif
-	@echo Simulation lancee avec 4 terminaux !
-
-# Nettoyer les fichiers générés
+# Nettoyage des fichiers compilés
+.PHONY: clean
 clean:
-	@echo Nettoyage...
+	@echo Nettoyage des fichiers compiles...
 ifeq ($(OS),Windows_NT)
-	@if exist $(BUILD_DIR) $(RM_DIR) $(BUILD_DIR)
-	@if exist $(TARGET) $(RM) $(TARGET)
-	@if exist $(TERMINAL_MAIN) $(RM) $(TERMINAL_MAIN)
-	@if exist $(TERMINAL_VISUEL) $(RM) $(TERMINAL_VISUEL)
-	@if exist $(TERMINAL_INFO) $(RM) $(TERMINAL_INFO)
-	@if exist $(TERMINAL_EVENTS) $(RM) $(TERMINAL_EVENTS)
+	@if exist $(MULTITERMINAL_DIR)\terminal_visuel$(EXE_EXT) del /Q $(MULTITERMINAL_DIR)\terminal_visuel$(EXE_EXT)
+	@if exist $(MULTITERMINAL_DIR)\terminal_info$(EXE_EXT) del /Q $(MULTITERMINAL_DIR)\terminal_info$(EXE_EXT)
+	@if exist $(MULTITERMINAL_DIR)\terminal_events$(EXE_EXT) del /Q $(MULTITERMINAL_DIR)\terminal_events$(EXE_EXT)
+	@if exist $(MULTITERMINAL_DIR)\test$(EXE_EXT) del /Q $(MULTITERMINAL_DIR)\test$(EXE_EXT)
 else
-	@$(RM_DIR) $(BUILD_DIR)
-	@$(RM) $(TARGET)
-	@$(RM) $(ALL_TERMINALS)
+	@rm -f $(TERMINAL_VISUEL) $(TERMINAL_INFO) $(TERMINAL_EVENTS) $(TEST_EXEC)
 endif
-	@echo Nettoyage termine.
+	@echo Nettoyage termine!
 
 # Aide
+.PHONY: help
 help:
-	@echo ========================================
-	@echo Makefile - Simulateur de gestion aerienne
-	@echo ========================================
+	@echo ================================================
+	@echo  MAKEFILE - SIMULATION MULTI-TERMINAL
+	@echo ================================================
 	@echo.
-	@echo Cibles disponibles:
-	@echo   make              - Compile tout (simulateur + terminaux)
-	@echo   make all          - Identique a make
-	@echo   make simulation   - Compile uniquement les terminaux
-	@echo   make terminals    - Compile uniquement les terminaux
-	@echo   make run          - Lance le simulateur principal
-	@echo   make run-simulation - Lance la simulation complete (4 terminaux)
-	@echo   make clean        - Nettoie les fichiers compiles
-	@echo   make help         - Affiche cette aide
+	@echo Commandes disponibles:
+	@echo   make          - Compile tous les executables
+	@echo   make build    - Compile tous les executables
+	@echo   make run      - Compile et lance la simulation
+	@echo   make clean    - Supprime les fichiers compiles
+	@echo   make help     - Affiche cette aide
 	@echo.
+	@echo ================================================
